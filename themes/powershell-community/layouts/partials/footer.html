@@ -1,0 +1,96 @@
+<footer class="powershell-dark text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <!-- About -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-8 h-8 powershell-blue rounded-lg flex items-center justify-center">
+                        <i class="fas fa-terminal text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">PowerShell.org</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-4">
+                    The community hub for PowerShell enthusiasts, automaters, and professionals worldwide.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="{{ .Site.Params.social.twitter }}" target="_blank" rel="noopener" 
+                       class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="{{ .Site.Params.social.youtube }}" target="_blank" rel="noopener" 
+                       class="text-gray-400 hover:text-red-400 transition-colors duration-200">
+                        <i class="fab fa-youtube text-lg"></i>
+                    </a>
+                    <a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener" 
+                       class="text-gray-400 hover:text-gray-200 transition-colors duration-200">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="{{ .Site.Params.social.slack }}" target="_blank" rel="noopener" 
+                       class="text-gray-400 hover:text-purple-400 transition-colors duration-200">
+                        <i class="fab fa-slack text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/podcast/" class="text-gray-400 hover:text-white transition-colors duration-200">Podcast</a></li>
+                    <li><a href="/summit/" class="text-gray-400 hover:text-white transition-colors duration-200">Summit</a></li>
+                    <li><a href="/learning/" class="text-gray-400 hover:text-white transition-colors duration-200">Learning Resources</a></li>
+                    <li><a href="/community/" class="text-gray-400 hover:text-white transition-colors duration-200">Community</a></li>
+                    <li><a href="https://forums.powershell.org" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors duration-200">Forums</a></li>
+                </ul>
+            </div>
+            
+            <!-- Resources -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/posts/" class="text-gray-400 hover:text-white transition-colors duration-200">Articles</a></li>
+                    <li><a href="/tags/" class="text-gray-400 hover:text-white transition-colors duration-200">Topics</a></li>
+                    <li><a href="/authors/" class="text-gray-400 hover:text-white transition-colors duration-200">Authors</a></li>
+                    <li><a href="/sitemap.xml" class="text-gray-400 hover:text-white transition-colors duration-200">Sitemap</a></li>
+                    <li><a href="/index.xml" class="text-gray-400 hover:text-white transition-colors duration-200">RSS Feed</a></li>
+                </ul>
+            </div>
+            
+            <!-- Events -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Upcoming Events</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h4 class="font-medium text-white mb-1">{{ .Site.Params.summit.title }}</h4>
+                        <p class="text-sm text-gray-400 mb-2">{{ .Site.Params.summit.dates }}</p>
+                        <a href="{{ .Site.Params.summit.registration_url }}" 
+                           class="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors duration-200">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <p class="text-sm text-gray-400">
+                    © {{ now.Year }} PowerShell.org Community. All rights reserved.
+                </p>
+            </div>
+            <div class="flex items-center space-x-6 text-sm">
+                <a href="/privacy/" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                <a href="/terms/" class="text-gray-400 hover:text-white transition-colors duration-200">Terms of Use</a>
+                <a href="/contact/" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            class="hidden fixed bottom-8 right-8 powershell-blue text-white p-3 rounded-full shadow-lg hover:opacity-90 transition-opacity duration-200 z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</footer>

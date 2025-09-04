@@ -1,0 +1,16 @@
+{
+  "name": "powershell-org-hugo",
+  "version": "1.0.0",
+  "description": "PowerShell.org Hugo static site",
+  "scripts": {
+    "dev": "hugo server -D --disableFastRender",
+    "build": "hugo --gc --minify",
+    "preview": "hugo server --environment production"
+  },
+  "devDependencies": {
+    "hugo-extended": "^0.121.0"
+  },
+  "hugo": {
+    "version": "0.121.0"
+  }
+}

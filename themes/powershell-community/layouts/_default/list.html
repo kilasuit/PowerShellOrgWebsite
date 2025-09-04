@@ -1,0 +1,231 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="powershell-blue py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
+            {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}
+        </h1>
+        {{ if .Params.description }}
+        <p class="text-xl opacity-90 max-w-3xl mx-auto">{{ .Params.description }}</p>
+        {{ else if .Content }}
+        <div class="text-xl opacity-90 max-w-3xl mx-auto prose prose-lg prose-invert">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Filter/Search Bar -->
+        {{ if gt (len .Pages) 5 }}
+        <div class="mb-8">
+            <div class="max-w-md mx-auto">
+                <div class="relative">
+                    <input type="text" id="content-search" 
+                           placeholder="Search {{ .Title | lower }}..."
+                           class="w-full px-4 py-3 pl-10 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        
+        <!-- Category/Tag Filter (if applicable) -->
+        {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
+        <div class="mb-8 text-center">
+            <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                <i class="fas fa-tag mr-2"></i>
+                <span class="font-medium">{{ .Title }}</span>
+            </div>
+        </div>
+        {{ end }}
+        
+        <!-- Content Grid -->
+        <div class="grid gap-8" id="content-container">
+            {{ $paginator := .Paginate .Pages }}
+            {{ range $paginator.Pages }}
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="{{ .Title | lower }}" 
+                     data-content="{{ .Summary | lower }}"
+                     data-tags="{{ delimit .Params.tags " " | lower }}">
+                
+                {{ if eq .Section "podcast" }}
+                <!-- Podcast Episode Layout -->
+                <div class="lg:flex">
+                    <div class="lg:w-1/4 p-6 lg:pr-0">
+                        <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-podcast text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/4 p-6 lg:pl-8">
+                        <div class="flex items-center text-purple-600 text-sm font-medium mb-3">
+                            <i class="fas fa-podcast mr-2"></i>
+                            <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                            {{ if .Params.duration }}
+                            <span class="mx-2">•</span>
+                            <span>{{ .Params.duration }}</span>
+                            {{ end }}
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3">
+                            <a href="{{ .Permalink }}" class="hover:text-purple-600 transition-colors duration-200">
+                                {{ .Title }}
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">{{ .Summary }}</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="{{ .Permalink }}" 
+                               class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors duration-200">
+                                <i class="fas fa-play mr-2"></i>Listen
+                            </a>
+                            {{ with .Params.tags }}
+                            <div class="flex flex-wrap gap-2">
+                                {{ range first 3 . }}
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">
+                                    {{ . }}
+                                </span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                
+                {{ else }}
+                <!-- Regular Article Layout -->
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                            {{ with .Params.author }}
+                            <span>•</span>
+                            <span>{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ with .Params.categories }}
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            {{ index . 0 }}
+                        </span>
+                        {{ end }}
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="{{ .Permalink }}" class="hover:text-blue-600 transition-colors duration-200">
+                            {{ .Title }}
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3">{{ .Summary }}</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="{{ .Permalink }}" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        {{ with .Params.tags }}
+                        <div class="flex flex-wrap gap-2">
+                            {{ range first 3 . }}
+                            <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" 
+                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
+                                {{ . }}
+                            </a>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </article>
+            {{ end }}
+        </div>
+        
+        <!-- No Results Message -->
+        <div id="no-results" class="hidden text-center py-12">
+            <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">No results found</h3>
+            <p class="text-gray-600">Try adjusting your search terms or browse all content.</p>
+        </div>
+        
+        <!-- Pagination -->
+        {{ if gt $paginator.TotalPages 1 }}
+        <nav class="mt-12 flex justify-center" aria-label="Pagination">
+            <div class="flex items-center space-x-1">
+                {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}" 
+                   class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200 flex items-center">
+                    <i class="fas fa-chevron-left mr-1"></i>Previous
+                </a>
+                {{ end }}
+                
+                {{ $currentPage := $paginator.PageNumber }}
+                {{ $totalPages := $paginator.TotalPages }}
+                
+                {{ range $paginator.Pagers }}
+                {{ $pageNumber := .PageNumber }}
+                {{ if or (le $pageNumber 2) (ge $pageNumber (sub $totalPages 1)) (and (ge $pageNumber (sub $currentPage 1)) (le $pageNumber (add $currentPage 1))) }}
+                    {{ if eq . $paginator }}
+                    <span class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium">
+                        {{ .PageNumber }}
+                    </span>
+                    {{ else }}
+                    <a href="{{ .URL }}" 
+                       class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
+                        {{ .PageNumber }}
+                    </a>
+                    {{ end }}
+                {{ else if or (eq $pageNumber 3) (eq $pageNumber (sub $totalPages 2)) }}
+                    <span class="px-2 py-2 text-gray-400">...</span>
+                {{ end }}
+                {{ end }}
+                
+                {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}" 
+                   class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200 flex items-center">
+                    Next<i class="fas fa-chevron-right ml-1"></i>
+                </a>
+                {{ end }}
+            </div>
+        </nav>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+// Search functionality
+const searchInput = document.getElementById('content-search');
+if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const contentItems = document.querySelectorAll('.content-item');
+        const noResults = document.getElementById('no-results');
+        let visibleCount = 0;
+        
+        contentItems.forEach(item => {
+            const title = item.dataset.title;
+            const content = item.dataset.content;
+            const tags = item.dataset.tags;
+            
+            if (title.includes(searchTerm) || content.includes(searchTerm) || tags.includes(searchTerm)) {
+                item.style.display = 'block';
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+        
+        // Show/hide no results message
+        if (visibleCount === 0 && searchTerm.length > 0) {
+            noResults.classList.remove('hidden');
+        } else {
+            noResults.classList.add('hidden');
+        }
+    });
+}
+</script>
+{{ end }}

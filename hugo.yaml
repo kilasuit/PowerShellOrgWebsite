@@ -6,9 +6,10 @@ theme: 'powershell-community'
 # Enable RSS feeds
 enableRSSFeed: true
 
-# Pagination
-paginate: 10
-paginatePath: 'page'
+# Updated pagination syntax for Hugo v0.128+
+pagination:
+  pagerSize: 10
+  path: 'page'
 
 # Syntax highlighting
 markup:
@@ -50,7 +51,7 @@ menu:
 
 # Site parameters
 params:
-  description: "PowerShell.org is the community hub for PowerShell enthusiasts, automators, and professionals. Join us for podcasts, summits, learning resources, and vibrant community discussions."
+  description: "PowerShell.org is the community hub for PowerShell enthusiasts, automaters, and professionals. Join us for podcasts, summits, learning resources, and vibrant community discussions."
   author: "PowerShell.org Community"
   
   # Social links
