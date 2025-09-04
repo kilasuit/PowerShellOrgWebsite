@@ -1,0 +1,107 @@
+baseURL: 'https://powershell.org'
+languageCode: 'en-us'
+title: 'PowerShell.org - Welcome Automaters!'
+theme: 'powershell-community'
+
+# Enable RSS feeds
+enableRSSFeed: true
+
+# Pagination
+paginate: 10
+paginatePath: 'page'
+
+# Syntax highlighting
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    lineNos: true
+    codeFences: true
+
+# Taxonomies
+taxonomies:
+  category: categories
+  tag: tags
+  author: authors
+
+# Menu configuration
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+    - name: "Podcast"
+      url: "/podcast/"
+      weight: 20
+    - name: "Summit"
+      url: "/summit/"
+      weight: 30
+    - name: "Community"
+      url: "/community/"
+      weight: 40
+    - name: "Learning"
+      url: "/learning/"
+      weight: 50
+    - name: "Forums"
+      url: "https://forums.powershell.org"
+      weight: 60
+
+# Site parameters
+params:
+  description: "PowerShell.org is the community hub for PowerShell enthusiasts, automators, and professionals. Join us for podcasts, summits, learning resources, and vibrant community discussions."
+  author: "PowerShell.org Community"
+  
+  # Social links
+  social:
+    twitter: "https://twitter.com/powershell_org"
+    youtube: "https://youtube.com/PowerScriptingLive"
+    github: "https://github.com/powershell"
+    slack: "https://aka.ms/psslack"
+  
+  # Featured content
+  hero:
+    title: "Welcome Automaters!"
+    subtitle: "Your hub for PowerShell community, learning, and automation excellence"
+    cta_text: "Join the Community"
+    cta_url: "/community/"
+  
+  # Podcast settings
+  podcast:
+    title: "The PowerShell Podcast"
+    description: "Building your career with PowerShell"
+    feed_url: "https://powershellpodcast.podbean.com/feed/"
+    
+  # Summit settings
+  summit:
+    year: "2025"
+    title: "PowerShell + DevOps Global Summit"
+    dates: "April 28 - May 1, 2025"
+    location: "Bellevue, WA"
+    registration_url: "#"
+    
+  # Analytics (GitHub Pages compatible)
+  google_analytics: ""
+  
+# Output formats
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+
+# Related content
+related:
+  includeNewer: true
+  indices:
+  - name: keywords
+    weight: 100
+  - name: tags
+    weight: 80
+  - name: categories
+    weight: 60
