@@ -83,7 +83,7 @@
                         Community Pulse
                     </h3>
                     <div class="space-y-4">
-                        {{ range .Site.Data.community-stats.activities }}
+                        {{ range .Site.Data.community_stats.activities }}
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 {{ .color }} rounded-full mt-2"></div>
                             <div>
@@ -97,13 +97,13 @@
                     <!-- Real Forum Stats -->
                     <div class="mt-4 pt-4 border-t border-gray-200 grid grid-cols-2 gap-4 text-center">
                         <div>
-                            <div class="font-bold text-blue-600">{{ .Site.Data.community-stats.stats.topics_this_week }}
+                            <div class="font-bold text-blue-600">{{ .Site.Data.community_stats.stats.topics_this_week }}
                             </div>
                             <div class="text-xs text-gray-500">Topics this week</div>
                         </div>
                         <div>
-                            <div class="font-bold text-green-600">{{ .Site.Data.community-stats.stats.active_users |
-                                lang.NumFmt 0 }}</div>
+                            <div class="font-bold text-green-600">{{ .Site.Data.community_stats.stats.active_users }} 
+                            </div>
                             <div class="text-xs text-gray-500">Forum members</div>
                         </div>
                     </div>

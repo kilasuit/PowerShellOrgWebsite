@@ -66,7 +66,7 @@ async function fetchDiscourseActivity() {
         };
         
         // Save to Hugo data file
-        fs.writeFileSync('./data/community-stats.json', JSON.stringify(communityStats, null, 2));
+        fs.writeFileSync('./data/community_stats.json', JSON.stringify(communityStats, null, 2));
         
         console.log('✅ Discourse activity fetched successfully');
         console.log(`📊 Found ${activities.length} activities`);

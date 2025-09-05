@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://powershell.org/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://powershell.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning/</loc>
+    <loc>https://powershell.org/learning/</loc>
   </url><url>
-    <loc>http://localhost:1313/summit/</loc>
+    <loc>https://powershell.org/summit/</loc>
   </url><url>
-    <loc>http://localhost:1313/community/</loc>
+    <loc>https://powershell.org/community/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://powershell.org/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/podcast/</loc>
+    <loc>https://powershell.org/podcast/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://powershell.org/</loc>
   </url>
 </urlset>
