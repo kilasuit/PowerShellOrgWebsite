@@ -80,7 +80,7 @@ params:
     title: "PowerShell + DevOps Global Summit"
     dates: "April 28 - May 1, 2025"
     location: "Bellevue, WA"
-    registration_url: "#"
+    registration_url: "https://powershellsummit.org"
     
   # Analytics (GitHub Pages compatible)
   google_analytics: ""

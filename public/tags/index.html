@@ -54,9 +54,21 @@
         }
 
         .hero-pattern {
+            background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%);
+            position: relative;
+        }
+
+        .hero-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-image:
-                radial-gradient(circle at 25% 25%, rgba(0, 188, 242, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(0, 120, 212, 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.02) 0%, transparent 40%);
+            pointer-events: none;
         }
 
         .podcast-card:hover {
@@ -110,6 +122,49 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
+        }
+
+         
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+         
+        .gotham-black {
+            font-family: 'Inter', 'Gotham', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        .gotham-bold {
+            font-family: 'Inter', 'Gotham', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .gotham-medium {
+            font-family: 'Inter', 'Gotham', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+        }
+
+         
+        .conference-gradient {
+            background: linear-gradient(135deg, #0082c6 0%, #00aeef 50%, #2b2d78 100%);
+        }
+
+         
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        .float {
+            animation: float 20s ease-in-out infinite;
         }
     </style>
 
@@ -183,7 +238,7 @@
             
             
             <div class="hidden md:flex items-center space-x-4">
-                <a href="#" 
+                <a href="https://powershellsummit.org" 
                    class="summit-gradient text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity duration-200">
                     Summit 2025
                 </a>
@@ -250,7 +305,7 @@
                 </a>
                 
                 <div class="pt-2 border-t border-gray-200">
-                    <a href="#" 
+                    <a href="https://powershellsummit.org" 
                        class="block summit-gradient text-white px-3 py-2 rounded-lg text-center font-medium hover:opacity-90 transition-opacity duration-200">
                         Register for Summit 2025
                     </a>
@@ -378,7 +433,7 @@
                     <div class="bg-gray-800 p-4 rounded-lg">
                         <h4 class="font-medium text-white mb-1">PowerShell &#43; DevOps Global Summit</h4>
                         <p class="text-sm text-gray-400 mb-2">April 28 - May 1, 2025</p>
-                        <a href="#" 
+                        <a href="https://powershellsummit.org" 
                            class="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors duration-200">
                             Learn More →
                         </a>

@@ -126,6 +126,49 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+
+        /* Import Gotham or use system fallbacks */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        /* Gotham fallback styling */
+        .gotham-black {
+            font-family: 'Inter', 'Gotham', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        .gotham-bold {
+            font-family: 'Inter', 'Gotham', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .gotham-medium {
+            font-family: 'Inter', 'Gotham', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+        }
+
+        /* Conference-inspired gradient background */
+        .conference-gradient {
+            background: linear-gradient(135deg, #0082c6 0%, #00aeef 50%, #2b2d78 100%);
+        }
+
+        /* Subtle animation for floating elements */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        .float {
+            animation: float 20s ease-in-out infinite;
+        }
     </style>
 
     <!-- Analytics -->
