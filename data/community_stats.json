@@ -2,12 +2,12 @@
   "activities": [
     {
       "message": "New reply in \"Completion candidates color...\"",
-      "time": "14 hours ago",
+      "time": "18 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "5 new topics this week",
+      "message": "4 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19289,
-    "total_posts": 117446,
+    "total_posts": 117447,
     "active_users": 9615,
-    "topics_this_week": 5
+    "topics_this_week": 4
   },
-  "last_updated": "2025-09-12T08:09:04.122Z"
+  "last_updated": "2025-09-12T12:11:49.559Z"
 }
