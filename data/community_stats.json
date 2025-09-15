@@ -2,12 +2,12 @@
   "activities": [
     {
       "message": "New reply in \"Microsoft Places - Errors while running ...\"",
-      "time": "7 hours ago",
+      "time": "3 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "5 new topics this week",
+      "message": "4 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19291,
-    "total_posts": 117460,
+    "total_posts": 117462,
     "active_users": 9614,
-    "topics_this_week": 5
+    "topics_this_week": 4
   },
-  "last_updated": "2025-09-15T08:09:51.966Z"
+  "last_updated": "2025-09-15T12:11:52.781Z"
 }
