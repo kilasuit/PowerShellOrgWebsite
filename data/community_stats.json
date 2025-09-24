@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Direct and security group license assign...\"",
-      "time": "22 hours ago",
+      "message": "New reply in \"Avoid incomplete remote file download us...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19294,
-    "total_posts": 117481,
-    "active_users": 9619,
+    "total_posts": 117483,
+    "active_users": 9620,
     "topics_this_week": 2
   },
-  "last_updated": "2025-09-24T12:12:14.836Z"
+  "last_updated": "2025-09-24T16:08:51.602Z"
 }
