@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Avoid incomplete remote file download us...\"",
-      "time": "2 days ago",
+      "time": "3 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19295,
     "total_posts": 117491,
-    "active_users": 9622,
+    "active_users": 9621,
     "topics_this_week": 2
   },
-  "last_updated": "2025-09-28T16:06:45.937Z"
+  "last_updated": "2025-09-28T20:06:58.665Z"
 }
