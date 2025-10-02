@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Windows is hibernated, refused to mount...\"",
-      "time": "4 hours ago",
+      "time": "8 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9623,
     "topics_this_week": 2
   },
-  "last_updated": "2025-10-02T00:27:06.293Z"
+  "last_updated": "2025-10-02T04:07:49.515Z"
 }
