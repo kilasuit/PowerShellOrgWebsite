@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Array of objects questions...\"",
-      "time": "3 hours ago",
+      "message": "New reply in \"Windows is hibernated, refused to mount...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19299,
-    "total_posts": 117513,
+    "total_posts": 117517,
     "active_users": 9623,
     "topics_this_week": 4
   },
-  "last_updated": "2025-10-03T12:11:27.583Z"
+  "last_updated": "2025-10-03T16:07:57.345Z"
 }
