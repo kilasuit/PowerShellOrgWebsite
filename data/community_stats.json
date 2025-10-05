@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Array of objects questions...\"",
-      "time": "12 hours ago",
+      "time": "16 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9623,
     "topics_this_week": 5
   },
-  "last_updated": "2025-10-05T08:07:44.738Z"
+  "last_updated": "2025-10-05T12:10:02.533Z"
 }
