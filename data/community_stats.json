@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Array of objects questions...\"",
-      "time": "Yesterday",
+      "message": "New reply in \"Need to install PowerShell 2.0... instal...\"",
+      "time": "3 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "5 new topics this week",
+      "message": "6 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19300,
-    "total_posts": 117527,
-    "active_users": 9623,
-    "topics_this_week": 5
+    "total_topics": 19301,
+    "total_posts": 117529,
+    "active_users": 9624,
+    "topics_this_week": 6
   },
-  "last_updated": "2025-10-06T04:08:04.354Z"
+  "last_updated": "2025-10-06T08:09:44.731Z"
 }
