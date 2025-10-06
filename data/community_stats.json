@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Need to install PowerShell 2.0... instal...\"",
-      "time": "3 hours ago",
+      "message": "New reply in \"Avoid incomplete remote file download us...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19301,
-    "total_posts": 117529,
+    "total_posts": 117531,
     "active_users": 9624,
     "topics_this_week": 6
   },
-  "last_updated": "2025-10-06T08:09:44.731Z"
+  "last_updated": "2025-10-06T12:11:42.051Z"
 }
