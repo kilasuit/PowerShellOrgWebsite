@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Is there a way to add utilities to the W...\"",
-      "time": "4 hours ago",
+      "message": "New reply in \"Need to install PowerShell 2.0... instal...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19301,
-    "total_posts": 117549,
+    "total_posts": 117552,
     "active_users": 9625,
     "topics_this_week": 5
   },
-  "last_updated": "2025-10-08T04:08:10.949Z"
+  "last_updated": "2025-10-08T08:09:43.284Z"
 }
