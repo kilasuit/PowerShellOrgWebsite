@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"How to fetch details of AKS private clus...\"",
-      "time": "4 hours ago",
+      "time": "8 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19302,
-    "total_posts": 117564,
-    "active_users": 9633,
+    "total_posts": 117566,
+    "active_users": 9632,
     "topics_this_week": 3
   },
-  "last_updated": "2025-10-10T12:11:49.392Z"
+  "last_updated": "2025-10-10T16:08:39.916Z"
 }
