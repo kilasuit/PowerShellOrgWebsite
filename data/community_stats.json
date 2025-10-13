@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Need to install PowerShell 2.0... instal...\"",
-      "time": "15 hours ago",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19302,
-    "total_posts": 117577,
-    "active_users": 9623,
+    "total_posts": 117578,
+    "active_users": 9621,
     "topics_this_week": 1
   },
-  "last_updated": "2025-10-13T12:11:59.509Z"
+  "last_updated": "2025-10-13T16:08:31.912Z"
 }
