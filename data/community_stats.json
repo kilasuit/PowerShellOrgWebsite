@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Is there a way to add utilities to the W...\"",
-      "time": "2 hours ago",
+      "time": "6 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19302,
     "total_posts": 117579,
-    "active_users": 9621,
+    "active_users": 9622,
     "topics_this_week": 1
   },
-  "last_updated": "2025-10-13T20:08:11.879Z"
+  "last_updated": "2025-10-14T00:27:18.887Z"
 }
