@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Is there a way to add utilities to the W...\"",
-      "time": "14 hours ago",
+      "message": "New reply in \"Wake On Lan works on 2 PC's but not on a...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "2 new topics this week",
+      "message": "3 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19303,
-    "total_posts": 117584,
+    "total_topics": 19304,
+    "total_posts": 117587,
     "active_users": 9621,
-    "topics_this_week": 2
+    "topics_this_week": 3
   },
-  "last_updated": "2025-10-14T08:09:00.474Z"
+  "last_updated": "2025-10-14T12:12:32.490Z"
 }
