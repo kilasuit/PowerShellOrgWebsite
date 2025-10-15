@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Wake On Lan works on 2 PC's but not on a...\"",
-      "time": "9 hours ago",
+      "time": "12 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9621,
     "topics_this_week": 2
   },
-  "last_updated": "2025-10-15T00:28:55.963Z"
+  "last_updated": "2025-10-15T04:08:12.060Z"
 }
