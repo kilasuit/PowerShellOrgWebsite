@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Out-Print multiple sheets...\"",
-      "time": "11 hours ago",
+      "message": "New reply in \"How to reset password for a user who in ...\"",
+      "time": "1 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "3 new topics this week",
+      "message": "2 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19303,
-    "total_posts": 117603,
+    "total_posts": 117605,
     "active_users": 9621,
-    "topics_this_week": 3
+    "topics_this_week": 2
   },
-  "last_updated": "2025-10-17T04:08:22.779Z"
+  "last_updated": "2025-10-17T08:09:53.878Z"
 }
