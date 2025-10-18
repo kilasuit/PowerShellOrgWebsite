@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Out-Print multiple sheets...\"",
-      "time": "Yesterday",
+      "time": "2 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9621,
     "topics_this_week": 2
   },
-  "last_updated": "2025-10-18T16:07:12.462Z"
+  "last_updated": "2025-10-18T20:06:56.797Z"
 }
