@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Remove-Printjob...\"",
-      "time": "21 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9623,
     "topics_this_week": 3
   },
-  "last_updated": "2025-10-21T04:08:25.573Z"
+  "last_updated": "2025-10-21T08:09:55.238Z"
 }
