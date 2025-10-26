@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"How to debug ERROR: HTTP request failed ...\"",
-      "time": "Yesterday",
+      "time": "2 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9618,
     "topics_this_week": 2
   },
-  "last_updated": "2025-10-26T16:07:15.387Z"
+  "last_updated": "2025-10-26T20:07:30.730Z"
 }
