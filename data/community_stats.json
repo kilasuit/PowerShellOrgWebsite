@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Remove a single CR/LF from a CSV file...\"",
-      "time": "Just now",
+      "time": "3 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19306,
-    "total_posts": 117624,
-    "active_users": 9619,
+    "total_posts": 117625,
+    "active_users": 9620,
     "topics_this_week": 3
   },
-  "last_updated": "2025-10-27T16:08:47.351Z"
+  "last_updated": "2025-10-27T20:07:11.721Z"
 }
