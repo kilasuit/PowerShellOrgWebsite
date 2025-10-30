@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"AD Password Expiry Notice Script Need He...\"",
-      "time": "5 hours ago",
+      "message": "New reply in \"Remove a single CR/LF from a CSV file...\"",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19307,
-    "total_posts": 117633,
+    "total_posts": 117635,
     "active_users": 9623,
     "topics_this_week": 3
   },
-  "last_updated": "2025-10-29T20:07:57.733Z"
+  "last_updated": "2025-10-30T00:30:14.806Z"
 }
