@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Advice about sharing code toys...\"",
-      "time": "19 hours ago",
+      "time": "23 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9624,
     "topics_this_week": 3
   },
-  "last_updated": "2025-11-18T08:10:01.100Z"
+  "last_updated": "2025-11-18T12:12:09.362Z"
 }
