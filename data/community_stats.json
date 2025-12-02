@@ -1,12 +1,6 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Function in a module needs to run elevat...\"",
-      "time": "6 days ago",
-      "type": "reply",
-      "color": "bg-purple-500"
-    },
-    {
       "message": "Active PowerShell discussions ongoing",
       "time": "Ongoing",
       "type": "community",
@@ -16,8 +10,8 @@
   "stats": {
     "total_topics": 19315,
     "total_posts": 117701,
-    "active_users": 9620,
+    "active_users": 9619,
     "topics_this_week": 0
   },
-  "last_updated": "2025-12-02T12:13:14.900Z"
+  "last_updated": "2025-12-02T16:09:26.437Z"
 }
