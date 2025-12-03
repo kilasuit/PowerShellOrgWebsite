@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"File Check Loop Help...\"",
-      "time": "4 hours ago",
+      "message": "New reply in \"Efficient array data collecting and memo...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "1 new topics this week",
+      "message": "2 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19316,
-    "total_posts": 117703,
+    "total_topics": 19317,
+    "total_posts": 117705,
     "active_users": 9623,
-    "topics_this_week": 1
+    "topics_this_week": 2
   },
-  "last_updated": "2025-12-03T08:10:02.760Z"
+  "last_updated": "2025-12-03T12:13:17.951Z"
 }
