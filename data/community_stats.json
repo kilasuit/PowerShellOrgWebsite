@@ -2,12 +2,12 @@
   "activities": [
     {
       "message": "New reply in \"Printing a text file from Powershell vs ...\"",
-      "time": "8 hours ago",
+      "time": "3 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "4 new topics this week",
+      "message": "3 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19319,
+    "total_topics": 19318,
     "total_posts": 117718,
     "active_users": 9623,
-    "topics_this_week": 4
+    "topics_this_week": 3
   },
-  "last_updated": "2025-12-04T16:09:33.806Z"
+  "last_updated": "2025-12-04T20:08:17.473Z"
 }
