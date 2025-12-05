@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Printing a text file from Powershell vs ...\"",
-      "time": "1 hours ago",
+      "message": "New reply in \"Herestring and splitting by lines...\"",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "3 new topics this week",
+      "message": "4 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19318,
-    "total_posts": 117719,
-    "active_users": 9623,
-    "topics_this_week": 3
+    "total_topics": 19319,
+    "total_posts": 117721,
+    "active_users": 9624,
+    "topics_this_week": 4
   },
-  "last_updated": "2025-12-05T00:30:56.217Z"
+  "last_updated": "2025-12-05T04:13:23.978Z"
 }
