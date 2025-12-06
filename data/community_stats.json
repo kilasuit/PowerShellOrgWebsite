@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Efficient array data collecting and memo...\"",
-      "time": "12 hours ago",
+      "message": "New reply in \"Printing a text file from Powershell vs ...\"",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19319,
-    "total_posts": 117727,
+    "total_posts": 117728,
     "active_users": 9625,
     "topics_this_week": 4
   },
-  "last_updated": "2025-12-06T12:11:02.388Z"
+  "last_updated": "2025-12-06T16:07:44.301Z"
 }
