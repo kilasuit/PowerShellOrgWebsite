@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Efficient array data collecting and memo...\"",
-      "time": "3 hours ago",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19319,
-    "total_posts": 117724,
+    "total_posts": 117727,
     "active_users": 9625,
     "topics_this_week": 4
   },
-  "last_updated": "2025-12-05T20:08:16.988Z"
+  "last_updated": "2025-12-06T00:29:14.096Z"
 }
