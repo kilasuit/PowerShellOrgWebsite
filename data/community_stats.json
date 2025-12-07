@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Printing a text file from Powershell vs ...\"",
-      "time": "22 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19319,
     "total_posts": 117730,
-    "active_users": 9625,
+    "active_users": 9624,
     "topics_this_week": 4
   },
-  "last_updated": "2025-12-07T12:10:45.392Z"
+  "last_updated": "2025-12-07T16:07:19.174Z"
 }
