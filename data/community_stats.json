@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Apakah gopay memiliki WhatsApp...\"",
-      "time": "3 hours ago",
+      "message": "New reply in \"Remote script permissions issue...\"",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "13 new topics this week",
+      "message": "5 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19332,
-    "total_posts": 117788,
-    "active_users": 9629,
-    "topics_this_week": 13
+    "total_topics": 19324,
+    "total_posts": 117789,
+    "active_users": 9628,
+    "topics_this_week": 5
   },
-  "last_updated": "2025-12-13T16:08:14.186Z"
+  "last_updated": "2025-12-13T20:07:55.273Z"
 }
