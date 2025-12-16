@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Remote script permissions issue...\"",
-      "time": "3 days ago",
+      "time": "4 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19324,
     "total_posts": 117790,
-    "active_users": 9631,
+    "active_users": 9630,
     "topics_this_week": 4
   },
-  "last_updated": "2025-12-16T08:10:52.464Z"
+  "last_updated": "2025-12-16T12:13:21.892Z"
 }
