@@ -1,12 +1,6 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Remote script permissions issue...\"",
-      "time": "6 days ago",
-      "type": "reply",
-      "color": "bg-purple-500"
-    },
-    {
       "message": "Active PowerShell discussions ongoing",
       "time": "Ongoing",
       "type": "community",
@@ -15,9 +9,9 @@
   ],
   "stats": {
     "total_topics": 19324,
-    "total_posts": 117792,
+    "total_posts": 117793,
     "active_users": 9624,
     "topics_this_week": 0
   },
-  "last_updated": "2025-12-19T08:10:11.246Z"
+  "last_updated": "2025-12-19T12:12:37.772Z"
 }
