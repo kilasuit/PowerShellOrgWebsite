@@ -1,6 +1,12 @@
 {
   "activities": [
     {
+      "message": "New reply in \"Specific Powershell: opposite of 'new'...\"",
+      "time": "Just now",
+      "type": "reply",
+      "color": "bg-purple-500"
+    },
+    {
       "message": "Active PowerShell discussions ongoing",
       "time": "Ongoing",
       "type": "community",
@@ -13,5 +19,5 @@
     "active_users": 9621,
     "topics_this_week": 0
   },
-  "last_updated": "2025-12-26T08:10:17.176Z"
+  "last_updated": "2025-12-26T12:12:48.880Z"
 }
