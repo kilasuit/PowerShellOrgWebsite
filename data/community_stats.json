@@ -2,9 +2,15 @@
   "activities": [
     {
       "message": "New reply in \"Specific Powershell: opposite of 'new'...\"",
-      "time": "Just now",
+      "time": "1 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
+    },
+    {
+      "message": "1 new topics this week",
+      "time": "This week",
+      "type": "stats",
+      "color": "bg-green-500"
     },
     {
       "message": "Active PowerShell discussions ongoing",
@@ -14,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19324,
-    "total_posts": 117797,
+    "total_topics": 19325,
+    "total_posts": 117799,
     "active_users": 9621,
-    "topics_this_week": 0
+    "topics_this_week": 1
   },
-  "last_updated": "2025-12-26T12:12:48.880Z"
+  "last_updated": "2025-12-26T16:08:06.814Z"
 }
