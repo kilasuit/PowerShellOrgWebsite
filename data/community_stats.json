@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Add ExtendedAttribute to Exchange Online...\"",
-      "time": "11 hours ago",
+      "message": "New reply in \"Convert-ToJSON questions...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "2 new topics this week",
+      "message": "3 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19326,
-    "total_posts": 117807,
+    "total_topics": 19327,
+    "total_posts": 117808,
     "active_users": 9623,
-    "topics_this_week": 2
+    "topics_this_week": 3
   },
-  "last_updated": "2025-12-31T08:10:19.247Z"
+  "last_updated": "2025-12-31T12:12:55.199Z"
 }
