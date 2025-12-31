@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Add ExtendedAttribute to Exchange Online...\"",
-      "time": "7 hours ago",
+      "time": "11 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19326,
     "total_posts": 117807,
-    "active_users": 9622,
+    "active_users": 9623,
     "topics_this_week": 2
   },
-  "last_updated": "2025-12-31T04:20:21.313Z"
+  "last_updated": "2025-12-31T08:10:19.247Z"
 }
