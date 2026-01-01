@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Convert-ToJSON questions...\"",
-      "time": "5 hours ago",
+      "message": "New reply in \"Add ExtendedAttribute to Exchange Online...\"",
+      "time": "3 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19327,
-    "total_posts": 117813,
+    "total_posts": 117814,
     "active_users": 9625,
     "topics_this_week": 3
   },
-  "last_updated": "2025-12-31T20:07:51.980Z"
+  "last_updated": "2026-01-01T00:36:29.876Z"
 }
