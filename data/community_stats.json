@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Specific Powershell: opposite of 'new'...\"",
-      "time": "6 hours ago",
+      "time": "11 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9623,
     "topics_this_week": 2
   },
-  "last_updated": "2026-01-02T20:07:56.962Z"
+  "last_updated": "2026-01-03T00:30:42.189Z"
 }
