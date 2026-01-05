@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Specific Powershell: opposite of 'new'...\"",
-      "time": "2 days ago",
+      "message": "New reply in \"How to list processes that lock drive...\"",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "2 new topics this week",
+      "message": "3 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19327,
-    "total_posts": 117817,
-    "active_users": 9621,
-    "topics_this_week": 2
+    "total_topics": 19328,
+    "total_posts": 117819,
+    "active_users": 9622,
+    "topics_this_week": 3
   },
-  "last_updated": "2026-01-05T00:35:20.387Z"
+  "last_updated": "2026-01-05T04:31:13.779Z"
 }
