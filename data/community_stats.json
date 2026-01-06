@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"How to list processes that lock drive...\"",
-      "time": "9 hours ago",
+      "time": "13 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19328,
-    "total_posts": 117821,
+    "total_posts": 117822,
     "active_users": 9621,
     "topics_this_week": 3
   },
-  "last_updated": "2026-01-06T12:13:19.399Z"
+  "last_updated": "2026-01-06T16:09:33.719Z"
 }
