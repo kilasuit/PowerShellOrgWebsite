@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"How to list processes that lock drive...\"",
-      "time": "2 days ago",
+      "message": "New reply in \"Disk Performance - Winsat...\"",
+      "time": "1 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "1 new topics this week",
+      "message": "2 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19328,
-    "total_posts": 117826,
+    "total_topics": 19329,
+    "total_posts": 117827,
     "active_users": 9620,
-    "topics_this_week": 1
+    "topics_this_week": 2
   },
-  "last_updated": "2026-01-08T04:21:52.599Z"
+  "last_updated": "2026-01-08T08:10:48.751Z"
 }
