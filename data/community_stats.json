@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Disk Performance - Winsat...\"",
-      "time": "Just now",
+      "time": "4 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9620,
     "topics_this_week": 2
   },
-  "last_updated": "2026-01-10T04:16:24.445Z"
+  "last_updated": "2026-01-10T08:09:15.016Z"
 }
