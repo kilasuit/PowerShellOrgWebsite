@@ -50,7 +50,7 @@
             <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
                      data-title="{{ .Title | lower }}" 
                      data-content="{{ .Summary | lower }}"
-                     data-tags="{{ delimit .Params.tags " " | lower }}">
+                     {{ if .Params.tags }}data-tags="{{ delimit .Params.tags " " | lower }}"{{ end }}>
                 
                 {{ if eq .Section "podcast" }}
                 <!-- Podcast Episode Layout -->

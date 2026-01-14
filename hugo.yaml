@@ -45,6 +45,9 @@ menu:
     - name: "Learning"
       url: "/learning/"
       weight: 50
+    - name: "Authors"
+      url: "/authors/"
+      weight: 55
     - name: "Forums"
       url: "https://forums.powershell.org"
       weight: 60

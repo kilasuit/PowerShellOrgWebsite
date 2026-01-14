@@ -227,6 +227,13 @@
                     
                 </a>
                 
+                <a href="/authors/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Authors
+                    
+                </a>
+                
                 <a href="https://forums.powershell.org" 
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    target="_blank" rel="noopener">
@@ -297,6 +304,13 @@
                     
                 </a>
                 
+                <a href="/authors/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Authors
+                    
+                </a>
+                
                 <a href="https://forums.powershell.org" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    target="_blank" rel="noopener">
@@ -322,41 +336,85 @@
         
 
 
-<section class="powershell-blue py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
-            Learning PowerShell
-        </h1>
-        
-        <p class="text-xl opacity-90 max-w-3xl mx-auto">Resources for learning PowerShell from beginner to advanced levels.</p>
-        
+<section class="bg-gradient-to-r from-green-600 to-green-800 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center text-white">
+            <div class="w-20 h-20 mx-auto mb-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <i class="fas fa-graduation-cap text-3xl"></i>
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">Learning PowerShell</h1>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">Resources for learning PowerShell from beginner to advanced levels.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-12 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <div class="relative">
+                <input type="text" id="article-search" 
+                       placeholder="Search articles..."
+                       class="w-full px-4 py-3 pl-10 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            
+            
+            <div class="relative">
+                <select id="author-filter" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 appearance-none bg-white">
+                    <option value="">All Authors</option>
+                    
+                    
+                    
+                </select>
+                <i class="fas fa-chevron-down absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+            </div>
+
+            
+            <div class="relative">
+                <select id="category-filter" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 appearance-none bg-white">
+                    <option value="">All Categories</option>
+                    
+                    
+                    
+                </select>
+                <i class="fas fa-chevron-down absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        
-        
-        
-        
-        
-        
-        <div class="grid gap-8" id="content-container">
+        <div class="grid gap-8" id="articles-container">
             
             
         </div>
-        
+
         
         <div id="no-results" class="hidden text-center py-12">
-            <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">No results found</h3>
-            <p class="text-gray-600">Try adjusting your search terms or browse all content.</p>
+            <i class="fas fa-search text-4xl text-gray-400 mb-4 block"></i>
+            <p class="text-xl text-gray-600">No articles found matching your filters.</p>
         </div>
+
         
         
-        
+    </div>
+</section>
+
+
+<section class="py-16 bg-green-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h2 class="text-3xl font-bold mb-4">Want to Share Your Knowledge?</h2>
+        <p class="text-xl mb-8 opacity-90">We're always looking for expert contributors. Share your PowerShell tips and tricks with the community.</p>
+        <a href="https://github.com/PowerShellOrg/PowerShellOrgWebsite" target="_blank" rel="noopener"
+           class="inline-flex items-center bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+            <i class="fab fa-github mr-2"></i>Contribute on GitHub
+        </a>
     </div>
 </section>
 
@@ -441,7 +499,7 @@
         <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
                 <p class="text-sm text-gray-400">
-                    © 2025 PowerShell.org Community. All rights reserved.
+                    © 2026 PowerShell.org Community. All rights reserved.
                 </p>
             </div>
             <div class="flex items-center space-x-6 text-sm">
@@ -501,35 +559,50 @@
     
 <script>
 
-const searchInput = document.getElementById('content-search');
-if (searchInput) {
-    searchInput.addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        const contentItems = document.querySelectorAll('.content-item');
-        const noResults = document.getElementById('no-results');
-        let visibleCount = 0;
+const searchInput = document.getElementById('article-search');
+const authorFilter = document.getElementById('author-filter');
+const categoryFilter = document.getElementById('category-filter');
+const articlesContainer = document.getElementById('articles-container');
+const noResults = document.getElementById('no-results');
+
+function filterArticles() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedAuthor = authorFilter.value.toLowerCase();
+    const selectedCategory = categoryFilter.value.toLowerCase();
+    
+    const articles = document.querySelectorAll('.learning-article');
+    let visibleCount = 0;
+    
+    articles.forEach(article => {
+        const title = article.dataset.title;
+        const content = article.dataset.content;
+        const author = article.dataset.author.toLowerCase();
+        const categories = article.dataset.categories.toLowerCase().split(',');
         
-        contentItems.forEach(item => {
-            const title = item.dataset.title;
-            const content = item.dataset.content;
-            const tags = item.dataset.tags;
-            
-            if (title.includes(searchTerm) || content.includes(searchTerm) || tags.includes(searchTerm)) {
-                item.style.display = 'block';
-                visibleCount++;
-            } else {
-                item.style.display = 'none';
-            }
-        });
+        
+        const matchesSearch = title.includes(searchTerm) || content.includes(searchTerm);
         
         
-        if (visibleCount === 0 && searchTerm.length > 0) {
-            noResults.classList.remove('hidden');
+        const matchesAuthor = !selectedAuthor || author.includes(selectedAuthor);
+        
+        
+        const matchesCategory = !selectedCategory || categories.some(cat => cat.includes(selectedCategory));
+        
+        if (matchesSearch && matchesAuthor && matchesCategory) {
+            article.style.display = 'block';
+            visibleCount++;
         } else {
-            noResults.classList.add('hidden');
+            article.style.display = 'none';
         }
     });
+    
+    
+    noResults.classList.toggle('hidden', visibleCount > 0);
 }
+
+searchInput.addEventListener('input', filterArticles);
+authorFilter.addEventListener('change', filterArticles);
+categoryFilter.addEventListener('change', filterArticles);
 </script>
 
 </body>

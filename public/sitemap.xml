@@ -2,20 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>http://localhost:1313/articles/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/beginner/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/fundamentals/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/getting-started-powershell/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/powershell/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/scripting/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/advanced/</loc>
+    <lastmod>2025-10-22T14:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/advanced-powershell-error-handling/</loc>
+    <lastmod>2025-10-22T14:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/best-practices/</loc>
+    <lastmod>2025-10-22T14:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/error-handling/</loc>
+    <lastmod>2025-10-22T14:30:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/error-handling/</loc>
+    <lastmod>2025-10-22T14:30:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learning/</loc>
   </url><url>
     <loc>http://localhost:1313/summit/</loc>
   </url><url>
+    <loc>http://localhost:1313/authors/</loc>
+  </url><url>
     <loc>http://localhost:1313/community/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url><url>
     <loc>http://localhost:1313/podcast/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>
