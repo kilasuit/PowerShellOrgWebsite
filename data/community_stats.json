@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"PWSH 7 (7.5.4) error on 1 of 2 installat...\"",
-      "time": "20 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19330,
     "total_posts": 117855,
-    "active_users": 9613,
+    "active_users": 9611,
     "topics_this_week": 2
   },
-  "last_updated": "2026-01-17T08:09:00.162Z"
+  "last_updated": "2026-01-17T12:11:25.044Z"
 }
