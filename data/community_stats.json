@@ -1,36 +1,29 @@
 {
   "activities": [
     {
-      "message": "PowerShell 7.4.1 security update available",
-      "time": "2 weeks ago",
-      "type": "release",
-      "color": "bg-green-500"
-    },
-    {
-      "message": "Active community helping with automation",
-      "time": "Ongoing",
-      "type": "community",
-      "color": "bg-blue-500"
-    },
-    {
-      "message": "New Azure PowerShell modules released",
-      "time": "3 weeks ago",
-      "type": "update",
+      "message": "New reply in \"Remove permissions for multiple offboard...\"",
+      "time": "3 days ago",
+      "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "PowerShell Gallery security improvements",
-      "time": "1 month ago",
-      "type": "security",
-      "color": "bg-orange-500"
+      "message": "1 new topics this week",
+      "time": "This week",
+      "type": "stats",
+      "color": "bg-green-500"
+    },
+    {
+      "message": "Active PowerShell discussions ongoing",
+      "time": "Ongoing",
+      "type": "community",
+      "color": "bg-blue-500"
     }
   ],
   "stats": {
-    "total_topics": 15420,
-    "total_posts": 85230,
-    "active_users": 9612,
-    "topics_this_week": 4
+    "total_topics": 19331,
+    "total_posts": 117860,
+    "active_users": 9603,
+    "topics_this_week": 1
   },
-  "last_updated": "2026-01-26T08:11:46.014Z",
-  "fallback": true
+  "last_updated": "2026-01-26T12:14:37.615Z"
 }
