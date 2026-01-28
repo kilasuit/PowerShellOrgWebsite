@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Remove permissions for multiple offboard...\"",
-      "time": "4 days ago",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19331,
-    "total_posts": 117860,
-    "active_users": 9603,
+    "total_posts": 117861,
+    "active_users": 9604,
     "topics_this_week": 1
   },
-  "last_updated": "2026-01-28T08:11:23.759Z"
+  "last_updated": "2026-01-28T12:14:59.920Z"
 }
