@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"VBAF: Machine Learning Framework for Pow...\"",
-      "time": "2 days ago",
+      "time": "3 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19334,
     "total_posts": 117888,
-    "active_users": 9596,
+    "active_users": 9594,
     "topics_this_week": 2
   },
-  "last_updated": "2026-02-09T08:22:04.635Z"
+  "last_updated": "2026-02-09T12:23:58.436Z"
 }
