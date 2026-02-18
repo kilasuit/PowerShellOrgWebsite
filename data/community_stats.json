@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"[Announcement] VBAF Development Roadmap ...\"",
-      "time": "20 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9592,
     "topics_this_week": 1
   },
-  "last_updated": "2026-02-18T12:20:10.266Z"
+  "last_updated": "2026-02-18T16:25:46.394Z"
 }
