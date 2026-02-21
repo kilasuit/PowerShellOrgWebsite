@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Tricky Powershell Script - Need to invok...\"",
-      "time": "23 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9596,
     "topics_this_week": 3
   },
-  "last_updated": "2026-02-20T20:10:53.869Z"
+  "last_updated": "2026-02-21T00:37:33.811Z"
 }
