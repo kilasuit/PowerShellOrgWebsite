@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Help explaining PSCustomObject...\"",
-      "time": "4 hours ago",
+      "message": "New reply in \"Evaluate a script and give feedback...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "5 new topics this week",
+      "message": "6 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19339,
-    "total_posts": 117907,
+    "total_topics": 19340,
+    "total_posts": 117908,
     "active_users": 9599,
-    "topics_this_week": 5
+    "topics_this_week": 6
   },
-  "last_updated": "2026-02-23T00:40:05.486Z"
+  "last_updated": "2026-02-23T04:46:06.926Z"
 }
