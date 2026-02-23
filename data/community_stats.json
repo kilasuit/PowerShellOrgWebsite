@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Help explaining PSCustomObject...\"",
-      "time": "1 hours ago",
+      "time": "4 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19339,
-    "total_posts": 117906,
+    "total_posts": 117907,
     "active_users": 9599,
     "topics_this_week": 5
   },
-  "last_updated": "2026-02-22T20:08:30.739Z"
+  "last_updated": "2026-02-23T00:40:05.486Z"
 }
