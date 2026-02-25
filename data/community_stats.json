@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Learn PowerShell...\"",
-      "time": "6 hours ago",
+      "message": "New reply in \"Need some scoping help...\"",
+      "time": "4 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19342,
-    "total_posts": 117918,
+    "total_posts": 117922,
     "active_users": 9602,
     "topics_this_week": 7
   },
-  "last_updated": "2026-02-25T12:21:33.954Z"
+  "last_updated": "2026-02-25T20:15:21.466Z"
 }
