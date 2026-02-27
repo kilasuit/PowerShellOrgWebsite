@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Learn PowerShell...\"",
-      "time": "7 hours ago",
+      "time": "11 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9602,
     "topics_this_week": 5
   },
-  "last_updated": "2026-02-27T00:39:25.085Z"
+  "last_updated": "2026-02-27T04:38:21.760Z"
 }
