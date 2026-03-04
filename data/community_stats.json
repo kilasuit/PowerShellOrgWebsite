@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Need to swap print servers...\"",
-      "time": "Just now",
+      "time": "4 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9598,
     "topics_this_week": 3
   },
-  "last_updated": "2026-03-04T16:18:05.399Z"
+  "last_updated": "2026-03-04T20:13:05.580Z"
 }
