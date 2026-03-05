@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Need to swap print servers...\"",
-      "time": "8 hours ago",
+      "message": "New reply in \"Scoping - How to get side effects in the...\"",
+      "time": "1 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "3 new topics this week",
+      "message": "4 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19345,
-    "total_posts": 117937,
-    "active_users": 9598,
-    "topics_this_week": 3
+    "total_topics": 19346,
+    "total_posts": 117938,
+    "active_users": 9599,
+    "topics_this_week": 4
   },
-  "last_updated": "2026-03-05T00:39:08.753Z"
+  "last_updated": "2026-03-05T04:38:00.870Z"
 }
