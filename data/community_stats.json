@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Need to swap print servers...\"",
-      "time": "5 hours ago",
+      "message": "New reply in \"Scoping - How to get side effects in the...\"",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19346,
-    "total_posts": 117944,
+    "total_posts": 117945,
     "active_users": 9596,
     "topics_this_week": 4
   },
-  "last_updated": "2026-03-06T00:42:23.087Z"
+  "last_updated": "2026-03-06T04:37:54.033Z"
 }
