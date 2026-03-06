@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Scoping - How to get side effects in the...\"",
-      "time": "6 hours ago",
+      "time": "10 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19346,
     "total_posts": 117945,
-    "active_users": 9596,
+    "active_users": 9595,
     "topics_this_week": 4
   },
-  "last_updated": "2026-03-06T08:14:58.875Z"
+  "last_updated": "2026-03-06T12:17:20.387Z"
 }
