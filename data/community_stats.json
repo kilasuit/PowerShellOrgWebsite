@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Explanating of code, Get-ChildItem and F...\"",
-      "time": "3 hours ago",
+      "message": "New reply in \"Explanating of code, $($_.FullName) from...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19347,
-    "total_posts": 117946,
+    "total_posts": 117947,
     "active_users": 9594,
     "topics_this_week": 5
   },
-  "last_updated": "2026-03-07T12:13:47.192Z"
+  "last_updated": "2026-03-07T16:09:18.043Z"
 }
