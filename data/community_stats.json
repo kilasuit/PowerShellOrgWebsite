@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Scoping - How to get side effects in the...\"",
-      "time": "Yesterday",
+      "message": "New reply in \"Explanating of code, Get-ChildItem and F...\"",
+      "time": "3 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
     {
-      "message": "4 new topics this week",
+      "message": "5 new topics this week",
       "time": "This week",
       "type": "stats",
       "color": "bg-green-500"
@@ -20,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19346,
-    "total_posts": 117945,
-    "active_users": 9595,
-    "topics_this_week": 4
+    "total_topics": 19347,
+    "total_posts": 117946,
+    "active_users": 9594,
+    "topics_this_week": 5
   },
-  "last_updated": "2026-03-07T08:10:51.284Z"
+  "last_updated": "2026-03-07T12:13:47.192Z"
 }
