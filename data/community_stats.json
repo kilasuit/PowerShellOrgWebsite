@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"UPDATE: VBAF v4.0.0 is complete...\"",
-      "time": "17 hours ago",
+      "time": "21 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19350,
     "total_posts": 117961,
-    "active_users": 9584,
+    "active_users": 9583,
     "topics_this_week": 3
   },
-  "last_updated": "2026-03-16T08:30:24.256Z"
+  "last_updated": "2026-03-16T12:25:33.470Z"
 }
