@@ -1,12 +1,6 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Explanating of code, $($_.FullName) from...\"",
-      "time": "6 days ago",
-      "type": "reply",
-      "color": "bg-purple-500"
-    },
-    {
       "message": "Active PowerShell discussions ongoing",
       "time": "Ongoing",
       "type": "community",
@@ -19,5 +13,5 @@
     "active_users": 9583,
     "topics_this_week": 0
   },
-  "last_updated": "2026-03-24T12:24:48.973Z"
+  "last_updated": "2026-03-24T16:28:49.035Z"
 }
