@@ -30,12 +30,12 @@
             <div class="hidden md:flex items-center space-x-4">
                 <a href="{{ .Site.Params.summit.registration_url }}" 
                    class="summit-gradient text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity duration-200">
-                    Summit 2025
+                    Summit {{ .Site.Params.summit.year }}
                 </a>
-                <a href="{{ .Site.Params.social.slack }}" 
+                <a href="{{ .Site.Params.social.discord }}"
                    target="_blank" rel="noopener"
                    class="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                    <i class="fab fa-slack text-xl"></i>
+                    <i class="fab fa-discord text-xl"></i>
                 </a>
             </div>
             
@@ -62,7 +62,7 @@
                 <div class="pt-2 border-t border-gray-200">
                     <a href="{{ .Site.Params.summit.registration_url }}" 
                        class="block summit-gradient text-white px-3 py-2 rounded-lg text-center font-medium hover:opacity-90 transition-opacity duration-200">
-                        Register for Summit 2025
+                        Register for Summit {{ .Site.Params.summit.year }}
                     </a>
                 </div>
             </div>

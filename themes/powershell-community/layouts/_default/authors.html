@@ -33,10 +33,9 @@
         {{ $authorTaxonomy := .Site.Taxonomies.authors }}
         {{ if $authorTaxonomy }}
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" id="authors-container">
-            {{ range $authorName, $pages := $authorTaxonomy.ByCount }}
-            {{ $authorURL := $pages.Page.Permalink }}
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden author-card" 
-                 data-author="{{ $authorName | lower }}">
+            {{ range $authorTaxonomy.ByCount }}
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden author-card"
+                 data-author="{{ .Term | lower }}">
                 <div class="p-8">
                     <!-- Author Avatar -->
                     <div class="flex justify-center mb-6">
@@ -44,22 +43,22 @@
                             <i class="fas fa-user text-2xl"></i>
                         </div>
                     </div>
-                    
+
                     <!-- Author Info -->
                     <h2 class="text-2xl font-bold text-center text-gray-900 mb-2">
-                        <a href="{{ $authorURL }}" class="hover:text-blue-600 transition-colors duration-200">
-                            {{ $authorName }}
+                        <a href="{{ .Page.Permalink }}" class="hover:text-blue-600 transition-colors duration-200">
+                            {{ .Page.Title }}
                         </a>
                     </h2>
-                    
+
                     <!-- Article Count -->
                     <p class="text-center text-gray-600 mb-6">
-                        <span class="text-3xl font-bold text-blue-600">{{ len $pages }}</span><br>
-                        <span class="text-sm">article{{ if gt (len $pages) 1 }}s{{ end }} published</span>
+                        <span class="text-3xl font-bold text-blue-600">{{ .Count }}</span><br>
+                        <span class="text-sm">article{{ if gt .Count 1 }}s{{ end }} published</span>
                     </p>
-                    
+
                     <!-- View Profile Button -->
-                    <a href="{{ $authorURL }}" 
+                    <a href="{{ .Page.Permalink }}"
                        class="block w-full bg-blue-600 text-white text-center px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                         <i class="fas fa-arrow-right mr-2"></i>View Profile
                     </a>

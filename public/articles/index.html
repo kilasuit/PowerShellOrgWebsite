@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Articles - PowerShell.org - Welcome Automaters!</title>
     <meta name="description"
-        content="">
+        content="PowerShell articles, tutorials, and guides from community experts.">
 
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -22,7 +22,7 @@
     <meta property="og:url" content="http://localhost:1313/articles/">
     <meta property="og:title" content="Articles">
     <meta property="og:description"
-        content="">
+        content="PowerShell articles, tutorials, and guides from community experts.">
     <meta property="og:site_name" content="PowerShell.org - Welcome Automaters!">
 
     
@@ -30,7 +30,7 @@
     <meta property="twitter:url" content="http://localhost:1313/articles/">
     <meta property="twitter:title" content="Articles">
     <meta property="twitter:description"
-        content="">
+        content="PowerShell articles, tutorials, and guides from community experts.">
 
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -220,6 +220,13 @@
                     
                 </a>
                 
+                <a href="/articles/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-600 font-semibold"
+                   >
+                    Articles
+                    
+                </a>
+                
                 <a href="/learning/" 
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
@@ -247,12 +254,12 @@
             <div class="hidden md:flex items-center space-x-4">
                 <a href="https://powershellsummit.org" 
                    class="summit-gradient text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity duration-200">
-                    Summit 2025
+                    Summit 2026
                 </a>
-                <a href="" 
+                <a href="https://aka.ms/psdiscord"
                    target="_blank" rel="noopener"
                    class="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                    <i class="fab fa-slack text-xl"></i>
+                    <i class="fab fa-discord text-xl"></i>
                 </a>
             </div>
             
@@ -297,6 +304,13 @@
                     
                 </a>
                 
+                <a href="/articles/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50"
+                   >
+                    Articles
+                    
+                </a>
+                
                 <a href="/learning/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -321,7 +335,7 @@
                 <div class="pt-2 border-t border-gray-200">
                     <a href="https://powershellsummit.org" 
                        class="block summit-gradient text-white px-3 py-2 rounded-lg text-center font-medium hover:opacity-90 transition-opacity duration-200">
-                        Register for Summit 2025
+                        Register for Summit 2026
                     </a>
                 </div>
             </div>
@@ -342,6 +356,8 @@
             Articles
         </h1>
         
+        <p class="text-xl opacity-90 max-w-3xl mx-auto">PowerShell articles, tutorials, and guides from community experts.</p>
+        
     </div>
 </section>
 
@@ -349,6 +365,17 @@
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        
+        <div class="mb-8">
+            <div class="max-w-md mx-auto">
+                <div class="relative">
+                    <input type="text" id="content-search" 
+                           placeholder="Search articles..."
+                           class="w-full px-4 py-3 pl-10 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
         
         
         
@@ -359,83 +386,42 @@
             
             
             <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="getting started with powershell" 
-                     data-content="&lt;p&gt;welcome to the world of powershell! this guide will help you understand the basics and get started with your automation journey.&lt;/p&gt;
-&lt;h2 id=&#34;why-powershell&#34;&gt;why powershell?&lt;/h2&gt;
-&lt;p&gt;powershell is a powerful automation framework and command-line shell that makes it easy to automate administrative tasks. whether you&amp;rsquo;re managing servers, automating deployments, or creating administrative scripts, powershell is the tool for the job.&lt;/p&gt;
-&lt;h2 id=&#34;key-concepts&#34;&gt;key concepts&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;cmdlets&lt;/strong&gt;: powershell commands that perform specific functions&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;pipelines&lt;/strong&gt;: connecting cmdlets together to perform complex operations&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;objects&lt;/strong&gt;: everything in powershell is an object&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;scripts&lt;/strong&gt;: collections of cmdlets organized to accomplish tasks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;getting-started&#34;&gt;getting started&lt;/h2&gt;
-&lt;p&gt;to begin learning powershell, start with the basics:&lt;/p&gt;"
-                     data-tags="powershell scripting tutorial">
+                     data-title="onramp scholarship application now open" 
+                     data-content="&lt;h1 id=&#34;scholarship-applications-now-open-for-the-onramp-program-at-the-powershell--devops-global-summit&#34;&gt;scholarship applications now open for the onramp program at the powershell &#43; devops global summit!&lt;/h1&gt;
+&lt;p&gt;are you an entry-level it professional looking for an immersive introduction to powershell, devops, and the broader tech community? the &lt;strong&gt;onramp program&lt;/strong&gt; at the powershell &#43; devops global summit is designed just for you, and scholarship applications are now open!&lt;/p&gt;
+&lt;p&gt;this is your chance to take part in a transformative experience, where you’ll gain technical skills, learn from industry experts, and connect with a thriving community.&lt;/p&gt;"
+                     >
                 
                 
                 
                 <div class="p-6">
                     <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
                         <div class="flex items-center space-x-3">
-                            <time>Nov 15, 2025</time>
+                            <time>Dec 2, 2024</time>
                             
                             <span>•</span>
                             <span>James Petty</span>
                             
                         </div>
                         
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            Beginner
-                        </span>
-                        
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/getting-started-powershell/" class="hover:text-blue-600 transition-colors duration-200">
-                            Getting Started with PowerShell
+                        <a href="http://localhost:1313/articles/2024-12-02-onramp-scholarship-application-now-open/" class="hover:text-blue-600 transition-colors duration-200">
+                            OnRamp Scholarship Application Now Open
                         </a>
                     </h2>
                     
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Welcome to the world of PowerShell! This guide will help you understand the basics and get started with your automation journey.</p>
-<h2 id="why-powershell">Why PowerShell?</h2>
-<p>PowerShell is a powerful automation framework and command-line shell that makes it easy to automate administrative tasks. Whether you&rsquo;re managing servers, automating deployments, or creating administrative scripts, PowerShell is the tool for the job.</p>
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li><strong>Cmdlets</strong>: PowerShell commands that perform specific functions</li>
-<li><strong>Pipelines</strong>: Connecting cmdlets together to perform complex operations</li>
-<li><strong>Objects</strong>: Everything in PowerShell is an object</li>
-<li><strong>Scripts</strong>: Collections of cmdlets organized to accomplish tasks</li>
-</ul>
-<h2 id="getting-started">Getting Started</h2>
-<p>To begin learning PowerShell, start with the basics:</p></p>
+                    <p class="text-gray-600 mb-4 line-clamp-3"><h1 id="scholarship-applications-now-open-for-the-onramp-program-at-the-powershell--devops-global-summit">Scholarship Applications Now Open for the OnRamp Program at the PowerShell + DevOps Global Summit!</h1>
+<p>Are you an entry-level IT professional looking for an immersive introduction to PowerShell, DevOps, and the broader tech community? The <strong>OnRamp program</strong> at the PowerShell + DevOps Global Summit is designed just for you, and scholarship applications are now open!</p>
+<p>This is your chance to take part in a transformative experience, where you’ll gain technical skills, learn from industry experts, and connect with a thriving community.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/getting-started-powershell/" 
+                        <a href="http://localhost:1313/articles/2024-12-02-onramp-scholarship-application-now-open/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         
-                        
-                        <div class="flex flex-wrap gap-2">
-                            
-                            <a href="/tags/powershell/" 
-                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
-                                powershell
-                            </a>
-                            
-                            <a href="/tags/scripting/" 
-                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
-                                scripting
-                            </a>
-                            
-                            <a href="/tags/tutorial/" 
-                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
-                                tutorial
-                            </a>
-                            
-                        </div>
                         
                     </div>
                 </div>
@@ -443,83 +429,414 @@
             </article>
             
             <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="advanced powershell error handling" 
-                     data-content="&lt;p&gt;error handling is one of the most important aspects of writing robust powershell scripts. in this article, we&amp;rsquo;ll explore advanced techniques to handle errors gracefully.&lt;/p&gt;
-&lt;h2 id=&#34;error-action-preferences&#34;&gt;error action preferences&lt;/h2&gt;
-&lt;p&gt;powershell gives you control over how errors are handled through error action preferences:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;stop&lt;/strong&gt;: treat errors as terminating&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;continue&lt;/strong&gt;: ignore the error and continue (default)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;silentlycontinue&lt;/strong&gt;: suppress error output&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;inquire&lt;/strong&gt;: prompt the user when an error occurs&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ignore&lt;/strong&gt;: same as silentlycontinue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;try-catch-finally-blocks&#34;&gt;try-catch-finally blocks&lt;/h2&gt;
-&lt;p&gt;the foundation of error handling in powershell:&lt;/p&gt;"
-                     data-tags="powershell error-handling best-practices">
+                     data-title="powershell &#43; devops global summit 2025: call for papers now open!" 
+                     data-content="&lt;h1 id=&#34;powershell--devops-global-summit-2025-call-for-papers-now-open&#34;&gt;powershell &#43; devops global summit 2025: call for papers now open!&lt;/h1&gt;
+&lt;p&gt;calling all innovators, problem-solvers, and thought leaders in the powershell and devops realm! the stage is set for the most anticipated event of 2025, and we want you to be a part of it. the powershell &#43; devops global summit 2025 is now accepting session proposals, and this is your moment to shine. from &lt;strong&gt;april 7-10, 2025&lt;/strong&gt;, in bellevue, wa, the brightest minds in automation and devops will converge to share knowledge, challenge the status quo, and push the boundaries of what&amp;rsquo;s possible. whether you&amp;rsquo;re a seasoned expert or a rising star with fresh perspectives, we invite you to submit your ideas and help shape the future of our industry.&lt;/p&gt;"
+                     >
                 
                 
                 
                 <div class="p-6">
                     <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
                         <div class="flex items-center space-x-3">
-                            <time>Oct 22, 2025</time>
+                            <time>Sep 30, 2024</time>
                             
                             <span>•</span>
-                            <span>Sarah Johnson</span>
+                            <span>James Petty</span>
                             
                         </div>
                         
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            Advanced
+                            Announcements
                         </span>
                         
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/advanced-powershell-error-handling/" class="hover:text-blue-600 transition-colors duration-200">
-                            Advanced PowerShell Error Handling
+                        <a href="http://localhost:1313/articles/2024-09-30-powershell-devops-global-summit-2025-call-for-papers-now-open/" class="hover:text-blue-600 transition-colors duration-200">
+                            PowerShell &#43; DevOps Global Summit 2025: Call for Papers Now Open!
                         </a>
                     </h2>
                     
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Error handling is one of the most important aspects of writing robust PowerShell scripts. In this article, we&rsquo;ll explore advanced techniques to handle errors gracefully.</p>
-<h2 id="error-action-preferences">Error Action Preferences</h2>
-<p>PowerShell gives you control over how errors are handled through error action preferences:</p>
-<ul>
-<li><strong>Stop</strong>: Treat errors as terminating</li>
-<li><strong>Continue</strong>: Ignore the error and continue (default)</li>
-<li><strong>SilentlyContinue</strong>: Suppress error output</li>
-<li><strong>Inquire</strong>: Prompt the user when an error occurs</li>
-<li><strong>Ignore</strong>: Same as SilentlyContinue</li>
-</ul>
-<h2 id="try-catch-finally-blocks">Try-Catch-Finally Blocks</h2>
-<p>The foundation of error handling in PowerShell:</p></p>
+                    <p class="text-gray-600 mb-4 line-clamp-3"><h1 id="powershell--devops-global-summit-2025-call-for-papers-now-open">PowerShell + DevOps Global Summit 2025: Call for Papers Now Open!</h1>
+<p>Calling all innovators, problem-solvers, and thought leaders in the PowerShell and DevOps realm! The stage is set for the most anticipated event of 2025, and we want you to be a part of it. The PowerShell + DevOps Global Summit 2025 is now accepting session proposals, and this is your moment to shine. From <strong>April 7-10, 2025</strong>, in Bellevue, WA, the brightest minds in automation and DevOps will converge to share knowledge, challenge the status quo, and push the boundaries of what&rsquo;s possible. Whether you&rsquo;re a seasoned expert or a rising star with fresh perspectives, we invite you to submit your ideas and help shape the future of our industry.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/advanced-powershell-error-handling/" 
+                        <a href="http://localhost:1313/articles/2024-09-30-powershell-devops-global-summit-2025-call-for-papers-now-open/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         
                         
-                        <div class="flex flex-wrap gap-2">
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="summit 2024 speaker spotlight: steven judd" 
+                     data-content="&lt;p&gt;hey there, powershell enthusiasts! today marks the start of a series of interviews featuring select summit 2024 presenters. i plan to sit and chat briefly with a mix of familiar and unfamiliar community presenters. through these interviews, my aim is to provide you with an opportunity to get to know our presenters and generate some anticipation for their upcoming talks at the powershell summit in bellevue, washington next month.&lt;/p&gt;
+&lt;p&gt;joining me as my first guest is my good friend and active community member, &lt;strong&gt;steven judd&lt;/strong&gt;!&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Mar 8, 2024</time>
                             
-                            <a href="/tags/powershell/" 
-                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
-                                powershell
-                            </a>
-                            
-                            <a href="/tags/error-handling/" 
-                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
-                                error-handling
-                            </a>
-                            
-                            <a href="/tags/best-practices/" 
-                               class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200">
-                                best-practices
-                            </a>
+                            <span>•</span>
+                            <span>Mike Kanakos</span>
                             
                         </div>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2024-03-08-summit2024-spotlight-steven-judd/" class="hover:text-blue-600 transition-colors duration-200">
+                            Summit 2024 Speaker Spotlight: Steven Judd
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Hey there, PowerShell enthusiasts! Today marks the start of a series of interviews featuring select Summit 2024 presenters. I plan to sit and chat briefly with a mix of familiar and unfamiliar community presenters. Through these interviews, my aim is to provide you with an opportunity to get to know our presenters and generate some anticipation for their upcoming talks at the PowerShell Summit in Bellevue, Washington next month.</p>
+<p>Joining me as my first guest is my good friend and active community member, <strong>Steven Judd</strong>!</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2024-03-08-summit2024-spotlight-steven-judd/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="how to toggle logon restrictions for ad accounts" 
+                     data-content="&lt;p&gt;&lt;em&gt;written by tino jr&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;this script will allow an administrator to enable or disable logon restrictions for an active directory (ad) user account. i received a unique requirement, in which several account must remain enabled, but restricted from logging into ad, so i wrote this script.&lt;/p&gt;
+&lt;p&gt;as you may know, you can specify logon hours to restrict ad users’ ability to logon during certain hours of the day . this is fine if the exact same time of logon restrictions will not change over time, however there might be a need to block logon access on an as-needed basis. the script can target an individual account, or target all members of a security group.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Mar 5, 2024</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2024-03-05-how-to-toggle-logon-restrictions-for-ad-accounts/" class="hover:text-blue-600 transition-colors duration-200">
+                            How to Toggle Logon Restrictions for AD Accounts
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p><em>Written by Tino JR</em></p>
+<p>This script will allow an administrator to enable or disable logon restrictions for an Active Directory (AD) user account. I received a unique requirement, in which several account must remain enabled, but restricted from logging into AD, so I wrote this script.</p>
+<p>As you may know, you can specify logon hours to restrict AD users’ ability to logon during certain hours of the day . This is fine if the exact same time of logon restrictions will not change over time, however there might be a need to block logon access on an as-needed basis. The script can target an individual account, or target all members of a security group.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2024-03-05-how-to-toggle-logon-restrictions-for-ad-accounts/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="onramp2024 program unveiled" 
+                     data-content="&lt;h1 id=&#34;navigating-the-path-to-proficiency-powershell--devops-onramp2024-program-unveiled&#34;&gt;navigating the path to proficiency: powershell &#43; devops onramp2024 program unveiled&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;introduction&lt;/h2&gt;
+&lt;p&gt;the powershell &#43; devops global summit proudly announces the onramp program for 2024 to foster inclusivity and provide opportunities for aspiring it professionals. this initiative is designed to be a bridge for those looking to enter the powershell and devops arena, offering a guided onboarding experience that aims to empower individuals with the skills and knowledge needed to thrive in this dynamic industry. as a testament to their commitment to diversity and accessibility, the powershell summit offers scholarships, ensuring financial constraints do not hinder passionate learners from participating.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Nov 29, 2023</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            Announcements
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2023-11-29-onramp2024-program-unveiled/" class="hover:text-blue-600 transition-colors duration-200">
+                            OnRamp2024 Program Unveiled
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><h1 id="navigating-the-path-to-proficiency-powershell--devops-onramp2024-program-unveiled">Navigating the Path to Proficiency: PowerShell + DevOps OnRamp2024 Program Unveiled</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The PowerShell + DevOps Global Summit proudly announces the OnRamp Program for 2024 to foster inclusivity and provide opportunities for aspiring IT professionals. This initiative is designed to be a bridge for those looking to enter the PowerShell and DevOps arena, offering a guided onboarding experience that aims to empower individuals with the skills and knowledge needed to thrive in this dynamic industry. As a testament to their commitment to diversity and accessibility, the PowerShell Summit offers scholarships, ensuring financial constraints do not hinder passionate learners from participating.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2023-11-29-onramp2024-program-unveiled/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="early bird tickets now on sale" 
+                     data-content="&lt;p&gt;&lt;strong&gt;unlock your powershell potential: powershell &#43; devops global summit tickets now on sale!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;are you ready to elevate your powershell and devops skills to new heights? the wait is over! tickets for the highly anticipated &lt;a href=&#34;https://www.powershellsummit.org/&#34; title=&#34;powershell &#43; devops global summit are now on sale&#34;&gt;powershell &#43; devops global summit are now on sale&lt;/a&gt;, and you won&amp;rsquo;t want to miss out on the early bird pricing of &lt;strong&gt;$1799 usd&lt;/strong&gt; (originally $1999 usd). seize the opportunity to enhance your expertise and join the global community at this must-attend event.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Nov 20, 2023</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2023-11-20-earlybirdnowopen/" class="hover:text-blue-600 transition-colors duration-200">
+                            Early Bird Tickets Now on Sale
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p><strong>Unlock Your PowerShell Potential: PowerShell + DevOps Global Summit Tickets Now on Sale!</strong></p>
+<p>Are you ready to elevate your PowerShell and DevOps skills to new heights? The wait is over! Tickets for the highly anticipated <a href="https://www.powershellsummit.org/" title="PowerShell + DevOps Global Summit are now on sale">PowerShell + DevOps Global Summit are now on sale</a>, and you won&rsquo;t want to miss out on the early bird pricing of <strong>$1799 USD</strong> (originally $1999 USD). Seize the opportunity to enhance your expertise and join the global community at this must-attend event.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2023-11-20-earlybirdnowopen/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="the powershell &#43; devops global summit cfp is open" 
+                     data-content="&lt;h1 id=&#34;call-for-papers-now-open-join-the-powershell--devops-global-summit-2024&#34;&gt;call for papers now open: join the powershell &#43; devops global summit 2024!&lt;/h1&gt;
+&lt;p&gt;are you a powershell enthusiast or a devops aficionado with a wealth of knowledge to share? do you have insights, tips, or innovative solutions that can empower others in the field? if so, we have fantastic news for you! the call for papers is now officially open for the 2024 powershell &#43; devops global summit.&lt;/p&gt;
+&lt;h2 id=&#34;why-you-should-submit-your-proposal&#34;&gt;why you should submit your proposal&lt;/h2&gt;
+&lt;p&gt;the powershell &#43; devops global summit is the premier event for it professionals, sysadmins, and devops practitioners who want to deepen their understanding of powershell and devops practices. whether you&amp;rsquo;re an experienced speaker or new to presenting, this is your opportunity to showcase your expertise, engage with a passionate community, and contribute to the growth of powershell and devops knowledge worldwide.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Oct 1, 2023</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2023-10-01-the-powershell-devops-global-summit-cfp-is-open/" class="hover:text-blue-600 transition-colors duration-200">
+                            The PowerShell &#43; DevOps Global Summit CFP is OPEN
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><h1 id="call-for-papers-now-open-join-the-powershell--devops-global-summit-2024">Call for Papers Now Open: Join the PowerShell + DevOps Global Summit 2024!</h1>
+<p>Are you a PowerShell enthusiast or a DevOps aficionado with a wealth of knowledge to share? Do you have insights, tips, or innovative solutions that can empower others in the field? If so, we have fantastic news for you! The Call for Papers is now officially open for the 2024 PowerShell + DevOps Global Summit.</p>
+<h2 id="why-you-should-submit-your-proposal">Why You Should Submit Your Proposal</h2>
+<p>The PowerShell + DevOps Global Summit is the premier event for IT professionals, sysadmins, and DevOps practitioners who want to deepen their understanding of PowerShell and DevOps practices. Whether you&rsquo;re an experienced speaker or new to presenting, this is your opportunity to showcase your expertise, engage with a passionate community, and contribute to the growth of PowerShell and DevOps knowledge worldwide.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2023-10-01-the-powershell-devops-global-summit-cfp-is-open/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="powershell escape room" 
+                     data-content="&lt;h1 id=&#34;powershell-escape-room-by-michiel-hamers&#34;&gt;powershell escape room by michiel hamers&lt;/h1&gt;
+&lt;p&gt;by michiel hamers&lt;br&gt;
+&lt;a href=&#34;https://about.me/michielhamers/&#34;&gt;https://about.me/michielhamers/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;why-on-earth-you-want-to-create-an-escape-room-with-powershell-as-backend&#34;&gt;why on earth you want to create an escape room with powershell as backend?&lt;/h2&gt;
+&lt;p&gt;i&amp;rsquo;ve always been a fan of escape rooms, so i decided to create my own for my kids. i wanted to make it something that would be challenging and fun for them, but also educational. i decided to use powershell as the backend for the escape room, as i&amp;rsquo;m a powershell developer and i thought it would be a great way to learn more about the language.&lt;br&gt;
+the first step was to design the rooms. i wanted to make sure that there were a variety of puzzles and challenges that my kids would have to solve. i also wanted to make sure that the rooms were visually appealing and engaging. once i had the rooms designed, i started building them.&lt;br&gt;
+i used a variety of materials to build the rooms, including wood, cardboard, and fabric. i also used a few electronic components, such as a usb extension cable with a switch and a 3-button keyboard. the usb extension cable with a switch was used to create a physical button that my kids could press to solve one of the puzzles. the 3-button keyboard was used to enter the code that my kids had to find to solve another puzzle.&lt;br&gt;
+i also used a few websites to create rebus puzzles that my kids had to solve. i printed out the rebus puzzles and placed them around the rooms. once my kids had solved all of the puzzles, they were able to enter the code on a single screen to escape the room.&lt;br&gt;
+in this blog post, we&amp;rsquo;ll delve into the process of creating an engaging powershell escape room for the global powershell community. we&amp;rsquo;ll emphasize the significance of storytelling and provide a detailed breakdown of the powershell structure used for the escape room.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Sep 15, 2023</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            DevOps
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2023-09-15-powershell-escape-room/" class="hover:text-blue-600 transition-colors duration-200">
+                            PowerShell Escape Room
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><h1 id="powershell-escape-room-by-michiel-hamers">PowerShell Escape Room by Michiel Hamers</h1>
+<p>by Michiel Hamers<br>
+<a href="https://about.me/michielhamers/">https://about.me/michielhamers/</a></p>
+<h2 id="why-on-earth-you-want-to-create-an-escape-room-with-powershell-as-backend">Why on earth you want to create an Escape Room with PowerShell as backend?</h2>
+<p>I&rsquo;ve always been a fan of escape rooms, so I decided to create my own for my kids. I wanted to make it something that would be challenging and fun for them, but also educational. I decided to use PowerShell as the backend for the escape room, as I&rsquo;m a PowerShell developer and I thought it would be a great way to learn more about the language.<br>
+The first step was to design the rooms. I wanted to make sure that there were a variety of puzzles and challenges that my kids would have to solve. I also wanted to make sure that the rooms were visually appealing and engaging. Once I had the rooms designed, I started building them.<br>
+I used a variety of materials to build the rooms, including wood, cardboard, and fabric. I also used a few electronic components, such as a USB extension cable with a switch and a 3-button keyboard. The USB extension cable with a switch was used to create a physical button that my kids could press to solve one of the puzzles. The 3-button keyboard was used to enter the code that my kids had to find to solve another puzzle.<br>
+I also used a few websites to create rebus puzzles that my kids had to solve. I printed out the rebus puzzles and placed them around the rooms. Once my kids had solved all of the puzzles, they were able to enter the code on a single screen to escape the room.<br>
+In this blog post, we&rsquo;ll delve into the process of creating an engaging PowerShell escape room for the global PowerShell community. We&rsquo;ll emphasize the significance of storytelling and provide a detailed breakdown of the PowerShell structure used for the escape room.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2023-09-15-powershell-escape-room/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="microsoft graph powershell module: getting started guide" 
+                     data-content="&lt;h1 id=&#34;microsoft-graph-powershell-module-getting-started-guide&#34;&gt;microsoft graph powershell module: getting started guide&lt;/h1&gt;
+&lt;p&gt;by jeff brown&lt;/p&gt;
+&lt;p&gt;microsoft is retiring the azure ad graph api sometime after june 30, 2023 (&lt;a href=&#34;https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-change-management-simplified/ba-p/2967456&#34;&gt;announcement&lt;/a&gt;). this retirement includes the azure ad powershell module. in its place, microsoft has released the microsoft graph powershell module. the microsoft graph powershell module is the next-generation way of managing microsoft cloud services using powershell. if you have used msonline or azure ad powershell in the past, you&amp;rsquo;ll need to read on to learn about this new module.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Sep 15, 2023</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            Graph
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2023-09-15-microsoft-graph-powershell-module-getting-started-guide/" class="hover:text-blue-600 transition-colors duration-200">
+                            Microsoft Graph PowerShell Module: Getting Started Guide
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><h1 id="microsoft-graph-powershell-module-getting-started-guide">Microsoft Graph PowerShell Module: Getting Started Guide</h1>
+<p>by Jeff Brown</p>
+<p>Microsoft is retiring the Azure AD Graph API sometime after June 30, 2023 (<a href="https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-change-management-simplified/ba-p/2967456">announcement</a>). This retirement includes the Azure AD PowerShell module. In its place, Microsoft has released the Microsoft Graph PowerShell module. The Microsoft Graph PowerShell module is the next-generation way of managing Microsoft cloud services using PowerShell. If you have used MSOnline or Azure AD PowerShell in the past, you&rsquo;ll need to read on to learn about this new module.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2023-09-15-microsoft-graph-powershell-module-getting-started-guide/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="powershell &#43; devops global summit 2024" 
+                     data-content="&lt;p&gt;[vc_row][vc_column][vc_column_text]&lt;/p&gt;
+&lt;p&gt;we have had a lot of questions regarding the dates and location for the 2024 edition of the powershell &#43; devops global summit. the team has been working hard to ensure we deliver the best possible experience for our attendees. we are pleased to return to bellevue, wa, april 8-11, 2024, to the beautiful &lt;em&gt;&lt;strong&gt;meydenbauer center&lt;/strong&gt;&lt;/em&gt; and our new partner hotel, the &lt;em&gt;&lt;strong&gt;courtyard by marriott.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;some of you may remember the courtyard from previous years. the hotel has undergone extensive renovations since our last visit and is a short 5 min walk to the meydenbauer center. visit the event &lt;a href=&#34;https://powershellsummit.org&#34;&gt;website&lt;/a&gt; and follow us on &lt;a href=&#34;https://twitter.com/pshsummit&#34;&gt;twitter&lt;/a&gt; and &lt;a href=&#34;https://www.linkedin.com/company/the-devops-collective&#34;&gt;linkedin&lt;/a&gt; for the most up-to-date information.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>May 23, 2023</time>
+                            
+                            <span>•</span>
+                            <span>James Petty</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            Announcements
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="http://localhost:1313/articles/2023-05-23-powershell-devops-global-summit-2024/" class="hover:text-blue-600 transition-colors duration-200">
+                            PowerShell &#43; DevOps Global Summit 2024
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>[vc_row][vc_column][vc_column_text]</p>
+<p>We have had a lot of questions regarding the dates and location for the 2024 edition of the PowerShell + DevOps Global Summit. The team has been working hard to ensure we deliver the best possible experience for our attendees. We are pleased to return to Bellevue, WA, April 8-11, 2024, to the beautiful <em><strong>Meydenbauer Center</strong></em> and our new partner hotel, the <em><strong>Courtyard by Marriott.</strong></em></p>
+<p>Some of you may remember the Courtyard from previous years. The hotel has undergone extensive renovations since our last visit and is a short 5 min walk to the Meydenbauer Center. Visit the event <a href="https://powershellsummit.org">website</a> and follow us on <a href="https://twitter.com/pshsummit">Twitter</a> and <a href="https://www.linkedin.com/company/the-devops-collective">LinkedIn</a> for the most up-to-date information.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="http://localhost:1313/articles/2023-05-23-powershell-devops-global-summit-2024/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
                         
                     </div>
                 </div>
@@ -536,6 +853,370 @@
         </div>
         
         
+        
+        <nav class="mt-12 flex justify-center" aria-label="Pagination">
+            <div class="flex items-center space-x-1">
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    <span class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium">
+                        1
+                    </span>
+                    
+                
+                
+                
+                
+                    
+                    <a href="/articles/page/2/" 
+                       class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
+                        2
+                    </a>
+                    
+                
+                
+                
+                
+                    <span class="px-2 py-2 text-gray-400">...</span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <span class="px-2 py-2 text-gray-400">...</span>
+                
+                
+                
+                
+                    
+                    <a href="/articles/page/104/" 
+                       class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
+                        104
+                    </a>
+                    
+                
+                
+                
+                
+                    
+                    <a href="/articles/page/105/" 
+                       class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200">
+                        105
+                    </a>
+                    
+                
+                
+                
+                
+                <a href="/articles/page/2/" 
+                   class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200 flex items-center">
+                    Next<i class="fas fa-chevron-right ml-1"></i>
+                </a>
+                
+            </div>
+        </nav>
         
     </div>
 </section>
@@ -570,9 +1251,9 @@
                        class="text-gray-400 hover:text-gray-200 transition-colors duration-200">
                         <i class="fab fa-github text-lg"></i>
                     </a>
-                    <a href="" target="_blank" rel="noopener" 
+                    <a href="https://aka.ms/psdiscord" target="_blank" rel="noopener"
                        class="text-gray-400 hover:text-purple-400 transition-colors duration-200">
-                        <i class="fab fa-slack text-lg"></i>
+                        <i class="fab fa-discord text-lg"></i>
                     </a>
                 </div>
             </div>
@@ -593,10 +1274,10 @@
             <div>
                 <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/posts/" class="text-gray-400 hover:text-white transition-colors duration-200">Articles</a></li>
-                    <li><a href="/tags/" class="text-gray-400 hover:text-white transition-colors duration-200">Topics</a></li>
+                    <li><a href="/articles/" class="text-gray-400 hover:text-white transition-colors duration-200">Articles</a></li>
                     <li><a href="/authors/" class="text-gray-400 hover:text-white transition-colors duration-200">Authors</a></li>
-                    <li><a href="/sitemap.xml" class="text-gray-400 hover:text-white transition-colors duration-200">Sitemap</a></li>
+                    <li><a href="/contributing/" class="text-gray-400 hover:text-white transition-colors duration-200">Contributing</a></li>
+                    <li><a href="/community-awards/" class="text-gray-400 hover:text-white transition-colors duration-200">Community Awards</a></li>
                     <li><a href="/index.xml" class="text-gray-400 hover:text-white transition-colors duration-200">RSS Feed</a></li>
                 </ul>
             </div>
@@ -607,7 +1288,7 @@
                 <div class="space-y-4">
                     <div class="bg-gray-800 p-4 rounded-lg">
                         <h4 class="font-medium text-white mb-1">PowerShell &#43; DevOps Global Summit</h4>
-                        <p class="text-sm text-gray-400 mb-2">April 16-16, 2026 </p>
+                        <p class="text-sm text-gray-400 mb-2">April 13-16, 2026</p>
                         <a href="https://powershellsummit.org" 
                            class="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors duration-200">
                             Learn More →
@@ -625,6 +1306,7 @@
                 </p>
             </div>
             <div class="flex items-center space-x-6 text-sm">
+                <a href="/code-of-conduct/" class="text-gray-400 hover:text-white transition-colors duration-200">Code of Conduct</a>
                 <a href="/privacy/" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
                 <a href="/terms/" class="text-gray-400 hover:text-white transition-colors duration-200">Terms of Use</a>
                 <a href="/contact/" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>

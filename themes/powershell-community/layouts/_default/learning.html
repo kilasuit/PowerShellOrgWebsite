@@ -26,17 +26,22 @@
             </div>
             
             <!-- Author Filter -->
+            {{ $articles := where .Site.RegularPages "Section" "articles" }}
+            {{ $.Scratch.Set "authors" slice }}
+            {{ $.Scratch.Set "categories" slice }}
+            {{ range $articles }}
+                {{ if .Params.author }}
+                    {{ $.Scratch.Add "authors" (slice .Params.author) }}
+                {{ end }}
+                {{ with .Params.categories }}
+                    {{ $.Scratch.Add "categories" . }}
+                {{ end }}
+            {{ end }}
             <div class="relative">
-                <select id="author-filter" 
+                <select id="author-filter"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 appearance-none bg-white">
                     <option value="">All Authors</option>
-                    {{ $authors := slice }}
-                    {{ range .Pages }}
-                        {{ if .Params.author }}
-                            {{ $authors = append $authors .Params.author }}
-                        {{ end }}
-                    {{ end }}
-                    {{ range $authors | uniq | sort }}
+                    {{ range ($.Scratch.Get "authors") | uniq | sort }}
                     <option value="{{ . | lower }}">{{ . }}</option>
                     {{ end }}
                 </select>
@@ -45,18 +50,10 @@
 
             <!-- Category Filter -->
             <div class="relative">
-                <select id="category-filter" 
+                <select id="category-filter"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 appearance-none bg-white">
                     <option value="">All Categories</option>
-                    {{ $categories := slice }}
-                    {{ range .Pages }}
-                        {{ with .Params.categories }}
-                            {{ range . }}
-                                {{ $categories = append $categories . }}
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                    {{ range $categories | uniq | sort }}
+                    {{ range ($.Scratch.Get "categories") | uniq | sort }}
                     <option value="{{ . | lower }}">{{ . }}</option>
                     {{ end }}
                 </select>
@@ -70,7 +67,7 @@
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid gap-8" id="articles-container">
-            {{ $paginator := .Paginate .Pages }}
+            {{ $paginator := .Paginate $articles }}
             {{ range $paginator.Pages }}
             <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden learning-article"
                      data-title="{{ .Title | lower }}"
