@@ -1,0 +1,72 @@
+name: Guest Blog Post Submission
+description: Pitch or submit a guest blog post for powershell.org
+title: "[Article] "
+labels: ["guest-post", "article"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in writing for PowerShell.org!
+
+        You can either **pitch an idea** here or **submit a full draft**. If you're comfortable with Git, you can also submit a pull request directly — see our [CONTRIBUTING.md](https://github.com/PowerShellOrg/PowerShellOrgWebsite/blob/main/CONTRIBUTING.md) for instructions.
+
+  - type: input
+    id: title
+    attributes:
+      label: Article Title
+      placeholder: "e.g., Getting Started with PSReadLine Predictive IntelliSense"
+    validations:
+      required: true
+
+  - type: input
+    id: author_name
+    attributes:
+      label: Author Name
+      placeholder: "Your name as you'd like it displayed"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: submission_type
+    attributes:
+      label: Submission Type
+      options:
+        - "Pitch — I'd like feedback before writing"
+        - "Draft — Full article included below"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary / Pitch
+      placeholder: "What's the article about? Who is the target audience? (2-3 sentences)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: article_content
+    attributes:
+      label: Article Content (Markdown)
+      description: "Paste your full article in Markdown if submitting a draft. Leave blank if pitching."
+      render: markdown
+    validations:
+      required: false
+
+  - type: input
+    id: author_url
+    attributes:
+      label: Author Website or Social Link (optional)
+      placeholder: "https://twitter.com/yourhandle or https://yourblog.com"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Agreement
+      options:
+        - label: "This is my original work and I grant PowerShell.org permission to publish it."
+          required: true
+        - label: "I understand the article may be edited for clarity and formatting."
+          required: true
