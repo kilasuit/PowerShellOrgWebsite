@@ -48,6 +48,9 @@ menu:
     - name: "Learning"
       url: "/learning/"
       weight: 50
+    - name: "Calendar"
+      url: "/calendar/"
+      weight: 52
     - name: "Authors"
       url: "/authors/"
       weight: 55

@@ -41,7 +41,8 @@
       "Bash(node:*)",
       "Bash(ls /c/scripts/PowerShellOrgWebsite/content/articles/*.md)",
       "Bash(ls /c/scripts/PowerShellOrgWebsite/content/podcast/*.md)",
-      "Bash(grep \"Install-Module\\\\`\" /c/scripts/PowerShellOrgWebsite/content/articles/2023-09-15-microsoft-graph-powershell-module-getting-started-guide.md)"
+      "Bash(grep \"Install-Module\\\\`\" /c/scripts/PowerShellOrgWebsite/content/articles/2023-09-15-microsoft-graph-powershell-module-getting-started-guide.md)",
+      "WebFetch(domain:leanpub.com)"
     ]
   }
 }

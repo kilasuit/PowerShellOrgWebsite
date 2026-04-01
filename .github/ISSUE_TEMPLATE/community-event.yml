@@ -1,0 +1,77 @@
+name: Community Event Submission
+description: Submit a PowerShell-related event for the community calendar
+title: "[Event] "
+labels: ["calendar", "community-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting an event to the PowerShell.org community calendar!
+        Please fill out the details below.
+
+  - type: input
+    id: event_name
+    attributes:
+      label: Event Name
+      placeholder: "e.g., PowerShell Saturday Austin"
+    validations:
+      required: true
+
+  - type: input
+    id: event_url
+    attributes:
+      label: Event Website
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: end_date
+    attributes:
+      label: End Date (leave blank for single-day events)
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: "City, State/Country or 'Virtual'"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: virtual
+    attributes:
+      label: Is this a virtual event?
+      options:
+        - "No"
+        - "Yes"
+        - "Hybrid (in-person + virtual)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Event Description
+      placeholder: "Brief description of the event (1-2 sentences)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      placeholder: "Anything else we should know? (e.g., CFP deadlines, discount codes, etc.)"
+    validations:
+      required: false
