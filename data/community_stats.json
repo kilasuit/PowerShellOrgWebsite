@@ -1,6 +1,18 @@
 {
   "activities": [
     {
+      "message": "New reply in \"Get Computer Name From AD Using Variable...\"",
+      "time": "Just now",
+      "type": "reply",
+      "color": "bg-purple-500"
+    },
+    {
+      "message": "1 new topics this week",
+      "time": "This week",
+      "type": "stats",
+      "color": "bg-green-500"
+    },
+    {
       "message": "Active PowerShell discussions ongoing",
       "time": "Ongoing",
       "type": "community",
@@ -8,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19349,
-    "total_posts": 117975,
-    "active_users": 9581,
-    "topics_this_week": 0
+    "total_topics": 19350,
+    "total_posts": 117977,
+    "active_users": 9583,
+    "topics_this_week": 1
   },
-  "last_updated": "2026-04-01T20:19:05.463Z"
+  "last_updated": "2026-04-02T00:41:38.825Z"
 }
