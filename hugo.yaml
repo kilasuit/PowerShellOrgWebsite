@@ -51,6 +51,9 @@ menu:
     - name: "Calendar"
       url: "/calendar/"
       weight: 52
+    - name: "Plaster"
+      url: "/plaster/"
+      weight: 53
     - name: "Authors"
       url: "/authors/"
       weight: 55

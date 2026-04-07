@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boe Prox - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/authors/boe-prox/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/authors/boe-prox/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/authors/boe-prox/">
+    <meta property="og:url" content="https://powershell.org/authors/boe-prox/">
     <meta property="og:title" content="Boe Prox">
     <meta property="og:description"
         content="">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/authors/boe-prox/">
+    <meta property="twitter:url" content="https://powershell.org/authors/boe-prox/">
     <meta property="twitter:title" content="Boe Prox">
     <meta property="twitter:description"
         content="">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -416,13 +430,13 @@
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-07-tips-on-implementing-pipeline-support/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-07-tips-on-implementing-pipeline-support/" class="hover:text-blue-600 transition-colors duration-200">
                                 Tips on Implementing Pipeline Support
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>While reviewing Event 1 (and now Event 2) I&rsquo;ve seen some scripts that don&rsquo;t quite have the correct pipeline support and others that do a great job with it. Whether it is an unneeded Begin or End statement, or throwing everything into a Process block and not quite getting the expected output or even having a Process block when ValueFromPipeline/ValueFromPipelineByPropertyName is not even enabled. Before I start working through my notes for Event 2, I wanted to get this post out of the way. I hope that what I put together here will help those out who are working to implement pipeline support in their code as well as providing a method of troubleshooting the parameter binding using Trace-Command. The blog post is available <a href="http://learn-powershell.net/2013/05/07/tips-on-implementing-pipeline-support/">hereÂ to view</a>.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-07-tips-on-implementing-pipeline-support/" 
+                            <a href="https://powershell.org/articles/2013-05-07-tips-on-implementing-pipeline-support/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -452,13 +466,13 @@
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-02-scripting-games-2013-event-1-favorite-and-not-so-favorite-submissions/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-02-scripting-games-2013-event-1-favorite-and-not-so-favorite-submissions/" class="hover:text-blue-600 transition-colors duration-200">
                                 Scripting Games 2013: Event 1 &#34;˜Favorite&#39; and &#34;˜Not So Favorite&#39; Submissions
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>As a follow-up to my <a href="http://learn-powershell.net/2013/05/01/scripting-games-2013-thoughts-after-event-1/">previous blog</a> post, I plan to pick out a submission or two or three which stood out as my personal favorite and least favorite and tell you why I think this by pointing pieces of code that was either put together nicely or could have been improved in one way or another. Depending on my time, I will do at least 1 Advanced and 1 Beginner submission for both &ldquo;˜Favorite&rdquo;™ and &ldquo;˜Not so Favorite. I&rsquo;ll start out by listing the code and then discussing it bullet point style to highlight my thoughts.Â So with that, lets begin this journey through the Event 1 submissions by <a href="http://learn-powershell.net/2013/05/02/scripting-games-2013-event-1-favorite-and-not-so-favorite-submissions/">following this link to my blog!</a></p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-02-scripting-games-2013-event-1-favorite-and-not-so-favorite-submissions/" 
+                            <a href="https://powershell.org/articles/2013-05-02-scripting-games-2013-event-1-favorite-and-not-so-favorite-submissions/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -488,13 +502,13 @@
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-01-scripting-games-2013-thoughts-after-event-1/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-01-scripting-games-2013-thoughts-after-event-1/" class="hover:text-blue-600 transition-colors duration-200">
                                 Scripting Games 2013: Thoughts After Event 1
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>With Event 1 in the books for the 2013 Scripting Games, we are now in the voting period where the community gets the chance to play judge on all of the scripts submitted by voting and commenting on the submissions. I aim to take a look at the common items that pose problems and recommendations on what to do to fix this. The full article is available <a href="http://learn-powershell.net/2013/05/01/scripting-games-2013-thoughts-after-event-1/">here</a>.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-01-scripting-games-2013-thoughts-after-event-1/" 
+                            <a href="https://powershell.org/articles/2013-05-01-scripting-games-2013-thoughts-after-event-1/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>

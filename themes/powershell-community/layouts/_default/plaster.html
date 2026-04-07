@@ -1,0 +1,433 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero-pattern py-20 lg:py-32 relative overflow-hidden">
+    <div class="hero-pattern::before"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center text-white animate-fade-in">
+            <div class="mb-8">
+                <pre class="inline-block text-left text-sm sm:text-base lg:text-lg font-mono opacity-90 leading-relaxed" style="text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+  ____  _           _              ____   ___
+ |  _ \| | __ _ ___| |_ ___ _ __  |___ \ / _ \
+ | |_) | |/ _` / __| __/ _ \ '__|   __) | | | |
+ |  __/| | (_| \__ \ ||  __/ |     / /| |_| | /
+ |_|   |_|\__,_|___/\__\___|_|    |____|\___/</pre>
+            </div>
+            <h1 class="text-4xl lg:text-6xl gotham-black mb-6">The Template Engine<br>for PowerShell</h1>
+            <p class="text-xl lg:text-2xl opacity-90 max-w-3xl mx-auto mb-10 gotham-medium">
+                Scaffold projects, modules, and files with customizable templates.
+                Now with JSON support, cross-platform compatibility, and modern tooling.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://github.com/PowerShellOrg/Plaster"
+                   target="_blank" rel="noopener"
+                   class="inline-flex items-center bg-white text-blue-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl">
+                    <i class="fab fa-github mr-3"></i>Get Started
+                </a>
+                <a href="#install"
+                   class="inline-flex items-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:bg-opacity-10 transition-all duration-200">
+                    <i class="fas fa-download mr-3"></i>Install Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Install Banner -->
+<section id="install" class="powershell-dark py-8">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="code-terminal rounded-lg p-6">
+            <div class="flex items-center mb-3">
+                <div class="flex space-x-2 mr-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <span class="text-gray-400 text-sm font-mono">PowerShell</span>
+            </div>
+            <code class="text-green-400 font-mono text-lg">Install-Module</code>
+            <code class="text-white font-mono text-lg"> -Name </code>
+            <code class="text-yellow-300 font-mono text-lg">Plaster</code>
+            <code class="text-white font-mono text-lg"> -Scope </code>
+            <code class="text-yellow-300 font-mono text-lg">CurrentUser</code>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Cards -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl gotham-bold text-gray-900 mb-4">Why Plaster?</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Stop writing boilerplate. Start scaffolding with confidence.</p>
+        </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Card 1: Template Engine -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-layer-group text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Consistent Projects</h3>
+                <p class="text-gray-600 leading-relaxed">Generate modules, scripts, DSC configurations, and any file structure from reusable templates. Every project starts right.</p>
+            </div>
+
+            <!-- Card 2: JSON Support -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-code text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">JSON &amp; XML Manifests</h3>
+                <p class="text-gray-600 leading-relaxed">Author templates in clean JSON with full VS Code IntelliSense, or use the traditional XML format. Your choice.</p>
+            </div>
+
+            <!-- Card 3: Cross Platform -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-desktop text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Cross-Platform</h3>
+                <p class="text-gray-600 leading-relaxed">Full support for Windows, Linux, and macOS. Works with PowerShell 5.1 and PowerShell 7.x.</p>
+            </div>
+
+            <!-- Card 4: Interactive -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-terminal text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Interactive &amp; Scriptable</h3>
+                <p class="text-gray-600 leading-relaxed">Use interactively with guided prompts, or pass parameters on the command line for fully automated scaffolding in CI/CD.</p>
+            </div>
+
+            <!-- Card 5: Extensible -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-puzzle-piece text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Module Integration</h3>
+                <p class="text-gray-600 leading-relaxed">Embed templates inside PowerShell modules and distribute them through the PowerShell Gallery. Templates travel with your tools.</p>
+            </div>
+
+            <!-- Card 6: Conditional -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-sliders-h text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Smart Conditionals</h3>
+                <p class="text-gray-600 leading-relaxed">Include or exclude files based on user choices. Build dynamic templates with conditions, validation, and dependencies.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Code Example: JSON vs XML -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl gotham-bold text-gray-900 mb-4">Pick Your Format</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Plaster 2.0 introduces JSON manifests alongside traditional XML. Same power, cleaner syntax.</p>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-2">
+
+            <!-- JSON Example -->
+            <div>
+                <div class="flex items-center mb-4">
+                    <span class="inline-flex items-center bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">
+                        <i class="fas fa-star mr-1 text-xs"></i> Recommended
+                    </span>
+                    <span class="ml-3 text-lg font-bold text-gray-900">JSON Format</span>
+                </div>
+                <div class="code-terminal rounded-xl overflow-hidden shadow-xl">
+                    <div class="flex items-center px-4 py-3 border-b border-gray-700">
+                        <div class="flex space-x-2 mr-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-gray-400 text-sm font-mono">plasterManifest.json</span>
+                    </div>
+                    <pre class="p-5 text-sm leading-relaxed overflow-x-auto"><code class="language-json">{
+  "schemaVersion": "2.0",
+  "metadata": {
+    "name": "MyModule",
+    "id": "a1b2c3d4-...",
+    "version": "1.0.0",
+    "title": "New PowerShell Module"
+  },
+  "parameters": [
+    {
+      "name": "ModuleName",
+      "type": "text",
+      "prompt": "Enter module name"
+    },
+    {
+      "name": "Features",
+      "type": "multichoice",
+      "default": [0, 1],
+      "choices": [
+        {"label": "&Tests", "value": "Tests"},
+        {"label": "&Build", "value": "Build"}
+      ]
+    }
+  ],
+  "content": [
+    {
+      "type": "templateFile",
+      "source": "Module.psm1",
+      "destination": "src/${ModuleName}.psm1"
+    }
+  ]
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- XML Example -->
+            <div>
+                <div class="flex items-center mb-4">
+                    <span class="inline-flex items-center bg-gray-100 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full">
+                        Compatible
+                    </span>
+                    <span class="ml-3 text-lg font-bold text-gray-900">XML Format</span>
+                </div>
+                <div class="code-terminal rounded-xl overflow-hidden shadow-xl">
+                    <div class="flex items-center px-4 py-3 border-b border-gray-700">
+                        <div class="flex space-x-2 mr-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-gray-400 text-sm font-mono">plasterManifest.xml</span>
+                    </div>
+                    <pre class="p-5 text-sm leading-relaxed overflow-x-auto"><code class="language-xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;plasterManifest schemaVersion="1.2"
+  xmlns="http://www.microsoft.com/
+    schemas/PowerShell/Plaster/v1"&gt;
+  &lt;metadata&gt;
+    &lt;name&gt;MyModule&lt;/name&gt;
+    &lt;id&gt;a1b2c3d4-...&lt;/id&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;title&gt;New PowerShell Module&lt;/title&gt;
+  &lt;/metadata&gt;
+  &lt;parameters&gt;
+    &lt;parameter name="ModuleName"
+      type="text"
+      prompt="Enter module name" /&gt;
+    &lt;parameter name="Features"
+      type="multichoice" default="0,1"&gt;
+      &lt;choice label="&amp;Tests"
+        value="Tests" /&gt;
+      &lt;choice label="&amp;Build"
+        value="Build" /&gt;
+    &lt;/parameter&gt;
+  &lt;/parameters&gt;
+  &lt;content&gt;
+    &lt;templateFile source="Module.psm1"
+      destination=
+      "src/${PLASTER_PARAM_ModuleName}.psm1"/&gt;
+  &lt;/content&gt;
+&lt;/plasterManifest&gt;</code></pre>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="mt-16 max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-800 text-white">
+                            <th class="px-6 py-4 text-left font-semibold">Feature</th>
+                            <th class="px-6 py-4 text-center font-semibold">JSON</th>
+                            <th class="px-6 py-4 text-center font-semibold">XML</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-gray-900 font-medium">Variable Syntax</td>
+                            <td class="px-6 py-4 text-center"><code class="bg-green-50 text-green-800 px-2 py-1 rounded text-sm">${Name}</code></td>
+                            <td class="px-6 py-4 text-center"><code class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">${PLASTER_PARAM_Name}</code></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-gray-900 font-medium">Multichoice Defaults</td>
+                            <td class="px-6 py-4 text-center"><code class="bg-green-50 text-green-800 px-2 py-1 rounded text-sm">[0, 1, 2]</code></td>
+                            <td class="px-6 py-4 text-center"><code class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">"0,1,2"</code></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-gray-900 font-medium">VS Code IntelliSense</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i></td>
+                            <td class="px-6 py-4 text-center"><span class="text-gray-400">Limited</span></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-gray-900 font-medium">Special Char Escaping</td>
+                            <td class="px-6 py-4 text-center"><span class="text-green-600 font-medium">Not needed</span></td>
+                            <td class="px-6 py-4 text-center"><code class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">&amp;amp; &amp;lt;</code></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 text-gray-900 font-medium">Schema Validation</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i> JSON Schema</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i> XSD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Start -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl gotham-bold text-gray-900 mb-4">Quick Start</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Three commands to your first scaffolded project.</p>
+        </div>
+        <div class="max-w-4xl mx-auto space-y-8">
+
+            <!-- Step 1 -->
+            <div class="flex items-start">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">1</div>
+                <div class="ml-6 flex-1">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Discover available templates</h3>
+                    <div class="code-terminal rounded-lg p-4">
+                        <code class="text-green-400 font-mono">Get-PlasterTemplate</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex items-start">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">2</div>
+                <div class="ml-6 flex-1">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Scaffold a new module interactively</h3>
+                    <div class="code-terminal rounded-lg p-4">
+                        <pre class="text-sm"><code class="text-green-400 font-mono">$template</code><code class="text-white font-mono"> = Get-PlasterTemplate |
+    Where-Object Name -eq NewPowerShellModule
+</code><code class="text-green-400 font-mono">Invoke-Plaster</code><code class="text-white font-mono"> -TemplatePath $template.TemplatePath `
+    -DestinationPath .\MyNewModule</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex items-start">
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">3</div>
+                <div class="ml-6 flex-1">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Or create your own template</h3>
+                    <div class="code-terminal rounded-lg p-4">
+                        <pre class="text-sm"><code class="text-green-400 font-mono">New-PlasterManifest</code><code class="text-white font-mono"> -TemplateName MyTemplate `
+    -TemplateType Project -Format JSON</code></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Cmdlet Reference -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl gotham-bold text-gray-900 mb-4">Commands</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Four cmdlets. Everything you need.</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+
+            <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-200">
+                <div class="flex items-center mb-4">
+                    <code class="text-lg font-bold text-blue-700 font-mono">Invoke-Plaster</code>
+                </div>
+                <p class="text-gray-600">Execute a template to generate files. Handles parameters, conditions, file copying, template expansion, and module manifest creation.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-200">
+                <div class="flex items-center mb-4">
+                    <code class="text-lg font-bold text-blue-700 font-mono">New-PlasterManifest</code>
+                </div>
+                <p class="text-gray-600">Create a new template manifest file in JSON or XML format. Optionally auto-discover content files in the template directory.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-200">
+                <div class="flex items-center mb-4">
+                    <code class="text-lg font-bold text-blue-700 font-mono">Test-PlasterManifest</code>
+                </div>
+                <p class="text-gray-600">Validate a manifest file for correctness. Checks schema compliance, parameter defaults, conditions, and interpolated values.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-200">
+                <div class="flex items-center mb-4">
+                    <code class="text-lg font-bold text-blue-700 font-mono">Get-PlasterTemplate</code>
+                </div>
+                <p class="text-gray-600">Discover templates on disk, recursively, or embedded inside installed PowerShell modules. Filter by name or tag.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Compatibility Matrix -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl gotham-bold text-gray-900 mb-4">Platform Support</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Plaster 2.0 runs everywhere PowerShell runs.</p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden border border-gray-200">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-800 text-white">
+                            <th class="px-6 py-4 text-left font-semibold">PowerShell</th>
+                            <th class="px-6 py-4 text-center font-semibold"><i class="fab fa-windows mr-1"></i> Windows</th>
+                            <th class="px-6 py-4 text-center font-semibold"><i class="fab fa-linux mr-1"></i> Linux</th>
+                            <th class="px-6 py-4 text-center font-semibold"><i class="fab fa-apple mr-1"></i> macOS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">7.0+</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i></td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i></td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">5.1 (Desktop)</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check-circle text-green-500 text-lg"></i></td>
+                            <td class="px-6 py-4 text-center"><span class="text-gray-400">&mdash;</span></td>
+                            <td class="px-6 py-4 text-center"><span class="text-gray-400">&mdash;</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="powershell-blue py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h2 class="text-3xl lg:text-4xl gotham-bold mb-6">Ready to scaffold?</h2>
+        <p class="text-xl mb-10 opacity-90">Install Plaster from the PowerShell Gallery and create your first template in minutes.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://www.powershellgallery.com/packages/Plaster"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center bg-white text-blue-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg">
+                <i class="fas fa-box-open mr-3"></i>PowerShell Gallery
+            </a>
+            <a href="https://github.com/PowerShellOrg/Plaster"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:bg-opacity-10 transition-all duration-200">
+                <i class="fab fa-github mr-3"></i>View Source
+            </a>
+            <a href="https://github.com/PowerShellOrg/Plaster/blob/master/docs/en-US/about_Plaster.help.md"
+               target="_blank" rel="noopener"
+               class="inline-flex items-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:bg-opacity-10 transition-all duration-200">
+                <i class="fas fa-book mr-3"></i>Documentation
+            </a>
+        </div>
+    </div>
+</section>
+
+{{ end }}

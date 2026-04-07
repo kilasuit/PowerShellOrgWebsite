@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Will Anderson - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/authors/will-anderson/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/authors/will-anderson/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/authors/will-anderson/">
+    <meta property="og:url" content="https://powershell.org/authors/will-anderson/">
     <meta property="og:title" content="Will Anderson">
     <meta property="og:description"
         content="">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/authors/will-anderson/">
+    <meta property="twitter:url" content="https://powershell.org/authors/will-anderson/">
     <meta property="twitter:title" content="Will Anderson">
     <meta property="twitter:description"
         content="">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -420,7 +434,7 @@ originally, i had built a one-liner that allowed me to create an nsg rule on th
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2017-08-08-using-powershell-azure-automation-and-oms-part-iii/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2017-08-08-using-powershell-azure-automation-and-oms-part-iii/" class="hover:text-blue-600 transition-colors duration-200">
                                 Using PowerShell, Azure Automation, and OMS – Part III
                             </a>
                         </h2>
@@ -430,7 +444,7 @@ This week, we&rsquo;re going to modify an existing function to use that webhook 
 We could actually build our logic directly into the runbook to parse the webhook data and then pass the formatted information to our function that we&rsquo;ve made available in Azure.  But I prefer to keep my runbooks as simple as possible and do the heavy lifting in my function.  This makes the runbook look a little bit cleaner, and allows me to minimize my code management a little more.  Also, Azure Automation Runbooks, as of this writing, don&rsquo;t play nicely with parameter sets in them, so I might as well pass my data along to a command that does.<br>
 Originally, I had built a one-liner that allowed me to create an NSG rule on the fly to block and incoming traffic from a specific IPAddress.  It was a fairly simple command.  But today, we&rsquo;re going to make it a little more robust, and give it the ability to use webhook data.  Here&rsquo;s my original code:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2017-08-08-using-powershell-azure-automation-and-oms-part-iii/" 
+                            <a href="https://powershell.org/articles/2017-08-08-using-powershell-azure-automation-and-oms-part-iii/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -470,7 +484,7 @@ so first off, let&amp;rsquo;s talk about basic runbooks and running them against
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2017-08-01-using-powershell-azure-automation-and-oms-part-ii/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2017-08-01-using-powershell-azure-automation-and-oms-part-ii/" class="hover:text-blue-600 transition-colors duration-200">
                                 Using PowerShell, Azure Automation, and OMS – Part II
                             </a>
                         </h2>
@@ -478,7 +492,7 @@ so first off, let&amp;rsquo;s talk about basic runbooks and running them against
 <strong>Creating the Runbook Script</strong><br>
 So first off, let&rsquo;s talk about basic runbooks and running them against objects in Azure.  As previously discussed, when your automation account is created, it creates with it an AzureRunAsAccount.  This account is configured to act on behalf of the user that has access to the automation account and the runbooks in order to perform the runbook task.  In order to leverage this account, you need to invoke it in the runbook itself.  You can actually find an example of this snippet in the AzureAutomationTutorialScript runbook in your automation account.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2017-08-01-using-powershell-azure-automation-and-oms-part-ii/" 
+                            <a href="https://powershell.org/articles/2017-08-01-using-powershell-azure-automation-and-oms-part-ii/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -518,7 +532,7 @@ in order to create the azure automation account, you&amp;rsquo;ll need to have c
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2017-07-25-using-powershell-azure-automation-and-oms-part-i/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2017-07-25-using-powershell-azure-automation-and-oms-part-i/" class="hover:text-blue-600 transition-colors duration-200">
                                 Using PowerShell, Azure Automation, and OMS – Part I
                             </a>
                         </h2>
@@ -526,7 +540,7 @@ in order to create the azure automation account, you&amp;rsquo;ll need to have c
 <strong>Creating The Azure Automation Account</strong><br>
 In order to create the Azure Automation Account, you&rsquo;ll need to have create the automation account object in the target resource group, and the ability to create an AzureRunAs account in AzureAD.  It&rsquo;s also important to be mindful that not every Azure region has the Microsoft.Automation resource provider registered to it, so you&rsquo;ll want the resource group to exist in the appropriate locale.  You can check this with the Get-AzureRmResourceProvider cmdlet:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2017-07-25-using-powershell-azure-automation-and-oms-part-i/" 
+                            <a href="https://powershell.org/articles/2017-07-25-using-powershell-azure-automation-and-oms-part-i/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -580,7 +594,7 @@ here&amp;rsquo;s my initial contact email that you can use to fit your own story
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2016-04-20-help-get-the-word-out-on-the-getgoing-program-scholarship/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2016-04-20-help-get-the-word-out-on-the-getgoing-program-scholarship/" class="hover:text-blue-600 transition-colors duration-200">
                                 Help Get the Word Out on the &#39;GetGoing&#39; Program &amp; Scholarship
                             </a>
                         </h2>
@@ -602,7 +616,7 @@ If you need a hand getting started, feel free to contact me at <strong>webmaster
 Here&rsquo;s my initial contact email that you can use to fit your own story:<br>
 <em>Greetings [Contact Name],</em></p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2016-04-20-help-get-the-word-out-on-the-getgoing-program-scholarship/" 
+                            <a href="https://powershell.org/articles/2016-04-20-help-get-the-word-out-on-the-getgoing-program-scholarship/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -644,13 +658,13 @@ Here&rsquo;s my initial contact email that you can use to fit your own story:<br
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2015-10-14-desired-state-configuration-beware-of-circular-configurations/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2015-10-14-desired-state-configuration-beware-of-circular-configurations/" class="hover:text-blue-600 transition-colors duration-200">
                                 Desired State Configuration – Beware Of Circular Configurations
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>Lately, I&rsquo;ve been working at converting a lot of my server configuration scripts into DSC configurations.  After all, what better way to learn than by updating your existing methods?  I recently ran into an issue, however, while converting my SCCM Distribution Point deployment script into a config, where the test systems inexplicably began rebooting every thirty minutes or so.  The Local Configuration Manager was configured to reboot if necessary, and these were fresh installs, so I knew that my culprit was most likely in my configuration.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2015-10-14-desired-state-configuration-beware-of-circular-configurations/" 
+                            <a href="https://powershell.org/articles/2015-10-14-desired-state-configuration-beware-of-circular-configurations/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -688,13 +702,13 @@ Here&rsquo;s my initial contact email that you can use to fit your own story:<br
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2015-04-30-powershell-org-is-now-on-imgur/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2015-04-30-powershell-org-is-now-on-imgur/" class="hover:text-blue-600 transition-colors duration-200">
                                 PowerShell.org Is Now On Imgur!
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>Hey there everyone!  I&rsquo;m pleased to announce that PowerShell.org has a new feed on Imgur!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2015-04-30-powershell-org-is-now-on-imgur/" 
+                            <a href="https://powershell.org/articles/2015-04-30-powershell-org-is-now-on-imgur/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -724,13 +738,13 @@ Here&rsquo;s my initial contact email that you can use to fit your own story:<br
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2015-04-27-powershelltos-next-meeting-may-6th-2015/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2015-04-27-powershelltos-next-meeting-may-6th-2015/" class="hover:text-blue-600 transition-colors duration-200">
                                 PowerShellTO&#39;s Next Meeting – May 6th, 2015
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>Join us on Wednesday, May 6th for our second Toronto PowerShell User’s Group meeting.  This time you get to take the wheel!  Send us some of your PowerShell related challenges and we’ll pick the top ones to work out in a group together!  We’ll also be talking about some of the things learned at PowerShell Summit – North America, and more!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2015-04-27-powershelltos-next-meeting-may-6th-2015/" 
+                            <a href="https://powershell.org/articles/2015-04-27-powershelltos-next-meeting-may-6th-2015/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -761,14 +775,14 @@ the festivities kicked off in downtown charlotte at the ri ra irish pub this las
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2015-04-20-powershell-summit-north-america-launches/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2015-04-20-powershell-summit-north-america-launches/" class="hover:text-blue-600 transition-colors duration-200">
                                 PowerShell Summit – North America Launches!
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>The PowerShell community descended on Charlotte, North Carolina for the third annual PowerShell Summit - North America this week!  Enthusiasts, MVPs, community leaders, and the PowerShell product team came to discuss the latest and greatest ongoings in the PowerShell world.<br>
 The festivities kicked off in downtown Charlotte at the Ri Ra Irish Pub this last Sunday.  New network connections were made and old friends reunited over fine brews in the Victorian-style public house before getting a good nights&rsquo; rest before the three day summit.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2015-04-20-powershell-summit-north-america-launches/" 
+                            <a href="https://powershell.org/articles/2015-04-20-powershell-summit-north-america-launches/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>

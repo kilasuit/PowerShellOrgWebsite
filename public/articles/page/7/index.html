@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Articles - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/articles/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/articles/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/articles/">
+    <meta property="og:url" content="https://powershell.org/articles/">
     <meta property="og:title" content="Articles">
     <meta property="og:description"
         content="PowerShell articles, tutorials, and guides from community experts.">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/articles/">
+    <meta property="twitter:url" content="https://powershell.org/articles/">
     <meta property="twitter:title" content="Articles">
     <meta property="twitter:description"
         content="PowerShell articles, tutorials, and guides from community experts.">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -400,53 +414,6 @@
             
             
             <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="media sync: organize your photos and videos with powershell" 
-                     data-content="&lt;p&gt;do you have photos and videos that you have taken over the years that are scattered all over the place? do you want to have all your photos and videos organized? do you want all your photos and videos to have a standardized naming scheme? if you answered yes to these questions, then this is the post for you. in this post, i will provide you with the powershell code and examples for how to use the media sync script. the media sync script utilizes the shell.application com object to gather file metadata. only files that have a picture or video metadata type will be processed. the script uses the date taken for pictures and the media created metadata fields to organize the photos and videos. if there is no date taken or media created available for a given file, the script will use the modify date instead. the script also ensures that you won&amp;rsquo;t have any duplicate files by checking the file hashes of the two files in question. if the script detects duplicate files, it will only keep one copy of the file. there are also tools included to help you cleanup unwanted files or folders, delete empty directories and find duplicate files. the script has a simple menu driven powershell gui similar to what i did in a previous &lt;a href=&#34;https://spiderzebra.com/2020/05/21/how-to-create-a-simple-powershell-gui/&#34;&gt;
-post
-&lt;/a&gt;. the media sync powershell script provides the following features:&lt;/p&gt;"
-                     >
-                
-                
-                
-                <div class="p-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
-                        <div class="flex items-center space-x-3">
-                            <time>Dec 16, 2020</time>
-                            
-                            <span>•</span>
-                            <span>n2501r</span>
-                            
-                        </div>
-                        
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            PowerShell for Admins
-                        </span>
-                        
-                    </div>
-                    
-                    <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-12-16-media-sync-organize-your-photos-and-videos-with-powershell/" class="hover:text-blue-600 transition-colors duration-200">
-                            Media Sync: Organize Your Photos and Videos with PowerShell
-                        </a>
-                    </h2>
-                    
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Do you have photos and videos that you have taken over the years that are scattered all over the place? Do you want to have all your photos and videos organized? Do you want all your photos and videos to have a standardized naming scheme? If you answered YES to these questions, then this is the post for you. In this post, I will provide you with the PowerShell code and examples for how to use the Media Sync script. The Media Sync script utilizes the Shell.Application COM object to gather file metadata. Only files that have a picture or video metadata type will be processed. The script uses the date taken for pictures and the media created metadata fields to organize the photos and videos. If there is no date taken or media created available for a given file, the script will use the modify date instead. The script also ensures that you won&rsquo;t have any duplicate files by checking the file hashes of the two files in question. If the script detects duplicate files, it will only keep one copy of the file. There are also tools included to help you cleanup unwanted files or folders, delete empty directories and find duplicate files. The script has a simple menu driven PowerShell GUI similar to what I did in a previous <a href="https://spiderzebra.com/2020/05/21/how-to-create-a-simple-powershell-gui/">
-post
-</a>. The Media Sync PowerShell script provides the following features:</p></p>
-                    
-                    <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-12-16-media-sync-organize-your-photos-and-videos-with-powershell/" 
-                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        
-                        
-                    </div>
-                </div>
-                
-            </article>
-            
-            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
                      data-title="icymi: powershell week of 11-december-2020" 
                      data-content="&lt;p&gt;topics include graph, datetimes, json, crescendo and more&amp;hellip;&lt;/p&gt;"
                      >
@@ -470,7 +437,7 @@ post
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-12-11-icymi-powershell-week-of-11-december-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-12-11-icymi-powershell-week-of-11-december-2020/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 11-December-2020
                         </a>
                     </h2>
@@ -478,7 +445,7 @@ post
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include Graph, DateTimes, JSON, Crescendo and more&hellip;</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-12-11-icymi-powershell-week-of-11-december-2020/" 
+                        <a href="https://powershell.org/articles/2020-12-11-icymi-powershell-week-of-11-december-2020/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -520,7 +487,7 @@ today we’ll talk about the microsoft graph api, powershell &amp;amp; azuread a
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-12-04-icymi-powershell-week-of-27-november-2020-04-december-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-12-04-icymi-powershell-week-of-27-november-2020-04-december-2020/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 27-November-2020 &amp; 04-December-2020
                         </a>
                     </h2>
@@ -535,7 +502,7 @@ Sending SMS via Android using Powershell.</p>
 Today we’ll talk about the Microsoft Graph API, PowerShell &amp; AzureAD application. As you may know, the Microsoft Graph API is the data source where you can find everything about Office 365 and everything that’s interacting with it.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-12-04-icymi-powershell-week-of-27-november-2020-04-december-2020/" 
+                        <a href="https://powershell.org/articles/2020-12-04-icymi-powershell-week-of-27-november-2020-04-december-2020/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -576,7 +543,7 @@ this event will be 100% virtual
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-11-29-update-2021-powershell-devops-global-summit/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-11-29-update-2021-powershell-devops-global-summit/" class="hover:text-blue-600 transition-colors duration-200">
                             Update: 2021 PowerShell &#43; DevOps Global Summit
                         </a>
                     </h2>
@@ -590,7 +557,7 @@ this event will be 100% virtual
 . You may wonder what a virtual event would be like, and is it worth it to attend?</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-11-29-update-2021-powershell-devops-global-summit/" 
+                        <a href="https://powershell.org/articles/2020-11-29-update-2021-powershell-devops-global-summit/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -625,7 +592,7 @@ this event will be 100% virtual
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-11-20-icymi-powershell-week-of-20-november-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-11-20-icymi-powershell-week-of-20-november-2020/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 20-November-2020
                         </a>
                     </h2>
@@ -633,7 +600,7 @@ this event will be 100% virtual
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include Splatting, Print Servers, Active Directory and more&hellip;</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-11-20-icymi-powershell-week-of-20-november-2020/" 
+                        <a href="https://powershell.org/articles/2020-11-20-icymi-powershell-week-of-20-november-2020/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -668,7 +635,7 @@ this event will be 100% virtual
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-11-13-icymi-powershell-week-of-13-november-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-11-13-icymi-powershell-week-of-13-november-2020/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 13-November-2020
                         </a>
                     </h2>
@@ -676,7 +643,7 @@ this event will be 100% virtual
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include Teams, Azure, Tic-Tac-Toe and more&hellip;</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-11-13-icymi-powershell-week-of-13-november-2020/" 
+                        <a href="https://powershell.org/articles/2020-11-13-icymi-powershell-week-of-13-november-2020/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -711,7 +678,7 @@ this event will be 100% virtual
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-11-06-icymi-powershell-week-of-06-november-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-11-06-icymi-powershell-week-of-06-november-2020/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 06-November-2020
                         </a>
                     </h2>
@@ -719,7 +686,7 @@ this event will be 100% virtual
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include Containers, Microsoft Teams, AMSI and more</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-11-06-icymi-powershell-week-of-06-november-2020/" 
+                        <a href="https://powershell.org/articles/2020-11-06-icymi-powershell-week-of-06-november-2020/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -754,7 +721,7 @@ this event will be 100% virtual
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-11-05-writing-your-own-powershell-functions-cmdlets/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-11-05-writing-your-own-powershell-functions-cmdlets/" class="hover:text-blue-600 transition-colors duration-200">
                             Writing Your Own PowerShell Functions / Cmdlets
                         </a>
                     </h2>
@@ -762,7 +729,7 @@ this event will be 100% virtual
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>This article is an attempt at describing some of my thought process when building functions. By functions I mean a command that you can execute after importing a module. I am not referring to running a script that accepts parameters and input. Having a task to complete for a function is of course the first objective. Once an idea is in mind I like to write as much as the Help section first as possible as this helps me outline and plan what I am going to do.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-11-05-writing-your-own-powershell-functions-cmdlets/" 
+                        <a href="https://powershell.org/articles/2020-11-05-writing-your-own-powershell-functions-cmdlets/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -801,7 +768,7 @@ what does that mean for attendees?&lt;/p&gt;"
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-11-03-the-return-of-the-powershell-devops-global-summit/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-11-03-the-return-of-the-powershell-devops-global-summit/" class="hover:text-blue-600 transition-colors duration-200">
                             The Return of the PowerShell &#43; DevOps Global Summit
                         </a>
                     </h2>
@@ -813,7 +780,7 @@ The DevOps Collective INC is pleased to announce the return of the PowerShell + 
 What does that mean for attendees?</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-11-03-the-return-of-the-powershell-devops-global-summit/" 
+                        <a href="https://powershell.org/articles/2020-11-03-the-return-of-the-powershell-devops-global-summit/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -848,7 +815,7 @@ What does that mean for attendees?</p></p>
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2020-10-30-icymi-powershell-week-of-30-october-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2020-10-30-icymi-powershell-week-of-30-october-2020/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 30-October-2020
                         </a>
                     </h2>
@@ -856,7 +823,50 @@ What does that mean for attendees?</p></p>
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include SQL, Teams Webhooks, Zombie Files and more&hellip;</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2020-10-30-icymi-powershell-week-of-30-october-2020/" 
+                        <a href="https://powershell.org/articles/2020-10-30-icymi-powershell-week-of-30-october-2020/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="icymi: powershell week of 23-october-2020" 
+                     data-content="&lt;p&gt;topics include web forms, converting to pdf, oracle cloud infrastructure and more&amp;hellip;&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Oct 23, 2020</time>
+                            
+                            <span>•</span>
+                            <span>Robin Dadswell</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            In Case You Missed It
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="https://powershell.org/articles/2020-10-23-icymi-powershell-week-of-23-october-2020/" class="hover:text-blue-600 transition-colors duration-200">
+                            ICYMI: PowerShell Week of 23-October-2020
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include web forms, converting to PDF, Oracle Cloud Infrastructure and more&hellip;</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="https://powershell.org/articles/2020-10-23-icymi-powershell-week-of-23-october-2020/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>

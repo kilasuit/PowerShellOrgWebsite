@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Art Beane - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/authors/art-beane/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/authors/art-beane/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/authors/art-beane/">
+    <meta property="og:url" content="https://powershell.org/authors/art-beane/">
     <meta property="og:title" content="Art Beane">
     <meta property="og:description"
         content="">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/authors/art-beane/">
+    <meta property="twitter:url" content="https://powershell.org/authors/art-beane/">
     <meta property="twitter:title" content="Art Beane">
     <meta property="twitter:description"
         content="">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -418,7 +432,7 @@ i had mentioned in a previous blog entry that, particularly in the advanced entr
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-06-07-notes-for-event-6/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-06-07-notes-for-event-6/" class="hover:text-blue-600 transition-colors duration-200">
                                 Notes for Event 6
                             </a>
                         </h2>
@@ -426,7 +440,7 @@ i had mentioned in a previous blog entry that, particularly in the advanced entr
 Well, there was one thing that really surprised me. The instructions were quite clear about minimizing &ldquo;Are You Sure&rdquo; queries to the user, but you can count on one hand the number of entries that included <em>-Confirm:$false</em>. This is just an example of why it&rsquo;s so important to read the problem statement very carefully and extract the solution requirements. Then, after creatingÂ the solution, go back and verify that the requirements have all been met. Many of the entries called out this requirement in the comments, but then didn&rsquo;t account for it in the script.<br>
 I had mentioned in a previous blog entry that, particularly in the advanced entries, the author was working too hard. Sometimes this means putting more emphasis on &ldquo;completeness&rdquo; than in solving the problem. Here&rsquo;s an example of a wasted effort.Â A fewÂ entries used the _[ValidateNotNullOrEmpty()]_Â test for a possible alternate to the default value for &ldquo;Server&rdquo;.Â  Because there is a default value for the parameter, itÂ won&rsquo;t be null or empty making this test unnecessary. Here, give this a try:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-06-07-notes-for-event-6/" 
+                            <a href="https://powershell.org/articles/2013-06-07-notes-for-event-6/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -460,7 +474,7 @@ anyway, just one more event to go. i&amp;rsquo;m expecting a spectacular finish!
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-30-notes-on-event-5/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-30-notes-on-event-5/" class="hover:text-blue-600 transition-colors duration-200">
                                 Notes on Event 5
                             </a>
                         </h2>
@@ -470,7 +484,7 @@ Most of the entries used <em>Sort-Object -Unique</em> or <em>Select-Object -Uniq
 Returning an instance count sounds like an interesting option, but after thinking about it some more, I&rsquo;m not so sure. Counts of the number of sessions and the hits per session would be much more interesting than the raw hits count. But that&rsquo;s way, way beyond the scope of this event.<br>
 Anyway, just one more event to go. I&rsquo;m expecting a spectacular finish!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-30-notes-on-event-5/" 
+                            <a href="https://powershell.org/articles/2013-05-30-notes-on-event-5/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -506,7 +520,7 @@ there were several different methods used to verify the presence of the ad modul
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-23-judge-notes-for-event-4/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-23-judge-notes-for-event-4/" class="hover:text-blue-600 transition-colors duration-200">
                                 Judge notes for Event 4
                             </a>
                         </h2>
@@ -518,7 +532,7 @@ A couple of entries had something that at first I thought was silly. But, instea
 As mentioned, the best entries were those that fell back to the [ADSI] accelerator when the AD module or the Quest snapin weren&rsquo;t found. Making this kind of check and fallback is pretty important when responding to audit requests. This reminds me of a case where I actually had to respond to an audit request with the actual last logon date in a domain with mixed W2K3, W2K8, and W2K8R2 domain controllers. The default choice was to use the AD module, but since we had to check each domain controller (there were 72 of them), it turned out to be a real pain determining which method to use on each of them. In the end, we decided to install the Quest tools on the audit server and just avoid the issue.<br>
 There were several different methods used to verify the presence of the AD module before trying to load it. Most of them were actually more work that really necessary. The reason for this is that the Import-Module cmdlet does not return an error if the module has already been loaded. Thus, the easiest test would be:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-23-judge-notes-for-event-4/" 
+                            <a href="https://powershell.org/articles/2013-05-23-judge-notes-for-event-4/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -554,7 +568,7 @@ hope these ideas help. good luck in event 4.&lt;/p&gt;">
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-16-judge-notes-for-event-3/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-16-judge-notes-for-event-3/" class="hover:text-blue-600 transition-colors duration-200">
                                 Judge notes for event 3
                             </a>
                         </h2>
@@ -566,7 +580,7 @@ Using a REGEX to validate a string parameter, such as a computer name, isn&rsquo
 Lastly, a caution when including an optional credentials parameter. It&rsquo;s probably not a good idea to default it to an empty credential object <em>($Credential = [System.Management.Automation.PSCredential]::Empty)</em>. If you do a _if ($Credential) {}_Â call later in the script, it will always be $true and you may end up calling for the user to enter credentials far too many times. A better solution would be to check PSBoundParametersÂ to see if a credential object was passed in.<br>
 Hope these ideas help. Good luck in Event 4.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-16-judge-notes-for-event-3/" 
+                            <a href="https://powershell.org/articles/2013-05-16-judge-notes-for-event-3/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -603,7 +617,7 @@ there were a surprising number of entries that had [string]$computername instead
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-10-some-notes-on-event-2-advanced/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-10-some-notes-on-event-2-advanced/" class="hover:text-blue-600 transition-colors duration-200">
                                 Some notes on Event 2 Advanced
                             </a>
                         </h2>
@@ -616,7 +630,7 @@ There were a surprising number of entries that had [string]$ComputerName instead
 </ul>
 <p>On the whole, though I really liked the effort everyone put into their scripts. Those that exactly met the requirements were short, sweet, and to the point. There were several extensions that I also liked.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-10-some-notes-on-event-2-advanced/" 
+                            <a href="https://powershell.org/articles/2013-05-10-some-notes-on-event-2-advanced/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -656,7 +670,7 @@ let&amp;rsquo;s try an experiment to show what i mean. try this:&lt;/p&gt;">
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-08-notes-on-beginner-event-2/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-08-notes-on-beginner-event-2/" class="hover:text-blue-600 transition-colors duration-200">
                                 Notes on Beginner Event 2
                             </a>
                         </h2>
@@ -664,7 +678,7 @@ let&amp;rsquo;s try an experiment to show what i mean. try this:&lt;/p&gt;">
 Within the Select block, it is necessary to make a call to <em>Get-WmiObject Win32_OperatingSystem</em> to get come additional information. It looks like everybody got the format correct: <em>@{Name=&lsquo;OS&rsquo;;Expression={Get-WmiObject}}</em> where folks got into trouble was in specifying the ComputerNameÂ property. Some didn&rsquo;t even include it, meaning that the OS value would be taken from the local computer and not the remote one. But, more often than not, the code contained a plain $_ : <em>@{Name=&lsquo;OS&rsquo;;Expression={(Get-WmiObject Win32_OperatingSystem -ComputerName $</em>).Caption}}<em>. So, what&rsquo;s wrong with this? The problem is the value of $</em> at this point in the pipeline.<br>
 Let&rsquo;s try an experiment to show what I mean. Try this:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-08-notes-on-beginner-event-2/" 
+                            <a href="https://powershell.org/articles/2013-05-08-notes-on-beginner-event-2/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -704,7 +718,7 @@ a common error here was missing the subdirectory. most folks got this correct by
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-05-02-judge-notes-for-event-1/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-05-02-judge-notes-for-event-1/" class="hover:text-blue-600 transition-colors duration-200">
                                 Judge Notes for Event 1
                             </a>
                         </h2>
@@ -712,7 +726,7 @@ a common error here was missing the subdirectory. most folks got this correct by
 Working with the destination folder address.<br>
 A common error here was missing the subdirectory. Most folks got this correct by using some version of <em>$</em>.FullName.Replace(&quot;˜C:\Application\Log&quot;™,&quot;™\NASServer\Archives&quot;™)_ or <em>Join-Path &ldquo;˜\NASServer\Archives&rdquo;™ $</em>.Directory.Name_, but there were a number who just used the root destination folder name without looking for the subfolder. And some others had solutions that (although I thought were innovative), took too much effort. Among them are:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-05-02-judge-notes-for-event-1/" 
+                            <a href="https://powershell.org/articles/2013-05-02-judge-notes-for-event-1/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>

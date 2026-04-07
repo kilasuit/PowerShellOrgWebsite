@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The PowerShell Podcast - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/podcast/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/podcast/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/podcast/">
+    <meta property="og:url" content="https://powershell.org/podcast/">
     <meta property="og:title" content="The PowerShell Podcast">
     <meta property="og:description"
         content="Building your career with PowerShell">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/podcast/">
+    <meta property="twitter:url" content="https://powershell.org/podcast/">
     <meta property="twitter:title" content="The PowerShell Podcast">
     <meta property="twitter:description"
         content="Building your career with PowerShell">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -405,39 +419,6 @@
         <div class="grid gap-8" id="episodes-container">
             
             
-            <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden podcast-episode" data-title="get-directory function" data-content="&lt;p&gt;in the olden days (i.e. when i used cmd.exe), i often did &amp;ldquo;dir *.&amp;rdquo; to quickly get a list of the directories in the current path. powershell doesn&amp;rsquo;t work this way (which is good because it would be unexpected), so i had to make a replacement.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;function get-directory { ls $args | ? { $_.psiscontainer } } &lt;/code&gt;the alias which makes most sense to me for this function is &amp;ldquo;lsd&amp;rdquo;. what, that acronym is already in use? 🙂&lt;/p&gt;">
-                <div class="lg:flex">
-                    <div class="lg:w-1/3 p-6 lg:pr-0">
-                        <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mb-4 lg:mb-0">
-                            <i class="fas fa-podcast text-4xl text-white"></i>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3 p-6 lg:pl-8">
-                        <div class="flex items-center text-purple-600 text-sm font-medium mb-3">
-                            <i class="fas fa-calendar mr-2"></i>
-                            <time>March 24, 2008</time>
-                            
-                        </div>
-                        <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-03-24-get-directory-function/" class="hover:text-purple-600 transition-colors duration-200">
-                                Get-Directory Function
-                            </a>
-                        </h2>
-                        <p class="text-gray-600 mb-4 line-clamp-3"><p>In the olden days (i.e. when I used CMD.EXE), I often did &ldquo;dir *.&rdquo; to quickly get a list of the directories in the current path. PowerShell doesn&rsquo;t work this way (which is good because it would be unexpected), so I had to make a replacement.</p>
-<p><code>function Get-Directory { ls $Args | ? { $_.PSIsContainer } } </code>The alias which makes most sense to me for this function is &ldquo;lsd&rdquo;. What, that acronym is already in use? 🙂</p></p>
-                        <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-03-24-get-directory-function/" 
-                               class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
-                                <i class="fas fa-play mr-2"></i>Listen Now
-                            </a>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-            </article>
-            
             <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden podcast-episode" data-title="episode 21 – one-half of jeffrey snover" data-content="&lt;p&gt;&lt;strong&gt;a podcast about windows powershell.&lt;/strong&gt;&lt;br&gt;
 listen: &lt;a href=&#34;http://media.libsyn.com/media/powerscripting/pspodcast-021.mp3&#34;&gt;&lt;strong&gt;&lt;img src=&#34;http://powerscripting.libsyn.com/img/podcasticon.gif&#34; alt=&#34;&#34;&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;in-this-episode&#34;&gt;in this episode&lt;/h3&gt;
@@ -457,7 +438,7 @@ listen: &lt;a href=&#34;http://media.libsyn.com/media/powerscripting/pspodcast-0
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-03-17-powerscripting-podcast-episode-21-one-half-of-jeffrey-snover/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-03-17-powerscripting-podcast-episode-21-one-half-of-jeffrey-snover/" class="hover:text-purple-600 transition-colors duration-200">
                                 Episode 21 – One-half of Jeffrey Snover
                             </a>
                         </h2>
@@ -468,7 +449,7 @@ Listen: <a href="http://media.libsyn.com/media/powerscripting/PSPodcast-021.mp3"
 <h3 id="interview-with-jeffrey-snover">Interview with Jeffrey Snover</h3>
 <p>And now a word from our sponsor:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-03-17-powerscripting-podcast-episode-21-one-half-of-jeffrey-snover/" 
+                            <a href="https://powershell.org/podcast/2008-03-17-powerscripting-podcast-episode-21-one-half-of-jeffrey-snover/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -498,13 +479,13 @@ Listen: <a href="http://media.libsyn.com/media/powerscripting/PSPodcast-021.mp3"
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-03-17-episode-21-coming-soon/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-03-17-episode-21-coming-soon/" class="hover:text-purple-600 transition-colors duration-200">
                                 Episode 21 coming soon.
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>I just wanted to let you know that the new podcast should be posted by Tuesday morning. We had a great interview with Jeffery Snover that you don&rsquo;t want to miss!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-03-17-episode-21-coming-soon/" 
+                            <a href="https://powershell.org/podcast/2008-03-17-episode-21-coming-soon/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -536,7 +517,7 @@ more multiplication. this one uses &#34;`a&#34; which is the special character
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-03-16-one-liner-countdown-timer-in-powershell/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-03-16-one-liner-countdown-timer-in-powershell/" class="hover:text-purple-600 transition-colors duration-200">
                                 One-Liner: Countdown Timer in PowerShell
                             </a>
                         </h2>
@@ -549,7 +530,7 @@ multiplication off the top of my head. Next is Write-Host with some<br />
 more multiplication. This one uses "`a" which is the special character
 <p>which emits a beep (old schoolers know this as the ASCII code for</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-03-16-one-liner-countdown-timer-in-powershell/" 
+                            <a href="https://powershell.org/podcast/2008-03-16-one-liner-countdown-timer-in-powershell/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -575,14 +556,14 @@ more multiplication. This one uses "`a" which is the special character
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-03-03-one-liner-pop-up-a-message-box/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-03-03-one-liner-pop-up-a-message-box/" class="hover:text-purple-600 transition-colors duration-200">
                                 One-liner: Pop up a message box
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>You could paste this into a scheduled task or something if you want an annoying reminder to pop up on your screen.Â  :)Â  Now if only schtasks.exe was as easy to use as PowerShell&hellip;</p>
 <p><code>PowerShell -NoProfile -NonInteractive -Command [reflection.assembly]::loadwithpartialname('system.windows.forms'); [system.Windows.Forms.MessageBox]::show('reminder: buy milk') </code></p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-03-03-one-liner-pop-up-a-message-box/" 
+                            <a href="https://powershell.org/podcast/2008-03-03-one-liner-pop-up-a-message-box/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -634,7 +615,7 @@ scripts that run for a long time, but don&amp;rsquo;t look hung.&amp;rdquo;&lt;/
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-03-03-powerscripting-podcast-episode-20/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-03-03-powerscripting-podcast-episode-20/" class="hover:text-purple-600 transition-colors duration-200">
                                 Episode 20 – Jeffrey Snover is coming
                             </a>
                         </h2>
@@ -667,7 +648,7 @@ scripts that run for a long time, but don&rsquo;t look hung.&rdquo;</li>
 <li>
 <p><a href="http://runasradio.com/" title="RunAs Radio">RunAs Radio</a>{#cyjc} recently featured our very own PowerShell MVP Marco Shaw on their <a href="http://runasradio.com/default.aspx?showNum=46" title="podcast show #46">podcast show #46</a>{#rw28} to talk about WMI and IIS7 and several other things.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-03-03-powerscripting-podcast-episode-20/" 
+                            <a href="https://powershell.org/podcast/2008-03-03-powerscripting-podcast-episode-20/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -697,13 +678,13 @@ scripts that run for a long time, but don&rsquo;t look hung.&rdquo;</li>
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-02-20-windows-2008-server-launch-event-in-atlanta/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-02-20-windows-2008-server-launch-event-in-atlanta/" class="hover:text-purple-600 transition-colors duration-200">
                                 Windows 2008 Server launch event in Atlanta
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>If you are going, let us know via <a href="http://www.facebook.com/event.php?eid=10571182124">the event</a> I just created in Facebook.Â  Details are in the link.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-02-20-windows-2008-server-launch-event-in-atlanta/" 
+                            <a href="https://powershell.org/podcast/2008-02-20-windows-2008-server-launch-event-in-atlanta/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -757,7 +738,7 @@ powershell-basics.com
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-02-17-powerscripting-podcast-episode-19/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-02-17-powerscripting-podcast-episode-19/" class="hover:text-purple-600 transition-colors duration-200">
                                 Episode 19 – The Scripting Games are on
                             </a>
                         </h2>
@@ -792,7 +773,7 @@ PowerShell-Basics.com
 <p>Export-Clixml
 ](<a href="http://www.microsoft.com/technet/scriptcenter/topics/msh/cmdlets/export-clixml.mspx">http://www.microsoft.com/technet/scriptcenter/topics/msh/cmdlets/export-clixml.mspx</a>)</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-02-17-powerscripting-podcast-episode-19/" 
+                            <a href="https://powershell.org/podcast/2008-02-17-powerscripting-podcast-episode-19/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -852,7 +833,7 @@ get-vm | new-snapshot&lt;/li&gt;
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-02-03-powerscripting-podcast-episode-18-win-fabulous-prizes/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-02-03-powerscripting-podcast-episode-18-win-fabulous-prizes/" class="hover:text-purple-600 transition-colors duration-200">
                                 Episode 18 – Win Fabulous Prizes!
                             </a>
                         </h2>
@@ -888,7 +869,7 @@ get-vm | new-snapshot</li>
 <h5 id="tips">Tips</h5>
 <p>There&rsquo;s a ton of Scripting Guys stuff we meant to cover in the interview show last time that we never got around to:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-02-03-powerscripting-podcast-episode-18-win-fabulous-prizes/" 
+                            <a href="https://powershell.org/podcast/2008-02-03-powerscripting-podcast-episode-18-win-fabulous-prizes/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -940,7 +921,7 @@ listen: &lt;a href=&#34;http://media.libsyn.com/media/powerscripting/pspodcast-0
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/podcast/2008-01-21-35-2/" class="hover:text-purple-600 transition-colors duration-200">
+                            <a href="https://powershell.org/podcast/2008-01-21-35-2/" class="hover:text-purple-600 transition-colors duration-200">
                                 Episode 17 – With &#34;The Scripting Guys!&#34;
                             </a>
                         </h2>
@@ -968,7 +949,7 @@ Listen: <a href="http://media.libsyn.com/media/powerscripting/PSPodcast-017.mp3"
 </ul>
 <p>See you next time!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/podcast/2008-01-21-35-2/" 
+                            <a href="https://powershell.org/podcast/2008-01-21-35-2/" 
                                class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
                                 <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
@@ -976,6 +957,43 @@ Listen: <a href="http://media.libsyn.com/media/powerscripting/PSPodcast-017.mp3"
                             <a href="http://media.libsyn.com/media/powerscripting/PSPodcast-017.mp3" target="_blank" rel="noopener"
                                class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium">
                                 <i class="fas fa-external-link-alt mr-2"></i>Direct Link
+                            </a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden podcast-episode" data-title="interviews" data-content="&lt;p&gt;we&amp;rsquo;ve been doing a lot of interview and guest shows lately.â  i just wanted to let you all know that with one or two exceptions, we&amp;rsquo;ve interviewed all the people we really wanted to get on the show, and we&amp;rsquo;ll definitely getting back to the more meaty shows in the future.&lt;br&gt;
+once we get the last bit of interviews done, i imagine from time to time we&amp;rsquo;ll still have guests on the show, but it&amp;rsquo;ll be less of a focus and more of a complement.â  and spaced between these, we will have more interviews when the occasion warrants.â  for example if a big release of some cool software we like happens, we might have the developer on the show.&lt;br&gt;
+show 17 has already been recorded, so once we (and by we i mean jonathan) get the editing done that&amp;rsquo;ll get posted.â  it&amp;rsquo;s an interview show, i think you&amp;rsquo;ll like it.â  we were really pleased that they deigned to talk to us mere mortals.â  😉&lt;br&gt;
+thanks for listening, and don&amp;rsquo;t forget to send us feedback&amp;ndash;we like to hear from you!&lt;/p&gt;">
+                <div class="lg:flex">
+                    <div class="lg:w-1/3 p-6 lg:pr-0">
+                        <div class="aspect-square bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mb-4 lg:mb-0">
+                            <i class="fas fa-podcast text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 p-6 lg:pl-8">
+                        <div class="flex items-center text-purple-600 text-sm font-medium mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <time>January 18, 2008</time>
+                            
+                        </div>
+                        <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
+                            <a href="https://powershell.org/podcast/2008-01-18-interviews/" class="hover:text-purple-600 transition-colors duration-200">
+                                Interviews
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3"><p>We&rsquo;ve been doing a lot of interview and guest shows lately.Â  I just wanted to let you all know that with one or two exceptions, we&rsquo;ve interviewed all the people we really wanted to get on the show, and we&rsquo;ll definitely getting back to the more meaty shows in the future.<br>
+Once we get the last bit of interviews done, I imagine from time to time we&rsquo;ll still have guests on the show, but it&rsquo;ll be less of a focus and more of a complement.Â  And spaced between these, we will have more interviews when the occasion warrants.Â  For example if a big release of some cool software we like happens, we might have the developer on the show.<br>
+Show 17 has already been recorded, so once we (and by we I mean Jonathan) get the editing done that&rsquo;ll get posted.Â  It&rsquo;s an interview show, I think you&rsquo;ll like it.Â  We were really pleased that they deigned to talk to us mere mortals.Â  😉<br>
+Thanks for listening, and don&rsquo;t forget to send us feedback&ndash;we like to hear from you!</p></p>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <a href="https://powershell.org/podcast/2008-01-18-interviews/" 
+                               class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200">
+                                <i class="fas fa-play mr-2"></i>Listen Now
                             </a>
                             
                             

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Don Jones - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/authors/don-jones/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/authors/don-jones/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/authors/don-jones/">
+    <meta property="og:url" content="https://powershell.org/authors/don-jones/">
     <meta property="og:title" content="Don Jones">
     <meta property="og:description"
         content="">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/authors/don-jones/">
+    <meta property="twitter:url" content="https://powershell.org/authors/don-jones/">
     <meta property="twitter:title" content="Don Jones">
     <meta property="twitter:description"
         content="">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -419,7 +433,7 @@ for example, this works to replace all instances of &amp;ldquo;t&amp;rdquo; with
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-21-why-get-content-aint-yer-friend/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-21-why-get-content-aint-yer-friend/" class="hover:text-blue-600 transition-colors duration-200">
                                 Why Get-Content Ain&#39;t Yer Friend
                             </a>
                         </h2>
@@ -428,7 +442,7 @@ Get-Content is quickly becoming my nemesis, because it&rsquo;s sucking a lot of 
 Worse, PowerShell has just enough under-the-hood smarts to make <em>some</em> things work, but not _everything. _<br>
 For example, this works to replace all instances of &ldquo;t&rdquo; with &ldquo;x&rdquo; in the file test.txt, outputting the result to new.txt:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-21-why-get-content-aint-yer-friend/" 
+                            <a href="https://powershell.org/articles/2013-10-21-why-get-content-aint-yer-friend/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -475,7 +489,7 @@ it&amp;rsquo;s pretty important to understand these potential differences. when 
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-19-the-shell-vs-the-host/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-19-the-shell-vs-the-host/" class="hover:text-blue-600 transition-colors duration-200">
                                 The Shell vs. The Host
                             </a>
                         </h2>
@@ -486,7 +500,7 @@ When you develop a script using the ISE or the console (which behave pretty simi
 Here&rsquo;s a perfect example: most of the &ldquo;built-in&rdquo; variables you&rsquo;re used to working with in the ISE or the console aren&rsquo;t actually built into theÂ _engine,Â _they&rsquo;re built into thoseÂ _hosts.Â _For example, since the host is responsible for presenting verbose output, theÂ <em>host</em> is what creates and uses the $VerbosePreference variable. When your script is running in a different host, $VerbosePreference may not exist, and indeed verbose output may simply be ignored. An off-the-shelf PowerShell runspace doesn&rsquo;t actually come with very much &ldquo;built-in&rdquo; at all, so scripts can behaveÂ <em>very</em> differently.<br>
 It&rsquo;s pretty important to understand these potential differences. When a developer sets out to create their own host application - like most of the commercial script editors do - it can be very confusing and frustrating, because they essentially have to reverse-engineer much of what the PowerShell.exe console application is doing, so that they can provide an equivalent experience. But you should neverÂ <em>assume</em> that a script&rsquo;s behavior under one host will be consistent in all other hosts; test and verify.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-19-the-shell-vs-the-host/" 
+                            <a href="https://powershell.org/articles/2013-10-19-the-shell-vs-the-host/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -530,7 +544,7 @@ please - tell a colleague. help us get the word out, because this is going to be
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-18-more-summit-speaker-names-leaked/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-18-more-summit-speaker-names-leaked/" class="hover:text-blue-600 transition-colors duration-200">
                                 More Summit Speaker Names Leaked
                             </a>
                         </h2>
@@ -542,7 +556,7 @@ please - tell a colleague. help us get the word out, because this is going to be
 That&rsquo;s aboutÂ <strong>63 sessions total</strong>. Wow. We&rsquo;re planning to run continuous sessions from 9am to noon, and then from 1pm to 5pm every day, spread across three tracks. There&rsquo;ll also be welcome address at 8:15am Monday morning.<br>
 Please - tell a colleague. Help us get the word out, because this is going to beÂ _amazing.Â _</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-18-more-summit-speaker-names-leaked/" 
+                            <a href="https://powershell.org/articles/2013-10-18-more-summit-speaker-names-leaked/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -581,14 +595,14 @@ drop a comment below. some comments might be re-published as standalone posts as
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-17-did-you-attend-the-2013-powershell-summit/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-17-did-you-attend-the-2013-powershell-summit/" class="hover:text-blue-600 transition-colors duration-200">
                                 Did you attend the 2013 PowerShell Summit?
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>I&rsquo;m looking to hear from folks who attended the PowerShell Summit North America 2013. Specifically, I&rsquo;d love to hear what you thought of it. What value did you get? If someone were considering attending in 2014, what advice would you offer them? How should they approach the boss? What did you, personally, &ldquo;take home&rdquo; from the Summit in the way of new information or skills?<br>
 Drop a comment below. Some comments might be re-published as standalone posts as we try to help people understand what the Summit is all about, and why they might want to attend. Thanks!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-17-did-you-attend-the-2013-powershell-summit/" 
+                            <a href="https://powershell.org/articles/2013-10-17-did-you-attend-the-2013-powershell-summit/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -630,7 +644,7 @@ i mean, for me, using .net basically works like this:&lt;/p&gt;">
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-15-why-the-heck-do-you-want-to-be-taught-net-in-a-powershell-class/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-15-why-the-heck-do-you-want-to-be-taught-net-in-a-powershell-class/" class="hover:text-blue-600 transition-colors duration-200">
                                 Why the HECK Do You Want to be Taught .NET in a PowerShell Class?!?!?!
                             </a>
                         </h2>
@@ -640,7 +654,7 @@ And I get it. When there&rsquo;s no cmdlet, .NET has a ton of goodies that can s
 My problem is, what&rsquo;s that look likeÂ <em>in a class?</em><br>
 I mean, for me, using .NET basically works like this:</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-15-why-the-heck-do-you-want-to-be-taught-net-in-a-powershell-class/" 
+                            <a href="https://powershell.org/articles/2013-10-15-why-the-heck-do-you-want-to-be-taught-net-in-a-powershell-class/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -679,14 +693,14 @@ keep in mind that we&amp;rsquo;re a bit bound by this course being microsoft off
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-15-questions-about-an-advanced-powershell-class-design/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-15-questions-about-an-advanced-powershell-class-design/" class="hover:text-blue-600 transition-colors duration-200">
                                 Questions about an Advanced PowerShell Class Design
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>As we continue collecting responses to an outline survey about an Advanced PowerShell class, I&rsquo;ve come up with a couple of questions and would appreciate any feedback you&rsquo;d care to leave here.<br>
 Keep in mind that we&rsquo;re a bit bound by this course being Microsoft Official Curriculum. I gotta make sure, in other words, that the average MCT can teach it. Ahem. I also have to face facts that people don&rsquo;t read or obey course pre-requisite suggestions, and that a lot of people taking the course will have zero programming background.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-15-questions-about-an-advanced-powershell-class-design/" 
+                            <a href="https://powershell.org/articles/2013-10-15-questions-about-an-advanced-powershell-class-design/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -725,14 +739,14 @@ you can tell me what you think by &lt;a href=&#34;http://674004.polldaddy.com/s/
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-12-help-me-design-the-advanced-powershell-class/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-12-help-me-design-the-advanced-powershell-class/" class="hover:text-blue-600 transition-colors duration-200">
                                 Help me Design the Advanced PowerShell Class!
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>I&rsquo;ve been asked to work on an &ldquo;advanced&rdquo; PowerShell class. Now, I don&rsquo;t like the &ldquo;advanced&rdquo; word very much, because it means something different to everyone, depending on their experience. So I&rsquo;m trying to make the class focus on &ldquo;powerful, practical things you can do with PowerShell that definitely drift into programming and scripting.&rdquo;<br>
 You can tell me what you think by <a href="http://674004.polldaddy.com/s/advanced-powershell-class-design">taking an online survey about the proposed outline</a>, which will be online through October 18th, 2013.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-12-help-me-design-the-advanced-powershell-class/" 
+                            <a href="https://powershell.org/articles/2013-10-12-help-me-design-the-advanced-powershell-class/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -777,7 +791,7 @@ early november should see the schedule finalized. stay tuned.&lt;/p&gt;">
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-10-leak-powershell-summit-na-2014-speakers/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-10-leak-powershell-summit-na-2014-speakers/" class="hover:text-blue-600 transition-colors duration-200">
                                 LEAK: PowerShell Summit NA 2014 Speakers
                             </a>
                         </h2>
@@ -790,7 +804,7 @@ I imagine I&rsquo;ll be invited to speak , along with my often-co-author Jeffery
 I saw Adam Driscoll&rsquo;s name on the list (uber-developer with a ton of PowerShell experience), Jason Helmick (I&rsquo;m hoping he&rsquo;ll do a deeply in-depth talk on PowerShell Web Access, since he&rsquo;s pretty much mastered all the not-documented intricacies of setting it up), and a few more.<br>
 Early November should see the schedule finalized. Stay tuned.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-10-leak-powershell-summit-na-2014-speakers/" 
+                            <a href="https://powershell.org/articles/2013-10-10-leak-powershell-summit-na-2014-speakers/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -835,7 +849,7 @@ we&amp;rsquo;ll accept as many coaches as want to participate. note that youâ 
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-02-seeking-coaches-and-judges-for-the-winter-scripting-games/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-02-seeking-coaches-and-judges-for-the-winter-scripting-games/" class="hover:text-blue-600 transition-colors duration-200">
                                 Seeking Coaches and Judges for the Winter Scripting Games
                             </a>
                         </h2>
@@ -848,7 +862,7 @@ Coaches&rsquo; comments receive a special flag, helping teams focus on them quic
 Team discussions are private to the team members and coaches; discussions will not be made public.<br>
 We&rsquo;ll accept as many coaches as want to participate. Note that youÂ <strong>cannot</strong> be both a coach and a judge, and coaches are not permitted to participate on a team as a player.</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-02-seeking-coaches-and-judges-for-the-winter-scripting-games/" 
+                            <a href="https://powershell.org/articles/2013-10-02-seeking-coaches-and-judges-for-the-winter-scripting-games/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>
@@ -890,13 +904,13 @@ We&rsquo;ll accept as many coaches as want to participate. Note that youÂ <str
                             
                         </div>
                         <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-                            <a href="http://localhost:1313/articles/2013-10-01-more-congrats/" class="hover:text-blue-600 transition-colors duration-200">
+                            <a href="https://powershell.org/articles/2013-10-01-more-congrats/" class="hover:text-blue-600 transition-colors duration-200">
                                 More Congrats!
                             </a>
                         </h2>
                         <p class="text-gray-600 mb-4 line-clamp-3"><p>Another kudos to Jon Walz, host of the long running PowerScripting Podcast, for his first and well-deserved MVP Award!</p></p>
                         <div class="flex flex-wrap items-center gap-4">
-                            <a href="http://localhost:1313/articles/2013-10-01-more-congrats/" 
+                            <a href="https://powershell.org/articles/2013-10-01-more-congrats/" 
                                class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
                                 <i class="fas fa-book mr-2"></i>Read Article
                             </a>

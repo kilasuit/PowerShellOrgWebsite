@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Articles - PowerShell.org - Welcome Automaters!</title>
@@ -16,10 +16,10 @@
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/articles/index.xml" title="PowerShell.org - Welcome Automaters!" />
+    <link rel="alternate" type="application/rss+xml" href="https://powershell.org/articles/index.xml" title="PowerShell.org - Welcome Automaters!" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/articles/">
+    <meta property="og:url" content="https://powershell.org/articles/">
     <meta property="og:title" content="Articles">
     <meta property="og:description"
         content="PowerShell articles, tutorials, and guides from community experts.">
@@ -27,7 +27,7 @@
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/articles/">
+    <meta property="twitter:url" content="https://powershell.org/articles/">
     <meta property="twitter:title" content="Articles">
     <meta property="twitter:description"
         content="PowerShell articles, tutorials, and guides from community experts.">
@@ -178,7 +178,7 @@
         <div class="flex justify-between items-center py-4">
             
             <div class="flex items-center">
-                <a href="http://localhost:1313/" class="flex items-center space-x-3">
+                <a href="https://powershell.org/" class="flex items-center space-x-3">
                     <div class="w-10 h-10 powershell-blue rounded-lg flex items-center justify-center">
                         <i class="fas fa-terminal text-white text-lg"></i>
                     </div>
@@ -238,6 +238,13 @@
                    class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
                    >
                     Calendar
+                    
+                </a>
+                
+                <a href="/plaster/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 "
+                   >
+                    Plaster
                     
                 </a>
                 
@@ -332,6 +339,13 @@
                     
                 </a>
                 
+                <a href="/plaster/" 
+                   class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
+                   >
+                    Plaster
+                    
+                </a>
+                
                 <a href="/authors/" 
                    class="block text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium "
                    >
@@ -400,180 +414,6 @@
             
             
             <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="learn to use verbose output streams in your pester tests" 
-                     data-content="&lt;p&gt;i&amp;rsquo;m going to file this under &amp;ldquo;either i&amp;rsquo;m a genius, or there&amp;rsquo;s a much better way and everyone knows it except for me.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;i recently began adding a suite of pester tests to one of my projects and i found myself needing to mock some unit tests against a particular function that would modify a variable based on the parameter specified. since all the functions i write nowadays are considered advanced functions (and yours should be too, they&amp;rsquo;re free!), i discovered a nice way to test the function&amp;rsquo;s actions using the&lt;/p&gt;"
-                     >
-                
-                
-                
-                <div class="p-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
-                        <div class="flex items-center space-x-3">
-                            <time>Apr 18, 2019</time>
-                            
-                            <span>•</span>
-                            <span>Nathaniel Webb (ArtisanByteCrafter)</span>
-                            
-                        </div>
-                        
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            PowerShell for Admins
-                        </span>
-                        
-                    </div>
-                    
-                    <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-04-18-learn-to-use-verbose-output-streams-in-your-pester-tests/" class="hover:text-blue-600 transition-colors duration-200">
-                            Learn To Use Verbose Output Streams In Your Pester Tests
-                        </a>
-                    </h2>
-                    
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>I&rsquo;m going to file this under &ldquo;Either I&rsquo;m a genius, or there&rsquo;s a much better way and everyone knows it except for me.&rdquo;</p>
-<p>I recently began adding a suite of Pester tests to one of my projects and I found myself needing to mock some unit tests against a particular function that would modify a variable based on the parameter specified. Since all the functions I write nowadays are considered advanced functions (and yours should be too, they&rsquo;re free!), I discovered a nice way to test the function&rsquo;s actions using the</p></p>
-                    
-                    <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-04-18-learn-to-use-verbose-output-streams-in-your-pester-tests/" 
-                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        
-                        
-                    </div>
-                </div>
-                
-            </article>
-            
-            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="icymi: powershell week of 12-april-2019" 
-                     data-content="&lt;p&gt;topics include splatting, psremoting to azure vms, and honey users.&lt;/p&gt;"
-                     >
-                
-                
-                
-                <div class="p-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
-                        <div class="flex items-center space-x-3">
-                            <time>Apr 12, 2019</time>
-                            
-                            <span>•</span>
-                            <span>Mark Roloff</span>
-                            
-                        </div>
-                        
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            PowerShell for Admins
-                        </span>
-                        
-                    </div>
-                    
-                    <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-04-12-icymi-powershell-week-of-12-april-2019/" class="hover:text-blue-600 transition-colors duration-200">
-                            ICYMI: PowerShell Week of 12-April-2019
-                        </a>
-                    </h2>
-                    
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include splatting, PSRemoting to Azure VMs, and honey users.</p></p>
-                    
-                    <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-04-12-icymi-powershell-week-of-12-april-2019/" 
-                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        
-                        
-                    </div>
-                </div>
-                
-            </article>
-            
-            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="hear, hear for here-strings" 
-                     data-content="&lt;p&gt;running commands in powershell that require a format that will not run natively in powershell could be a difficult task, or can it? powershell provides a way to store, for example, a json as a string, enter here-string. a here-string is a single or double quoted string in which the quotation marks are interpreted literally. an example would be invoking a rest api that requires a json body. lets take a look at an example and see how here-strings work.&lt;/p&gt;"
-                     >
-                
-                
-                
-                <div class="p-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
-                        <div class="flex items-center space-x-3">
-                            <time>Apr 9, 2019</time>
-                            
-                            <span>•</span>
-                            <span>pwshliquori</span>
-                            
-                        </div>
-                        
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            Tips and Tricks
-                        </span>
-                        
-                    </div>
-                    
-                    <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-04-09-hear-hear-for-here-strings/" class="hover:text-blue-600 transition-colors duration-200">
-                            Hear, Hear for Here-Strings
-                        </a>
-                    </h2>
-                    
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Running commands in PowerShell that require a format that will not run natively in PowerShell could be a difficult task, or can it? PowerShell provides a way to store, for example, a JSON as a string, enter here-string. A here-string is a single or double quoted string in which the quotation marks are interpreted literally. An example would be invoking a Rest API that requires a JSON body. Lets take a look at an example and see how here-strings work.</p></p>
-                    
-                    <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-04-09-hear-hear-for-here-strings/" 
-                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        
-                        
-                    </div>
-                </div>
-                
-            </article>
-            
-            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
-                     data-title="icymi: powershell week of 5-april-2019" 
-                     data-content="&lt;p&gt;topics include remoting with ssh, sending sms alerts, some live stream coding, and keybinds that you may not have known about.&lt;/p&gt;"
-                     >
-                
-                
-                
-                <div class="p-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
-                        <div class="flex items-center space-x-3">
-                            <time>Apr 5, 2019</time>
-                            
-                            <span>•</span>
-                            <span>Mark Roloff</span>
-                            
-                        </div>
-                        
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                            PowerShell for Admins
-                        </span>
-                        
-                    </div>
-                    
-                    <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-04-05-icymi-powershell-week-of-5-april-2019/" class="hover:text-blue-600 transition-colors duration-200">
-                            ICYMI: PowerShell Week of 5-April-2019
-                        </a>
-                    </h2>
-                    
-                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include remoting with SSH, sending SMS alerts, some live stream coding, and keybinds that you may not have known about.</p></p>
-                    
-                    <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-04-05-icymi-powershell-week-of-5-april-2019/" 
-                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        
-                        
-                    </div>
-                </div>
-                
-            </article>
-            
-            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
                      data-title="icymi: powershell week of 29-march-2019" 
                      data-content="&lt;p&gt;topics include an update to psscriptanalyzer, pester, and customizing sharepoint menus.&lt;/p&gt;"
                      >
@@ -597,7 +437,7 @@
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-03-29-icymi-powershell-week-of-29-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2019-03-29-icymi-powershell-week-of-29-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 29-March-2019
                         </a>
                     </h2>
@@ -605,7 +445,7 @@
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include an update to PSScriptAnalyzer, Pester, and customizing SharePoint menus.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-03-29-icymi-powershell-week-of-29-march-2019/" 
+                        <a href="https://powershell.org/articles/2019-03-29-icymi-powershell-week-of-29-march-2019/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -654,7 +494,7 @@
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-03-28-secure-your-powershell-session-with-jea-and-constrained-endpoints/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2019-03-28-secure-your-powershell-session-with-jea-and-constrained-endpoints/" class="hover:text-blue-600 transition-colors duration-200">
                             Secure Your Powershell Session with JEA and Constrained Endpoints
                         </a>
                     </h2>
@@ -676,7 +516,7 @@
 <p>JEA is very well documented, so this won&rsquo;t simply be repeating everything those references detail. Instead, we&rsquo;ll go through a simple, real-world use-case of when and why you might need to deploy one.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-03-28-secure-your-powershell-session-with-jea-and-constrained-endpoints/" 
+                        <a href="https://powershell.org/articles/2019-03-28-secure-your-powershell-session-with-jea-and-constrained-endpoints/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -716,7 +556,7 @@
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-03-26-2019-community-lightning-demos/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2019-03-26-2019-community-lightning-demos/" class="hover:text-blue-600 transition-colors duration-200">
                             2019 Community Lightning Demos
                         </a>
                     </h2>
@@ -729,7 +569,7 @@
 <p>Lightning demos are great for the audience and speakers alike.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-03-26-2019-community-lightning-demos/" 
+                        <a href="https://powershell.org/articles/2019-03-26-2019-community-lightning-demos/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -764,7 +604,7 @@
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-03-22-icymi-powershell-week-of-22-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2019-03-22-icymi-powershell-week-of-22-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 22-March-2019
                         </a>
                     </h2>
@@ -772,7 +612,7 @@
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include PowerShell IoT, Nmap in PS, and some livestreamed contributions to PSHTML.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-03-22-icymi-powershell-week-of-22-march-2019/" 
+                        <a href="https://powershell.org/articles/2019-03-22-icymi-powershell-week-of-22-march-2019/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -825,7 +665,7 @@
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-03-22-running-universal-dashboard-with-ubuntu-and-nginx-with-https/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2019-03-22-running-universal-dashboard-with-ubuntu-and-nginx-with-https/" class="hover:text-blue-600 transition-colors duration-200">
                             Running Universal Dashboard with Ubuntu and Nginx (With HTTPS!)
                         </a>
                     </h2>
@@ -851,7 +691,7 @@
 <p><code>pwsh PS&gt; Install-Module UniversalDashboard.Community -Scope CurrentUser </code>Confirm it is installed:</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-03-22-running-universal-dashboard-with-ubuntu-and-nginx-with-https/" 
+                        <a href="https://powershell.org/articles/2019-03-22-running-universal-dashboard-with-ubuntu-and-nginx-with-https/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -886,7 +726,7 @@
                     </div>
                     
                     <h2 class="text-xl font-bold text-gray-900 mb-3">
-                        <a href="http://localhost:1313/articles/2019-03-15-icymi-powershell-week-of-15-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
+                        <a href="https://powershell.org/articles/2019-03-15-icymi-powershell-week-of-15-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
                             ICYMI: PowerShell Week of 15-March-2019
                         </a>
                     </h2>
@@ -894,7 +734,187 @@
                     <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include goodies for your prompt, more xplatform support for the SqlServer module, and more.</p></p>
                     
                     <div class="flex items-center justify-between">
-                        <a href="http://localhost:1313/articles/2019-03-15-icymi-powershell-week-of-15-march-2019/" 
+                        <a href="https://powershell.org/articles/2019-03-15-icymi-powershell-week-of-15-march-2019/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="who&#39;s your 2019 powershell community hero?" 
+                     data-content="&lt;p&gt;today we&amp;rsquo;re opening nominations for the 2019 powershell community heroes! we want to know about those in the community that are doing a wealth of good. have they written a fantastic script, or posted a blog series that has been exceptionally helpful? are they doing a mad amount of pull requests in a module or in powershell core? here is your opportunity to make sure they get the recognition they deserve!&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Mar 11, 2019</time>
+                            
+                            <span>•</span>
+                            <span>Will Anderson</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            PowerShell for Admins
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="https://powershell.org/articles/2019-03-11-whos-your-2019-powershell-community-hero/" class="hover:text-blue-600 transition-colors duration-200">
+                            Who&#39;s Your 2019 PowerShell Community Hero?
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Today we&rsquo;re opening nominations for the 2019 PowerShell Community Heroes! We want to know about those in the community that are doing a wealth of good. Have they written a fantastic script, or posted a blog series that has been exceptionally helpful? Are they doing a mad amount of pull requests in a module or in PowerShell Core? Here is your opportunity to make sure they get the recognition they deserve!</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="https://powershell.org/articles/2019-03-11-whos-your-2019-powershell-community-hero/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="icymi: powershell week of 8-march-2019" 
+                     data-content="&lt;p&gt;topics include the graph api, status pages, test-driven development, getting your google 2fa in the shell, and more.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Mar 8, 2019</time>
+                            
+                            <span>•</span>
+                            <span>Mark Roloff</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            PowerShell for Admins
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="https://powershell.org/articles/2019-03-08-icymi-powershell-week-of-8-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
+                            ICYMI: PowerShell Week of 8-March-2019
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include the Graph API, status pages, test-driven development, getting your Google 2FA in the shell, and more.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="https://powershell.org/articles/2019-03-08-icymi-powershell-week-of-8-march-2019/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="icymi: powershell week of 1-march-2019" 
+                     data-content="&lt;p&gt;topics include more iron scripter, a trove of ad and o365 scripts, tons of rest api goodness, and some fundamental lessons from brisbane.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Mar 1, 2019</time>
+                            
+                            <span>•</span>
+                            <span>Mark Roloff</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            PowerShell for Admins
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="https://powershell.org/articles/2019-03-01-icymi-powershell-week-of-1-march-2019/" class="hover:text-blue-600 transition-colors duration-200">
+                            ICYMI: PowerShell Week of 1-March-2019
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include more Iron Scripter, a trove of AD and O365 scripts, tons of REST API goodness, and some fundamental lessons from Brisbane.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="https://powershell.org/articles/2019-03-01-icymi-powershell-week-of-1-march-2019/" 
+                           class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+            </article>
+            
+            <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
+                     data-title="icymi: powershell week of 22-february-2019" 
+                     data-content="&lt;p&gt;topics include poshbot, jeadsc, azure pipelines, arrays and hashtables, and pester testing.&lt;/p&gt;
+&lt;p&gt;content curated by brett bunker, robin dadswell, and mark roloff.&lt;/p&gt;
+&lt;h3 class=&#34;wp-block-heading&#34; id=&#34;writing-a-poshbot-plugin-to-display-topdesk-tickets-and-assets&#34;&gt;&lt;a href=&#34;https://github.com/devops-collective-inc/whatyoumissedthisweek/blob/master/20190222.md#writing-a-poshbot-plugin-to-display-topdesk-tickets-and-assets&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://andrewpla.github.io/writing-a-poshbot-plugin/&#34;&gt;&lt;em&gt;writing a poshbot plugin to display topdesk tickets and assets&lt;/em&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;by andrew pla on february 16th&lt;/p&gt;
+&lt;p&gt;creating bots for teams or slack can make you more productive and save time by not having to swtich between applications. come let andrew show you how to create a bot for teams using poshbot.&lt;/p&gt;"
+                     >
+                
+                
+                
+                <div class="p-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
+                        <div class="flex items-center space-x-3">
+                            <time>Feb 22, 2019</time>
+                            
+                            <span>•</span>
+                            <span>Brett</span>
+                            
+                        </div>
+                        
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                            PowerShell for Admins
+                        </span>
+                        
+                    </div>
+                    
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        <a href="https://powershell.org/articles/2019-02-22-icymi-powershell-week-of-22-february-2019/" class="hover:text-blue-600 transition-colors duration-200">
+                            ICYMI: PowerShell Week of 22-February-2019
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-4 line-clamp-3"><p>Topics include PoshBot, JeaDsc, Azure Pipelines, Arrays and Hashtables, and Pester testing.</p>
+<p>Content curated by Brett Bunker, Robin Dadswell, and Mark Roloff.</p>
+<h3 class="wp-block-heading" id="writing-a-poshbot-plugin-to-display-topdesk-tickets-and-assets"><a href="https://github.com/devops-collective-inc/WhatYouMissedThisWeek/blob/master/20190222.md#writing-a-poshbot-plugin-to-display-topdesk-tickets-and-assets"></a><a href="https://andrewpla.github.io/Writing-a-PoshBot-Plugin/"><em>Writing a PoshBot Plugin to Display TOPdesk Tickets and Assets</em></a></h3>
+<p>by Andrew Pla on February 16th</p>
+<p>Creating bots for Teams or Slack can make you more productive and save time by not having to swtich between applications. Come let Andrew show you how to create a bot for Teams using PoshBot.</p></p>
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="https://powershell.org/articles/2019-02-22-icymi-powershell-week-of-22-february-2019/" 
                            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200">
                             Read More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
