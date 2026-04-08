@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Automating Wireless Charging Coil Testin...\"",
-      "time": "Yesterday",
+      "time": "2 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9584,
     "topics_this_week": 3
   },
-  "last_updated": "2026-04-08T16:32:35.192Z"
+  "last_updated": "2026-04-08T20:18:45.869Z"
 }
