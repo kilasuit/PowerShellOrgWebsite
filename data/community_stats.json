@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Building Your Own Pomodoro Timer in the ...\"",
-      "time": "Yesterday",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19353,
-    "total_posts": 118004,
-    "active_users": 9587,
+    "total_posts": 118006,
+    "active_users": 9588,
     "topics_this_week": 3
   },
-  "last_updated": "2026-04-10T12:24:05.451Z"
+  "last_updated": "2026-04-10T16:24:13.516Z"
 }
