@@ -201,22 +201,20 @@ jobs:
         run: touch docs/.nojekyll
         
       - name: Commit and push to main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
-          # Add files that exist
+
           git add docs/ || echo "No docs directory to add"
-          
-          # Only add data files if they exist
+
           if [ -f data/community_stats.json ]; then
             git add data/community_stats.json
           fi
-          
-          # Only commit if there are changes
+
           if ! git diff --staged --quiet; then
             git commit -m "Deploy Hugo site to docs/ [skip ci]"
-            git push
+            git push origin HEAD:main
           else
             echo "No changes to commit"
           fi
