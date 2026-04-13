@@ -15,7 +15,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.121.0
+      HUGO_VERSION: 0.128.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -39,8 +39,63 @@ jobs:
             npm install
           fi
           
-      - name: Create data directory
-        run: mkdir -p data
+      - name: Create required directories
+        run: |
+          mkdir -p data
+          mkdir -p content/discord
+          mkdir -p static/discord
+ 
+      # -----------------------------------------------------------------------
+      # Discord Mirror Export
+      # Runs before Hugo so generated content/discord/ pages are present at
+      # build time. Skipped on pull requests (no access to secrets) and when
+      # the bot token is absent, so forks and draft PRs still build cleanly.
+      # -----------------------------------------------------------------------
+      - name: Export Discord mirror content
+        if: github.event_name != 'pull_request' && env.DISCORD_BOT_TOKEN != ''
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: |
+          echo "Running Discord mirror export..."
+          pwsh -NonInteractive -File tools/discord-mirror/Export-DiscordMirror.ps1 \
+            -ConfigPath config/discord-mirror.json \
+            -BotToken "$DISCORD_BOT_TOKEN"
+ 
+      - name: Verify Discord export output
+        if: github.event_name != 'pull_request' && env.DISCORD_BOT_TOKEN != ''
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: |
+          echo "=== content/discord/ ==="
+          find content/discord -type f | sort || echo "(empty)"
+          echo "=== static/discord/ ==="
+          find static/discord -type f | sort || echo "(empty)"
+          echo "=== search index record count ==="
+          python3 -c "import json,sys; d=json.load(open('static/discord/search-index.json')); print(f'{len(d)} records')" 2>/dev/null || echo "(unreadable or empty)"
+ 
+      # -----------------------------------------------------------------------
+      # Fallback: if the export was skipped (PR or missing token), ensure Hugo
+      # has a valid _index.md so the /discord/ route doesn't 404 on a clean
+      # build. Real content will be present on main branch builds.
+      # -----------------------------------------------------------------------
+      - name: Write Discord section placeholder (PR / no-token builds only)
+        if: github.event_name == 'pull_request' || env.DISCORD_BOT_TOKEN == ''
+        run: |
+          if [ ! -f content/discord/_index.md ]; then
+            cat > content/discord/_index.md << 'EOF'
+          ---
+          title: "Discord Archive"
+          description: "Selected Discord content mirrored for public search and discovery."
+          layout: single
+          draft: false
+          ---
+          Discord archive content is generated during the main branch build.
+          EOF
+          fi
+ 
+      # -----------------------------------------------------------------------
+      # Community stats (Discourse)
+      # -----------------------------------------------------------------------
           
       - name: Update community stats
         run: |
