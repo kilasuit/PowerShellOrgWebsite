@@ -51,7 +51,9 @@
       "Bash(\"C:/scripts/PowerShellOrgWebsite/static/favicon.ico\")",
       "Bash(wc -l /Users/jamespetty/git/PowerShellOrgWebsite/content/articles/*.md)",
       "Bash(git -C /Users/jamespetty/git/PowerShellOrgWebsite log --oneline)",
-      "Bash(hugo --gc --minify --destination /tmp/hugo-test-build)"
+      "Bash(hugo --gc --minify --destination /tmp/hugo-test-build)",
+      "Bash(cat /c/scripts/PowerShellOrgWebsite/config/*)",
+      "Bash(hugo --quiet)"
     ]
   }
 }

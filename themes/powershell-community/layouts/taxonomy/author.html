@@ -1,25 +1,25 @@
 {{ define "main" }}
 
 <!-- Authors Header -->
-<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
+<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center text-white">
-            <div class="w-20 h-20 mx-auto mb-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
                 <i class="fas fa-user-edit text-3xl"></i>
             </div>
-            <h1 class="text-4xl lg:text-5xl font-bold mb-4">{{ .Title }}</h1>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-2">{{ .Title }}</h1>
             <p class="text-xl opacity-90">Explore articles and content from this author</p>
         </div>
     </div>
 </section>
 
 <!-- Author Details & Articles -->
-<section class="py-16 bg-gray-50">
+<section class="py-10 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Author Summary -->
-        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <div class="flex items-center mb-6">
-                <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white mr-6">
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <div class="flex items-center mb-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white mr-5">
                     <i class="fas fa-user text-2xl"></i>
                 </div>
                 <div>
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Articles Grid -->
-        <div class="grid gap-8 mb-12">
+        <div class="grid gap-6 mb-8">
             {{ $paginator := .Paginate .Pages }}
             {{ range $paginator.Pages }}
             <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden article-card" 

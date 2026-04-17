@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-<article class="py-8 lg:py-16">
+<article class="py-6 lg:py-10">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Article Header -->
-        <header class="mb-8 lg:mb-12">
+        <header class="mb-6 lg:mb-8">
             <!-- Breadcrumb -->
             <nav class="mb-6" aria-label="Breadcrumb">
                 <ol class="flex items-center space-x-2 text-sm text-gray-500">
@@ -105,8 +105,8 @@
         
         <!-- Tags -->
         {{ with .Params.tags }}
-        <div class="mt-8 pt-8 border-t border-gray-200">
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Tags</h3>
+        <div class="mt-6 pt-6 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Tags</h3>
             <div class="flex flex-wrap gap-2">
                 {{ range . }}
                 <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" 
@@ -120,7 +120,7 @@
         
         <!-- Author Bio (if available) -->
         {{ with .Params.author_bio }}
-        <div class="mt-8 pt-8 border-t border-gray-200">
+        <div class="mt-6 pt-6 border-t border-gray-200">
             <div class="bg-gray-50 rounded-xl p-6">
                 <div class="flex items-start space-x-4">
                     <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
@@ -138,9 +138,9 @@
         <!-- Related Posts -->
         {{ $related := .Site.RegularPages.Related . | first 3 }}
         {{ if $related }}
-        <div class="mt-12 pt-8 border-t border-gray-200">
-            <h3 class="text-2xl font-bold text-gray-900 mb-8">Related Articles</h3>
-            <div class="grid md:grid-cols-3 gap-6">
+        <div class="mt-8 pt-6 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h3>
+            <div class="grid md:grid-cols-3 gap-5">
                 {{ range $related }}
                 <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div class="p-6">
@@ -159,7 +159,7 @@
         {{ end }}
         
         <!-- Navigation -->
-        <nav class="mt-12 pt-8 border-t border-gray-200">
+        <nav class="mt-8 pt-6 border-t border-gray-200">
             <div class="flex justify-between items-center">
                 {{ with .PrevInSection }}
                 <a href="{{ .Permalink }}" 

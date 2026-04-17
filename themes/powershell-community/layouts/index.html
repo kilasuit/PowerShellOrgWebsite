@@ -2,8 +2,8 @@
 
 <!-- Hero Section: Inspired by Conference Colors -->
 <section class="bg-blue-900 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-        <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
             <!-- Left Side: Content -->
             <div class="text-white">
                 <!-- Summit Badge -->
@@ -16,7 +16,7 @@
                 <h1 class="text-4xl lg:text-6xl font-black mb-6 leading-tight">
                     The Home of <span class="text-blue-300">PowerShell</span> Community
                 </h1>
-                <p class="text-xl lg:text-2xl mb-8 opacity-90">
+                <p class="text-xl lg:text-2xl mb-6 opacity-90">
                     Where IT professionals, developers, and automation enthusiasts come together to share
                     knowledge, learn new skills, and advance their careers with PowerShell.
                 </p>
@@ -33,7 +33,7 @@
                 </div>
 
                 <!-- Stats -->
-                <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-blue-300 border-opacity-30">
+                <div class="grid grid-cols-3 gap-6 mt-8 pt-6 border-t border-blue-300 border-opacity-30">
                     <div class="text-center">
                         <div class="text-2xl font-bold text-blue-300">Hundreds</div>
                         <div class="text-sm opacity-80">of Blog Articles</div>
@@ -60,7 +60,7 @@
                             <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
                             <div class="w-3 h-3 bg-green-500 rounded-full"></div>
                         </div>
-                        <span class="ml-4 text-blue-400 text-sm font-medium">PowerShell 7.4.0</span>
+                        <span class="ml-4 text-blue-400 text-sm font-medium">PowerShell 7.6.0</span>
                     </div>
                     <div class="font-mono text-sm">
                         <div class="text-blue-400">PS C:\></div>
@@ -130,14 +130,14 @@
 </section>
 
 <!-- Summit Announcement -->
-<section class="summit-gradient py-12">
+<section class="summit-gradient py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div class="flex items-center justify-center mb-4">
             <i class="fas fa-calendar-alt text-3xl mr-4"></i>
             <h2 class="text-3xl font-bold">{{ .Site.Params.summit.title }} {{ .Site.Params.summit.year }}</h2>
         </div>
-        <p class="text-xl mb-2">{{ .Site.Params.summit.dates }}</p>
-        <p class="text-lg mb-6">{{ .Site.Params.summit.location }}</p>
+        <p class="text-xl mb-1">{{ .Site.Params.summit.dates }}</p>
+        <p class="text-lg mb-4">{{ .Site.Params.summit.location }}</p>
         <a href="{{ .Site.Params.summit.registration_url }}"
             class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
             Early Bird Tickets Available!
@@ -146,14 +146,14 @@
 </section>
 
 <!-- Latest Podcast Episodes -->
-<section class="py-16 bg-white">
+<section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Latest Podcast Episodes</h2>
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Latest Podcast Episodes</h2>
             <p class="text-xl text-gray-600">Building your career with PowerShell</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {{ range first 3 (where .Site.RegularPages "Section" "podcast") }}
             <article
                 class="podcast-card bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
@@ -187,14 +187,14 @@
 </section>
 
 <!-- Recent Blog Posts -->
-<section class="py-16 bg-gray-50">
+<section class="py-10 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Recent Articles</h2>
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Recent Articles</h2>
             <p class="text-xl text-gray-600">Latest insights from the PowerShell community</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {{ range first 6 (where .Site.RegularPages "Section" "ne" "podcast") }}
             <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <div class="p-6">
@@ -233,14 +233,14 @@
 </section>
 
 <!-- Community Features -->
-<section class="py-16 bg-white">
+<section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Join Our Community</h2>
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Join Our Community</h2>
             <p class="text-xl text-gray-600">Connect with PowerShell enthusiasts worldwide</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Discord -->
             <div
                 class="text-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 transition-colors duration-300">

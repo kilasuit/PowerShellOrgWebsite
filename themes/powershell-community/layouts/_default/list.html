@@ -1,9 +1,9 @@
 {{ define "main" }}
 
 <!-- Page Header -->
-<section class="powershell-blue py-16">
+<section class="powershell-blue py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-2">
             {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}
         </h1>
         {{ if .Params.description }}
@@ -17,11 +17,11 @@
 </section>
 
 <!-- Content Section -->
-<section class="py-16 bg-gray-50">
+<section class="py-10 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Filter/Search Bar -->
         {{ if gt (len .Pages) 5 }}
-        <div class="mb-8">
+        <div class="mb-6">
             <div class="max-w-md mx-auto">
                 <div class="relative">
                     <input type="text" id="content-search" 
@@ -35,7 +35,7 @@
         
         <!-- Category/Tag Filter (if applicable) -->
         {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
-        <div class="mb-8 text-center">
+        <div class="mb-6 text-center">
             <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
                 <i class="fas fa-tag mr-2"></i>
                 <span class="font-medium">{{ .Title }}</span>
@@ -44,7 +44,7 @@
         {{ end }}
         
         <!-- Content Grid -->
-        <div class="grid gap-8" id="content-container">
+        <div class="grid gap-6" id="content-container">
             {{ $paginator := .Paginate .Pages }}
             {{ range $paginator.Pages }}
             <article class="content-item bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" 
@@ -151,7 +151,7 @@
         
         <!-- Pagination -->
         {{ if gt $paginator.TotalPages 1 }}
-        <nav class="mt-12 flex justify-center" aria-label="Pagination">
+        <nav class="mt-8 flex justify-center" aria-label="Pagination">
             <div class="flex items-center space-x-1">
                 {{ if $paginator.HasPrev }}
                 <a href="{{ $paginator.Prev.URL }}" 

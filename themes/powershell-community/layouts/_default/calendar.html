@@ -1,20 +1,20 @@
 {{ define "main" }}
 
 <!-- Calendar Header -->
-<section class="bg-gradient-to-r from-purple-600 to-purple-800 py-16">
+<section class="bg-gradient-to-r from-purple-600 to-purple-800 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center text-white">
-            <div class="w-20 h-20 mx-auto mb-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
                 <i class="fas fa-calendar-alt text-3xl"></i>
             </div>
-            <h1 class="text-4xl lg:text-5xl font-bold mb-4">{{ .Title }}</h1>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-2">{{ .Title }}</h1>
             <p class="text-xl opacity-90 max-w-2xl mx-auto">{{ .Params.description }}</p>
         </div>
     </div>
 </section>
 
 <!-- Upcoming Events -->
-<section class="py-16 bg-white">
+<section class="py-10 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {{/* Sort events by start_date and split into upcoming vs past */}}
@@ -35,7 +35,7 @@
         {{ end }}
 
         <!-- Upcoming Events -->
-        <div class="flex items-center mb-8">
+        <div class="flex items-center mb-6">
             <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
                 <i class="fas fa-calendar-check text-2xl text-purple-600"></i>
             </div>
@@ -43,7 +43,7 @@
         </div>
 
         {{ if $upcoming }}
-        <div class="space-y-6 mb-16">
+        <div class="space-y-5 mb-10">
             {{ range $upcoming }}
             <a href="{{ .url }}" target="_blank" rel="noopener"
                class="block bg-gray-50 rounded-xl border border-gray-200 hover:border-purple-400 hover:shadow-md transition-all duration-200 overflow-hidden">
@@ -91,7 +91,7 @@
             {{ end }}
         </div>
         {{ else }}
-        <div class="text-center py-12 mb-16 bg-gray-50 rounded-xl">
+        <div class="text-center py-8 mb-10 bg-gray-50 rounded-xl">
             <i class="fas fa-calendar-times text-4xl text-gray-400 mb-4 block"></i>
             <p class="text-xl text-gray-600">No upcoming events listed yet.</p>
             <p class="text-gray-500 mt-2">Know of one? Submit it below!</p>
@@ -100,13 +100,13 @@
 
         <!-- Past Events -->
         {{ if $past }}
-        <div class="flex items-center mb-8">
+        <div class="flex items-center mb-6">
             <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
                 <i class="fas fa-history text-2xl text-gray-500"></i>
             </div>
             <h2 class="text-3xl font-bold text-gray-900">Past Events</h2>
         </div>
-        <div class="space-y-4 mb-16">
+        <div class="space-y-4 mb-10">
             {{ range (sort $past "start_date" "desc") }}
             <div class="bg-gray-50 rounded-lg border border-gray-200 p-4 opacity-75">
                 <div class="flex items-center justify-between">
@@ -135,10 +135,10 @@
 </section>
 
 <!-- Submit Event CTA -->
-<section class="py-16 bg-purple-600">
+<section class="py-10 bg-purple-600">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h2 class="text-3xl font-bold mb-4">Have an Event to Share?</h2>
-        <p class="text-xl mb-8 opacity-90">Submit your PowerShell-related conference, meetup, or community event by opening a GitHub issue.</p>
+        <h2 class="text-3xl font-bold mb-2">Have an Event to Share?</h2>
+        <p class="text-xl mb-6 opacity-90">Submit your PowerShell-related conference, meetup, or community event by opening a GitHub issue.</p>
         <a href="https://github.com/PowerShellOrg/PowerShellOrgWebsite/issues/new?template=community-event.yml" target="_blank" rel="noopener"
            class="inline-flex items-center bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
             <i class="fab fa-github mr-2"></i>Submit an Event
