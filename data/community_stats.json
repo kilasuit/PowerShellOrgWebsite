@@ -1,6 +1,12 @@
 {
   "activities": [
     {
+      "message": "New reply in \"Getting Accurate Membership counts for A...\"",
+      "time": "Just now",
+      "type": "reply",
+      "color": "bg-purple-500"
+    },
+    {
       "message": "Active PowerShell discussions ongoing",
       "time": "Ongoing",
       "type": "community",
@@ -9,9 +15,9 @@
   ],
   "stats": {
     "total_topics": 19355,
-    "total_posts": 118013,
+    "total_posts": 118015,
     "active_users": 9579,
     "topics_this_week": 0
   },
-  "last_updated": "2026-04-22T20:24:58.785Z"
+  "last_updated": "2026-04-23T00:51:16.521Z"
 }
