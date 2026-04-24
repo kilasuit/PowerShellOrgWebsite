@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Getting Accurate Membership counts for A...\"",
-      "time": "22 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -19,5 +19,5 @@
     "active_users": 9579,
     "topics_this_week": 0
   },
-  "last_updated": "2026-04-24T12:30:24.437Z"
+  "last_updated": "2026-04-24T16:26:27.363Z"
 }
