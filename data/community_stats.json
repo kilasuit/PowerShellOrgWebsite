@@ -1,10 +1,16 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Getting Accurate Membership counts for A...\"",
-      "time": "5 days ago",
+      "message": "New reply in \"PowerShell 7.x ISE-Style App — Looking f...\"",
+      "time": "2 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
+    },
+    {
+      "message": "1 new topics this week",
+      "time": "This week",
+      "type": "stats",
+      "color": "bg-green-500"
     },
     {
       "message": "Active PowerShell discussions ongoing",
@@ -14,10 +20,10 @@
     }
   ],
   "stats": {
-    "total_topics": 19355,
-    "total_posts": 118018,
-    "active_users": 9578,
-    "topics_this_week": 0
+    "total_topics": 19356,
+    "total_posts": 118020,
+    "active_users": 9579,
+    "topics_this_week": 1
   },
-  "last_updated": "2026-04-29T05:11:33.001Z"
+  "last_updated": "2026-04-29T08:53:46.183Z"
 }
