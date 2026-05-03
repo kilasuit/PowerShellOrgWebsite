@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"PowerShell 7.x ISE-Style App — Looking f...\"",
-      "time": "Yesterday",
+      "time": "2 days ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9574,
     "topics_this_week": 1
   },
-  "last_updated": "2026-05-03T12:25:56.578Z"
+  "last_updated": "2026-05-03T16:21:04.954Z"
 }
