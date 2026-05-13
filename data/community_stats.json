@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Run command get-service and include the ...\"",
-      "time": "14 hours ago",
+      "time": "18 hours ago",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -22,8 +22,8 @@
   "stats": {
     "total_topics": 19358,
     "total_posts": 118058,
-    "active_users": 9575,
+    "active_users": 9574,
     "topics_this_week": 2
   },
-  "last_updated": "2026-05-13T09:10:26.248Z"
+  "last_updated": "2026-05-13T12:54:02.983Z"
 }
