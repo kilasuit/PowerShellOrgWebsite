@@ -1,40 +1,211 @@
 ---
 title: "Code of Conduct"
 description: "PowerShell.org community and event code of conduct."
+layout: "single"
 ---
 
-All attendees, speakers, sponsors, and volunteers at our conference are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help in ensuring a safe environment for everybody.
+# PowerShellOrg Code of Conduct
 
-## The Quick Version
+PowerShellOrg has adopted the Contributor Covenant version 3.0 as our Code of
+Conduct. The full text follows, with PowerShellOrg-specific reporting and
+enforcement details filled in.
 
-Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery are not appropriate for any conference venue, including talks, workshops, parties, Twitter, and other online media.
+## Our Pledge
 
-Please don't record or stream sessions without asking. Please let us know if you are expecting to have a watch party.
+We as members, contributors, leaders, and participants in the PowerShellOrg
+community pledge to make participation in our community a harassment-free
+experience for everyone, regardless of age, body size, visible or invisible
+disability, ethnicity, sex characteristics, gender identity and expression,
+level of experience, education, socio-economic status, nationality, personal
+appearance, race, caste, color, religion, sexual identity and orientation, or
+any other dimension of diversity.
 
-Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community, focused on the shared goal of
+building and maintaining open source PowerShell tooling.
 
-**It is important that you read the entire section below to ensure you understand what "harassment" means, and what actions we take when it occurs.**
+## Encouraged Behaviors
 
-## The Less Quick Version
+We encourage all community members to:
 
-Some of our events include the option for of-age attendees to consume alcoholic beverages. We expect all attendees to exercise extreme moderation: know your limits and do not even get near them. Attendees who overindulge may be asked to leave the event without a refund and may be barred from attending future events produced by our organization. We always offer soft drinks and try to make those complimentary whenever possible.
+- Demonstrate empathy, kindness, and respect toward other people
+- Be respectful of differing opinions, viewpoints, and experiences
+- Give and gracefully accept constructive feedback
+- Accept responsibility, apologize to those affected by our mistakes, and learn
+  from the experience
+- Focus on what is best not just for us as individuals, but for the overall
+  community
+- Use welcoming and inclusive language
+- Help newcomers feel welcome and supported
+- Credit others' contributions generously
 
-Being an adult means being respectful of yourself and of those around you.
+## Unacceptable Behaviors
 
-We do not tolerate harassment in any form. Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, and technology choices. Harassment includes displaying sexual images in public spaces, deliberately intimidating others, stalking, following, showing, or creating harassing photography or recordings, creating sustained disruptions of talks or other events, engaging in unwanted physical contact, and engaging in unwelcome sexual attention. If you are making another attendee uncomfortable, you are probably engaging in harassment.
+The following behaviors are considered violations of this Code of Conduct:
 
-Participants asked, by anyone, to stop any harassing behavior are expected to comply immediately.
+- Harassment of any participant, in any form
+- Discrimination, particularly against members of vulnerable or underrepresented
+  groups
+- The use of sexualized language or imagery, and sexual attention or advances of
+  any kind
+- Trolling, insulting or derogatory comments, and personal or political attacks
+- Public or private harassment, including stalking, doxxing, or sustained
+  disruption of discussions
+- Publishing others' private information, such as a physical or email address,
+  without their explicit permission
+- Advocating for, or encouraging, any of the above behavior
+- Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes or otherwise create a sexualized environment.
+We recognize that even well-intentioned actions can cause harm. Impact matters
+more than intent. When informed that our behavior has caused harm, the
+appropriate response is to listen, take responsibility, apologize sincerely, and
+change the behavior — not to defend the original intent.
 
-If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund. In most cases, out of an abundance of caution, participants engaging in harassing behavior will be asked to leave the event pending further investigation.
+## Consent and Boundaries
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded name pins. In most cases, we prefer that you speak with our CEO or another senior officer of the company, but we will respect your wishes if you prefer to speak to another staff member or volunteer.
+Community members must respect stated boundaries immediately. When a member asks
+another to stop a behavior, end a line of conversation, or leave them alone, the
+request must be honored without argument.
 
-Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance. However, if you have been harassed, the only action we will take without your permission is to have the harassing individual removed from the event, should you choose to identify them to us. Any other assistance we provide you will be at your request only. Our staff may ask you to provide a written report of what happened, but at your discretion, you may instead provide a verbal report. We do ask our staff and volunteers to make their own written reports so that we can accurately understand and preserve what you tell us. We will involve as few of our staff as possible to protect everyone's privacy as best we can.
+Repeated boundary violations after a clear request to stop will be treated as
+harassment.
 
-Be aware that our organization is not equipped or trained to interview witnesses, gather evidence, or perform other investigative activities. In an effort to preserve your rights and options, we will not engage in activities that are best left to professionals, such as law enforcement officers.
+## Scope
 
-Our conference uses a third party for video capture and production of select sessions which will be posted on PowerShell.org's social media accounts. Video capture for personal or commercial use otherwise is expressly forbidden without the written consent of The DevOps Collective and all necessary local licenses and permits.
+This Code of Conduct applies within all PowerShellOrg community spaces,
+including:
 
-We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+- All repositories within github.com/PowerShellOrg
+- GitHub Discussions, Issues, and Pull Requests
+- Any official PowerShellOrg communication channels (chat platforms, mailing
+  lists, video calls)
+- Public events where someone is officially representing PowerShellOrg
+
+It also applies when an individual is officially representing the community in
+public spaces. Examples of representing our community include using an official
+email address, posting via an official social media account, or acting as an
+appointed representative at an online or offline event.
+
+This Code of Conduct also applies to behavior outside these spaces when that
+behavior has the potential to adversely affect the safety and well-being of
+community members.
+
+## Reporting Concerns
+
+If you experience or witness behavior that violates this Code of Conduct, please
+report it. You will not be retaliated against for making a good-faith report.
+
+**Primary contact:** <Privacy@powershell.org>
+
+**Alternate contact:** Direct message to the Org Admin via GitHub or Discord.
+
+When reporting, please include:
+
+- Your contact information (so we can follow up)
+- Names (real or usernames) of any individuals involved, including witnesses
+- A description of what happened, with as much specificity as possible
+- The approximate date and time
+- Links to any relevant public records (issues, pull requests, chat messages)
+- Any additional context that would help us understand the situation
+- Whether you believe the situation is ongoing
+
+Reports will be acknowledged within 72 hours.
+
+All reports will be handled with discretion. We will not share your identity
+with the person you are reporting without your explicit consent, except where
+required by law.
+
+## Addressing and Repairing Harm
+
+When a Code of Conduct violation is reported, the Org Admin (with input from the
+Council where appropriate) will determine an appropriate response. Our goal is
+to address harm, support those affected, and where possible find a path for the
+person who caused harm to repair the relationship and reintegrate into the
+community.
+
+The following is a guideline. The Org Admin retains discretion to apply responses
+appropriate to the specific situation, including responses not listed here.
+
+### 1. Private Conversation
+
+**Community impact:** Use of inappropriate language, a single instance of
+unprofessional behavior, or behavior that, while not severe, was unwelcome.
+
+**Response:** A private written communication from the Org Admin, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
+
+### 2. Warning
+
+**Community impact:** A violation through a single incident or series of
+actions, or a pattern of behavior that has caused harm to one or more community
+members.
+
+**Response:** A written warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or permanent
+ban.
+
+### 3. Temporary Ban
+
+**Community impact:** A serious violation of community standards, including
+sustained inappropriate behavior or harassment of an individual.
+
+**Response:** A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+
+### 4. Permanent Ban
+
+**Community impact:** Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+
+**Response:** A permanent ban from any sort of public interaction within the
+community.
+
+## Restorative Paths
+
+Where appropriate, and at the discretion of the Org Admin and the affected
+parties, we may offer paths for community members who have caused harm to repair
+the relationship and re-engage with the community. This may include:
+
+- A private acknowledgment of the harm caused
+- A public apology, when requested by those harmed
+- A defined period of restricted participation
+- A clear set of expectations for re-engagement
+
+Restorative paths are not available for severe violations, including but not
+limited to harassment, doxxing, threats of violence, or sexual misconduct.
+
+## Appeals
+
+A person who has been subject to enforcement action may appeal the decision by
+writing to the Org Admin within 30 days. The Org Admin will review the appeal
+with input from the Council and respond within 30 days.
+
+If the appeal involves the Org Admin's own decision and the appellant believes
+the Org Admin cannot review it impartially, they may request that the Council
+review the appeal collectively. In that case, the Council reviews and decides by
+majority, and the Org Admin does not vote.
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 3.0, available at
+<https://www.contributor-covenant.org/version/3/0/code_of_conduct/>.
+
+[homepage]: https://www.contributor-covenant.org
+
+For answers to common questions about this Code of Conduct, see the FAQ at
+<https://www.contributor-covenant.org/faq>. Translations are available at
+<https://www.contributor-covenant.org/translations>.
+
+---
+
+_Last updated: 2026/04/21. Reports go to <Privacy@powershell.org>._

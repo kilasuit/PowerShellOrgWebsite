@@ -1,6 +1,7 @@
 ---
 title: "Contact Us"
 description: "Get in touch with the PowerShell.org community team."
+layout: "single"
 ---
 
 ## Get in Touch
