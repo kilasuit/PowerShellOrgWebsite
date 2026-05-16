@@ -1,10 +1,8 @@
 ---
 title: "Code of Conduct"
 description: "PowerShell.org community and event code of conduct."
-layout: "page"
+layout: "staticpage"
 ---
-
-# PowerShellOrg Code of Conduct
 
 PowerShellOrg has adopted the Contributor Covenant version 3.0 as our Code of
 Conduct. The full text follows, with PowerShellOrg-specific reporting and

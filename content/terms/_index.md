@@ -1,7 +1,7 @@
 ---
 title: "Terms of Use"
 description: "Terms and conditions for using PowerShell.org website and services."
-layout: "page"
+layout: "staticpage"
 ---
 
 ## Terms of Use

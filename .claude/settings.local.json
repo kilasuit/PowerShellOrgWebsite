@@ -56,7 +56,10 @@
       "Bash(hugo --quiet)",
       "Bash(head -5 /c/scripts/PowerShellOrgWebsite/content/articles/*.md)",
       "Bash(head -5 /c/scripts/PowerShellOrgWebsite/content/podcast/*.md)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(hugo --printPathWarnings)",
+      "Bash(hugo --templateMetrics)",
+      "Bash(hugo)"
     ]
   }
 }
