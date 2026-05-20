@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "message": "New reply in \"Print test page on default printer...\"",
-      "time": "1 hours ago",
+      "message": "New reply in \"Server goes dorment after 5 instances...\"",
+      "time": "Just now",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -21,9 +21,9 @@
   ],
   "stats": {
     "total_topics": 19362,
-    "total_posts": 118085,
+    "total_posts": 118086,
     "active_users": 9573,
     "topics_this_week": 4
   },
-  "last_updated": "2026-05-19T20:40:20.016Z"
+  "last_updated": "2026-05-20T01:03:59.467Z"
 }
