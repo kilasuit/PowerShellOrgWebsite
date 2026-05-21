@@ -2,7 +2,7 @@
   "activities": [
     {
       "message": "New reply in \"Print test page on default printer...\"",
-      "time": "21 hours ago",
+      "time": "Yesterday",
       "type": "reply",
       "color": "bg-purple-500"
     },
@@ -25,5 +25,5 @@
     "active_users": 9584,
     "topics_this_week": 3
   },
-  "last_updated": "2026-05-21T17:00:32.067Z"
+  "last_updated": "2026-05-21T20:41:26.155Z"
 }
