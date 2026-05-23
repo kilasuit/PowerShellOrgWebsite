@@ -26,7 +26,7 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
           python3 - <<'PYEOF'
-          import os, re
+          import os, re, yaml
 
           body = os.environ['ISSUE_BODY']
           issue_num = os.environ['ISSUE_NUMBER']
@@ -46,25 +46,26 @@ jobs:
           virtual_s  = field('Is this a virtual event?')
           description = field('Event Description')
 
-          virtual = 'true' if virtual_s.startswith(('Yes', 'Hybrid')) else 'false'
+          virtual = virtual_s.startswith(('Yes', 'Hybrid'))
 
           # Generate a URL-safe slug: name + year
           slug = re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
           slug = f"{slug}-{start_date[:4]}"
 
-          end_line = f'\nendDate: "{end_date}"' if end_date else ''
-          content = f"""---
-          title: "{name}"
-          startDate: "{start_date}"{end_line}
-          where: "{location}"
-          externalUrl: "{url}"
-          virtual: {virtual}
-          ---
-          {description}
-          """
-          # Dedent (the heredoc indents every line)
-          import textwrap
-          content = textwrap.dedent(content)
+          # Strip raw HTML from description to prevent stored XSS via goldmark unsafe mode
+          description = re.sub(r'<[^>]+>', '', description)
+
+          fm = {
+              'title': name,
+              'startDate': start_date,
+              'where': location,
+              'externalUrl': url,
+              'virtual': virtual,
+          }
+          if end_date:
+              fm['endDate'] = end_date
+
+          content = '---\n' + yaml.safe_dump(fm, default_flow_style=False, allow_unicode=True) + '---\n' + description + '\n'
 
           filepath = f'content/calendar/{slug}.md'
           os.makedirs('content/calendar', exist_ok=True)
