@@ -1,7 +1,7 @@
 name: Community Event Submission
 description: Submit a PowerShell-related event for the community calendar
 title: "[Event] "
-labels: ["calendar", "community-event"]
+labels: ["community-event"]
 body:
   - type: markdown
     attributes:
