@@ -4,6 +4,7 @@ author: Andrew Pla
 authors:
   - Andrew Pla
   - Jordan Hammond
+  - Josh Hendricks
 date: "2023-04-27T14:23:55+00:00"
 podcast_url: "https://mcdn.podbean.com/mf/web/gz29j9/PowerShell_Summit_2023_bar_sessions_1aaaovy.mp3"
 aliases:
